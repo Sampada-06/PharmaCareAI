@@ -1,0 +1,27 @@
+# Environment variables
+.env
+*.env
+
+# Node modules
+node_modules/
+backend-node/node_modules/
+frontend-react/node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Logs
+*.log
+
+# Temporary files
+*.txt
+*.bat
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1201 @@
+product_id,product_name,category,pzn,price,package_size,stock_quantity,expiry_date,description,prescription_needed,drug_interactions
+1001,Torrent Paracetamol 500mg,Medicine,42868828,350.35,Standard Pack,377,2026-12-03,Pain reliever and fever reducer,No,Consult doctor if taking BP medication
+1002,Mankind Montelukast 10mg,Medicine,14265799,64.1,Standard Pack,111,2027-04-16,Asthma prevention,Yes,Consult doctor if taking BP medication
+1003,Glenmark Sanitary Pads Pack,Sanitary,36687537,1079.71,Standard Pack,359,2028-03-01,Women hygiene product,No,Not Applicable
+1004,Alkem Antiseptic Liquid,Body Care,89089901,431.72,Standard Pack,445,2026-08-27,Kills germs and bacteria,No,Not Applicable
+1005,Zydus Iron Folic Acid,Supplement,47295260,250.11,Standard Pack,490,2028-10-10,Iron deficiency treatment,No,Not Applicable
+1006,Sun Pharma Cetaphil Cleanser,Skincare,60992979,163.14,Standard Pack,433,2027-08-08,Gentle skin cleanser,No,Not Applicable
+1007,Cipla Adult Diapers,Sanitary,71662963,813.62,Standard Pack,498,2027-09-12,Incontinence protection,No,Not Applicable
+1008,Torrent Levothyroxine 50mcg,Medicine,94374605,935.41,Standard Pack,441,2027-08-26,Thyroid hormone replacement,Yes,Consult doctor if taking BP medication
+1009,Cipla Vitamin D3 60000 IU,Supplement,98753260,357.29,Standard Pack,148,2026-11-10,Vitamin D supplement,No,Not Applicable
+1010,Mankind Vitamin D3 60000 IU,Supplement,47308985,691.05,Standard Pack,427,2027-08-29,Vitamin D supplement,No,Not Applicable
+1011,Zydus Omega 3 Fish Oil,Supplement,38119557,1011.86,Standard Pack,359,2028-07-20,Heart health supplement,No,Not Applicable
+1012,Dr Reddy's Montelukast 10mg,Medicine,81691040,1099.11,Standard Pack,83,2027-12-07,Asthma prevention,Yes,No major interactions reported
+1013,Lupin Aloe Vera Gel,Skincare,53524491,1267.42,Standard Pack,397,2026-10-17,Soothing skin gel,No,Not Applicable
+1014,Zydus Vitamin D3 60000 IU,Supplement,63843426,416.26,Standard Pack,108,2028-03-23,Vitamin D supplement,No,Not Applicable
+1015,Alkem Sunscreen SPF 50,Skincare,63100814,1329.33,Standard Pack,329,2027-12-03,UV protection lotion,No,Not Applicable
+1016,Dr Reddy's Omega 3 Fish Oil,Supplement,43101783,1122.58,Standard Pack,275,2027-05-17,Heart health supplement,No,Not Applicable
+1017,Abbott Baby Wipes,Sanitary,63606628,555.75,Standard Pack,70,2028-01-24,Gentle cleansing wipes,No,Not Applicable
+1018,Cipla Body Lotion,Body Care,24716857,246.21,Standard Pack,81,2028-11-09,Hydrating body lotion,No,Not Applicable
+1019,Sun Pharma Foot Care Cream,Body Care,61642594,584.8,Standard Pack,239,2028-02-13,Cracked heel treatment,No,Not Applicable
+1020,Cipla Aloe Vera Gel,Skincare,25374874,1028.93,Standard Pack,274,2028-09-27,Soothing skin gel,No,Not Applicable
+1021,Sun Pharma Acne Control Gel,Skincare,49392920,663.45,Standard Pack,232,2026-08-24,Reduces acne and pimples,No,Not Applicable
+1022,Dr Reddy's Aloe Vera Gel,Skincare,78139880,1370.69,Standard Pack,445,2028-05-22,Soothing skin gel,No,Not Applicable
+1023,Abbott Aloe Vera Gel,Skincare,36697396,246.2,Standard Pack,390,2027-02-02,Soothing skin gel,No,Not Applicable
+1024,Cipla Face Masks Pack,Sanitary,90388981,499.75,Standard Pack,9,2026-12-13,Protective face masks,No,Not Applicable
+1025,Lupin Acne Control Gel,Skincare,17774584,376.49,Standard Pack,290,2026-11-09,Reduces acne and pimples,No,Not Applicable
+1026,Sun Pharma Insulin Glargine,Medicine,81498611,1153.43,Standard Pack,65,2028-06-26,Long-acting insulin,Yes,No major interactions reported
+1027,Torrent Tampons Pack,Sanitary,80823176,1311.2,Standard Pack,216,2027-03-25,Menstrual hygiene product,No,Not Applicable
+1028,Torrent Tampons Pack,Sanitary,63551839,1492.82,Standard Pack,332,2027-09-07,Menstrual hygiene product,No,Not Applicable
+1029,Alkem Foot Care Cream,Body Care,26240908,386.9,Standard Pack,32,2027-08-02,Cracked heel treatment,No,Not Applicable
+1030,Glenmark Montelukast 10mg,Medicine,40885476,890.89,Standard Pack,3,2026-11-01,Asthma prevention,Yes,Avoid with Warfarin
+1031,Cipla Vitamin D3 60000 IU,Supplement,54349361,124.87,Standard Pack,121,2027-06-02,Vitamin D supplement,No,Not Applicable
+1032,Glenmark Antiseptic Liquid,Body Care,27758595,1090.56,Standard Pack,451,2028-03-27,Kills germs and bacteria,No,Not Applicable
+1033,Lupin Baby Wipes,Sanitary,73481353,1215.1,Standard Pack,97,2026-11-25,Gentle cleansing wipes,No,Not Applicable
+1034,Zydus Pantoprazole 40mg,Medicine,66851760,628.43,Standard Pack,442,2028-09-05,Acidity treatment,Yes,Avoid with Warfarin
+1035,Mankind Paracetamol 500mg,Medicine,55540424,1204.88,Standard Pack,55,2027-05-02,Pain reliever and fever reducer,No,May interact with Metformin
+1036,Alkem Calcium + Vitamin D,Supplement,28814949,644.38,Standard Pack,142,2027-12-07,Bone health supplement,No,Not Applicable
+1037,Alkem Vitamin D3 60000 IU,Supplement,83863413,164.9,Standard Pack,333,2028-02-25,Vitamin D supplement,No,Not Applicable
+1038,Lupin Azithromycin 500mg,Medicine,32321899,621.49,Standard Pack,246,2027-03-27,Antibiotic for bacterial infections,Yes,No major interactions reported
+1039,Mankind Metformin 500mg,Medicine,10289289,1478.26,Standard Pack,135,2028-10-31,Type 2 diabetes management,Yes,No major interactions reported
+1040,Glenmark Moisturizing Cream,Skincare,98834863,1083.24,Standard Pack,79,2027-03-03,Hydrates dry skin,No,Not Applicable
+1041,Cipla Sunscreen SPF 50,Skincare,87736262,1108.89,Standard Pack,31,2028-09-24,UV protection lotion,No,Not Applicable
+1042,Cipla Cetaphil Cleanser,Skincare,88406989,725.65,Standard Pack,470,2028-02-15,Gentle skin cleanser,No,Not Applicable
+1043,Glenmark Vitamin D3 60000 IU,Supplement,20752378,1279.99,Standard Pack,35,2028-04-21,Vitamin D supplement,No,Not Applicable
+1044,Mankind Amlodipine 5mg,Medicine,26090908,1413.56,Standard Pack,291,2027-04-30,Hypertension treatment,Yes,Consult doctor if taking BP medication
+1045,Abbott Sanitary Pads Pack,Sanitary,21003626,640.45,Standard Pack,298,2028-03-21,Women hygiene product,No,Not Applicable
+1046,Torrent Adult Diapers,Sanitary,37415205,1011.19,Standard Pack,160,2027-04-22,Incontinence protection,No,Not Applicable
+1047,Dr Reddy's Moisturizing Cream,Skincare,96637649,464.0,Standard Pack,161,2028-09-28,Hydrates dry skin,No,Not Applicable
+1048,Alkem Paracetamol 500mg,Medicine,93370583,1497.71,Standard Pack,51,2026-11-04,Pain reliever and fever reducer,No,Consult doctor if taking BP medication
+1049,Torrent Calcium + Vitamin D,Supplement,27778019,1401.22,Standard Pack,451,2026-10-30,Bone health supplement,No,Not Applicable
+1050,Torrent Omega 3 Fish Oil,Supplement,31172421,668.51,Standard Pack,278,2028-08-10,Heart health supplement,No,Not Applicable
+1051,Glenmark Aloe Vera Gel,Skincare,11049999,1008.44,Standard Pack,283,2027-06-23,Soothing skin gel,No,Not Applicable
+1052,Torrent Metformin 500mg,Medicine,25492573,1336.77,Standard Pack,380,2028-03-09,Type 2 diabetes management,Yes,May interact with Metformin
+1053,Abbott Acne Control Gel,Skincare,38270233,1082.07,Standard Pack,104,2028-07-24,Reduces acne and pimples,No,Not Applicable
+1054,Alkem Aloe Vera Gel,Skincare,43704923,1359.9,Standard Pack,433,2026-10-12,Soothing skin gel,No,Not Applicable
+1055,Torrent Pantoprazole 40mg,Medicine,15917225,25.25,Standard Pack,394,2027-01-01,Acidity treatment,Yes,Avoid alcohol
+1056,Glenmark Iron Folic Acid,Supplement,67403166,850.14,Standard Pack,57,2026-11-06,Iron deficiency treatment,No,Not Applicable
+1057,Cipla Calcium + Vitamin D,Supplement,59555330,882.11,Standard Pack,75,2027-11-04,Bone health supplement,No,Not Applicable
+1058,Torrent Vitamin D3 60000 IU,Supplement,58942697,1350.49,Standard Pack,407,2026-09-30,Vitamin D supplement,No,Not Applicable
+1059,Lupin Sunscreen SPF 50,Skincare,99514287,172.13,Standard Pack,399,2028-03-16,UV protection lotion,No,Not Applicable
+1060,Dr Reddy's Foot Care Cream,Body Care,41774346,1299.62,Standard Pack,499,2028-11-17,Cracked heel treatment,No,Not Applicable
+1061,Cipla Iron Folic Acid,Supplement,34073380,1110.12,Standard Pack,170,2028-10-30,Iron deficiency treatment,No,Not Applicable
+1062,Torrent Antiseptic Liquid,Body Care,31367172,1185.31,Standard Pack,55,2027-09-16,Kills germs and bacteria,No,Not Applicable
+1063,Lupin Insulin Glargine,Medicine,36786211,1228.55,Standard Pack,235,2027-08-14,Long-acting insulin,Yes,Avoid alcohol
+1064,Cipla Multivitamin Capsules,Supplement,98588154,305.83,Standard Pack,168,2027-06-02,General dietary supplement,No,Not Applicable
+1065,Zydus Cetirizine 10mg,Medicine,96098221,773.92,Standard Pack,347,2028-02-21,Allergy relief,No,Avoid alcohol
+1066,Torrent Azithromycin 500mg,Medicine,33966966,879.27,Standard Pack,135,2026-09-29,Antibiotic for bacterial infections,Yes,Avoid with Warfarin
+1067,Zydus Baby Wipes,Sanitary,52101056,665.86,Standard Pack,261,2026-12-17,Gentle cleansing wipes,No,Not Applicable
+1068,Lupin Foot Care Cream,Body Care,44188276,85.69,Standard Pack,223,2026-08-22,Cracked heel treatment,No,Not Applicable
+1069,Lupin Face Masks Pack,Sanitary,58884978,658.32,Standard Pack,485,2028-07-01,Protective face masks,No,Not Applicable
+1070,Zydus Aloe Vera Gel,Skincare,99038359,1275.06,Standard Pack,368,2027-06-24,Soothing skin gel,No,Not Applicable
+1071,Mankind Adult Diapers,Sanitary,53779528,615.55,Standard Pack,151,2028-03-10,Incontinence protection,No,Not Applicable
+1072,Mankind Multivitamin Capsules,Supplement,99245317,1411.74,Standard Pack,346,2028-09-25,General dietary supplement,No,Not Applicable
+1073,Abbott Calcium + Vitamin D,Supplement,50392808,620.99,Standard Pack,426,2026-08-21,Bone health supplement,No,Not Applicable
+1074,Lupin Acne Control Gel,Skincare,67698610,1182.92,Standard Pack,310,2028-06-21,Reduces acne and pimples,No,Not Applicable
+1075,Alkem Moisturizing Cream,Skincare,69345683,1019.93,Standard Pack,261,2027-12-18,Hydrates dry skin,No,Not Applicable
+1076,Torrent Vitamin D3 60000 IU,Supplement,79182797,1002.5,Standard Pack,317,2027-07-30,Vitamin D supplement,No,Not Applicable
+1077,Torrent Amlodipine 5mg,Medicine,40150759,1213.71,Standard Pack,75,2026-09-15,Hypertension treatment,Yes,Avoid with Warfarin
+1078,Abbott Iron Folic Acid,Supplement,19774839,694.02,Standard Pack,453,2028-05-26,Iron deficiency treatment,No,Not Applicable
+1079,Mankind Tampons Pack,Sanitary,76354180,611.49,Standard Pack,75,2028-06-22,Menstrual hygiene product,No,Not Applicable
+1080,Mankind Azithromycin 500mg,Medicine,39372360,280.31,Standard Pack,490,2028-08-02,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+1081,Glenmark Body Lotion,Body Care,43446826,1377.86,Standard Pack,62,2027-12-01,Hydrating body lotion,No,Not Applicable
+1082,Glenmark Iron Folic Acid,Supplement,85017682,901.27,Standard Pack,486,2028-10-02,Iron deficiency treatment,No,Not Applicable
+1083,Glenmark Foot Care Cream,Body Care,67276174,1249.24,Standard Pack,280,2027-11-20,Cracked heel treatment,No,Not Applicable
+1084,Alkem Iron Folic Acid,Supplement,44788100,1132.63,Standard Pack,430,2028-06-03,Iron deficiency treatment,No,Not Applicable
+1085,Alkem Aloe Vera Gel,Skincare,94120751,374.08,Standard Pack,225,2026-11-08,Soothing skin gel,No,Not Applicable
+1086,Torrent Sunscreen SPF 50,Skincare,55076693,493.17,Standard Pack,276,2026-11-11,UV protection lotion,No,Not Applicable
+1087,Lupin Multivitamin Capsules,Supplement,61410126,1047.05,Standard Pack,361,2027-03-28,General dietary supplement,No,Not Applicable
+1088,Mankind Pantoprazole 40mg,Medicine,54410148,823.06,Standard Pack,212,2026-10-23,Acidity treatment,Yes,May interact with Metformin
+1089,Abbott Medicated Soap,Body Care,12621534,1287.96,Standard Pack,391,2028-04-01,Skin infection protection,No,Not Applicable
+1090,Cipla Medicated Soap,Body Care,57212267,461.95,Standard Pack,199,2027-10-24,Skin infection protection,No,Not Applicable
+1091,Abbott Face Masks Pack,Sanitary,39600202,742.58,Standard Pack,139,2027-11-10,Protective face masks,No,Not Applicable
+1092,Mankind Body Lotion,Body Care,55114543,1009.93,Standard Pack,408,2027-10-09,Hydrating body lotion,No,Not Applicable
+1093,Dr Reddy's Iron Folic Acid,Supplement,93517915,810.5,Standard Pack,464,2027-09-28,Iron deficiency treatment,No,Not Applicable
+1094,Cipla Face Masks Pack,Sanitary,21267237,971.27,Standard Pack,69,2027-12-06,Protective face masks,No,Not Applicable
+1095,Torrent Vitamin D3 60000 IU,Supplement,60882459,504.48,Standard Pack,232,2027-07-21,Vitamin D supplement,No,Not Applicable
+1096,Torrent Moisturizing Cream,Skincare,66581473,393.36,Standard Pack,41,2027-12-15,Hydrates dry skin,No,Not Applicable
+1097,Cipla Levothyroxine 50mcg,Medicine,56970882,351.85,Standard Pack,35,2028-10-28,Thyroid hormone replacement,Yes,Avoid with Warfarin
+1098,Lupin Amlodipine 5mg,Medicine,12735359,939.58,Standard Pack,122,2026-12-28,Hypertension treatment,Yes,No major interactions reported
+1099,Lupin Montelukast 10mg,Medicine,72415804,1055.21,Standard Pack,392,2027-09-02,Asthma prevention,Yes,May interact with Metformin
+1100,Sun Pharma Face Masks Pack,Sanitary,31980274,1447.79,Standard Pack,55,2028-04-04,Protective face masks,No,Not Applicable
+1101,Abbott Cetirizine 10mg,Medicine,60372847,607.05,Standard Pack,366,2027-03-12,Allergy relief,No,Avoid with Warfarin
+1102,Sun Pharma Tampons Pack,Sanitary,50477742,1278.43,Standard Pack,307,2026-12-22,Menstrual hygiene product,No,Not Applicable
+1103,Zydus Sanitary Pads Pack,Sanitary,81503856,654.0,Standard Pack,189,2026-10-30,Women hygiene product,No,Not Applicable
+1104,Cipla Adult Diapers,Sanitary,66379329,1237.05,Standard Pack,54,2027-11-07,Incontinence protection,No,Not Applicable
+1105,Dr Reddy's Moisturizing Cream,Skincare,68450095,280.68,Standard Pack,267,2028-06-17,Hydrates dry skin,No,Not Applicable
+1106,Glenmark Aloe Vera Gel,Skincare,74893936,708.01,Standard Pack,422,2028-09-07,Soothing skin gel,No,Not Applicable
+1107,Zydus Adult Diapers,Sanitary,42949803,1249.48,Standard Pack,44,2027-06-02,Incontinence protection,No,Not Applicable
+1108,Alkem Antiseptic Liquid,Body Care,86483924,923.29,Standard Pack,194,2027-07-31,Kills germs and bacteria,No,Not Applicable
+1109,Zydus Insulin Glargine,Medicine,34406132,741.57,Standard Pack,181,2028-11-14,Long-acting insulin,Yes,Avoid alcohol
+1110,Abbott Acne Control Gel,Skincare,47080140,842.57,Standard Pack,264,2027-03-04,Reduces acne and pimples,No,Not Applicable
+1111,Mankind Amlodipine 5mg,Medicine,75575808,841.66,Standard Pack,123,2028-07-28,Hypertension treatment,Yes,No major interactions reported
+1112,Cipla Medicated Soap,Body Care,22489409,455.47,Standard Pack,207,2028-07-29,Skin infection protection,No,Not Applicable
+1113,Abbott Omega 3 Fish Oil,Supplement,59529086,720.43,Standard Pack,271,2027-08-08,Heart health supplement,No,Not Applicable
+1114,Zydus Foot Care Cream,Body Care,57219209,1060.23,Standard Pack,138,2027-06-30,Cracked heel treatment,No,Not Applicable
+1115,Sun Pharma Sunscreen SPF 50,Skincare,35848226,487.01,Standard Pack,380,2028-02-20,UV protection lotion,No,Not Applicable
+1116,Lupin Multivitamin Capsules,Supplement,74988034,429.22,Standard Pack,301,2028-10-07,General dietary supplement,No,Not Applicable
+1117,Torrent Face Masks Pack,Sanitary,23492385,1252.29,Standard Pack,151,2027-04-10,Protective face masks,No,Not Applicable
+1118,Torrent Sunscreen SPF 50,Skincare,11898961,1067.87,Standard Pack,64,2027-05-28,UV protection lotion,No,Not Applicable
+1119,Glenmark Paracetamol 500mg,Medicine,49209916,1052.18,Standard Pack,64,2028-06-04,Pain reliever and fever reducer,No,No major interactions reported
+1120,Abbott Paracetamol 500mg,Medicine,48163378,714.71,Standard Pack,225,2027-08-04,Pain reliever and fever reducer,No,May interact with Metformin
+1121,Alkem Cetirizine 10mg,Medicine,25312516,1236.73,Standard Pack,205,2028-01-06,Allergy relief,No,Avoid with Warfarin
+1122,Dr Reddy's Sanitary Pads Pack,Sanitary,30024960,1220.49,Standard Pack,485,2027-06-28,Women hygiene product,No,Not Applicable
+1123,Sun Pharma Amlodipine 5mg,Medicine,84903294,1151.38,Standard Pack,310,2028-04-22,Hypertension treatment,Yes,Consult doctor if taking BP medication
+1124,Mankind Calcium + Vitamin D,Supplement,70467027,1364.59,Standard Pack,152,2028-04-14,Bone health supplement,No,Not Applicable
+1125,Abbott Hand Sanitizer,Body Care,93352876,109.14,Standard Pack,491,2028-09-16,Alcohol-based hand cleaner,No,Not Applicable
+1126,Lupin Amlodipine 5mg,Medicine,45520201,997.43,Standard Pack,80,2027-04-23,Hypertension treatment,Yes,May interact with Metformin
+1127,Dr Reddy's Sanitary Pads Pack,Sanitary,10359129,624.61,Standard Pack,352,2028-04-20,Women hygiene product,No,Not Applicable
+1128,Cipla Hand Sanitizer,Body Care,41068214,446.4,Standard Pack,144,2028-08-09,Alcohol-based hand cleaner,No,Not Applicable
+1129,Lupin Body Lotion,Body Care,45507920,1185.99,Standard Pack,320,2028-04-15,Hydrating body lotion,No,Not Applicable
+1130,Sun Pharma Iron Folic Acid,Supplement,83089925,352.72,Standard Pack,76,2027-05-20,Iron deficiency treatment,No,Not Applicable
+1131,Cipla Vitamin D3 60000 IU,Supplement,32269779,1193.09,Standard Pack,304,2028-09-25,Vitamin D supplement,No,Not Applicable
+1132,Alkem Adult Diapers,Sanitary,26690465,713.67,Standard Pack,155,2028-08-06,Incontinence protection,No,Not Applicable
+1133,Glenmark Hand Sanitizer,Body Care,82475098,750.82,Standard Pack,41,2028-04-24,Alcohol-based hand cleaner,No,Not Applicable
+1134,Zydus Pantoprazole 40mg,Medicine,91029073,390.54,Standard Pack,46,2027-04-12,Acidity treatment,Yes,Consult doctor if taking BP medication
+1135,Torrent Sanitary Pads Pack,Sanitary,87342561,79.54,Standard Pack,387,2027-02-16,Women hygiene product,No,Not Applicable
+1136,Alkem Foot Care Cream,Body Care,47333543,288.6,Standard Pack,299,2027-11-10,Cracked heel treatment,No,Not Applicable
+1137,Alkem Body Lotion,Body Care,56702542,624.36,Standard Pack,164,2028-07-07,Hydrating body lotion,No,Not Applicable
+1138,Zydus Metformin 500mg,Medicine,65250068,1046.64,Standard Pack,147,2028-06-29,Type 2 diabetes management,Yes,No major interactions reported
+1139,Alkem Sanitary Pads Pack,Sanitary,21819185,485.49,Standard Pack,165,2026-12-17,Women hygiene product,No,Not Applicable
+1140,Cipla Foot Care Cream,Body Care,98269682,1306.66,Standard Pack,236,2027-10-18,Cracked heel treatment,No,Not Applicable
+1141,Glenmark Amlodipine 5mg,Medicine,58557203,941.5,Standard Pack,255,2028-05-22,Hypertension treatment,Yes,No major interactions reported
+1142,Torrent Amlodipine 5mg,Medicine,83715012,213.9,Standard Pack,147,2027-11-12,Hypertension treatment,Yes,No major interactions reported
+1143,Abbott Paracetamol 500mg,Medicine,42117961,1070.48,Standard Pack,159,2028-03-07,Pain reliever and fever reducer,No,Avoid with Warfarin
+1144,Sun Pharma Baby Wipes,Sanitary,40158811,1488.54,Standard Pack,467,2026-12-15,Gentle cleansing wipes,No,Not Applicable
+1145,Dr Reddy's Body Lotion,Body Care,76890827,1400.33,Standard Pack,149,2028-01-24,Hydrating body lotion,No,Not Applicable
+1146,Alkem Moisturizing Cream,Skincare,73380266,380.72,Standard Pack,282,2027-01-16,Hydrates dry skin,No,Not Applicable
+1147,Abbott Antiseptic Liquid,Body Care,78214937,1124.51,Standard Pack,69,2026-10-31,Kills germs and bacteria,No,Not Applicable
+1148,Zydus Moisturizing Cream,Skincare,78147397,415.42,Standard Pack,1,2027-06-06,Hydrates dry skin,No,Not Applicable
+1149,Abbott Aloe Vera Gel,Skincare,98575748,744.67,Standard Pack,76,2027-11-21,Soothing skin gel,No,Not Applicable
+1150,Zydus Baby Wipes,Sanitary,54619335,836.84,Standard Pack,278,2027-09-11,Gentle cleansing wipes,No,Not Applicable
+1151,Lupin Hand Sanitizer,Body Care,42051937,866.26,Standard Pack,119,2028-10-23,Alcohol-based hand cleaner,No,Not Applicable
+1152,Zydus Body Lotion,Body Care,73481797,1063.74,Standard Pack,415,2027-09-15,Hydrating body lotion,No,Not Applicable
+1153,Alkem Antiseptic Liquid,Body Care,14968688,206.84,Standard Pack,494,2028-04-16,Kills germs and bacteria,No,Not Applicable
+1154,Alkem Cetaphil Cleanser,Skincare,23383077,798.41,Standard Pack,233,2026-09-05,Gentle skin cleanser,No,Not Applicable
+1155,Dr Reddy's Iron Folic Acid,Supplement,20043277,714.85,Standard Pack,496,2027-05-19,Iron deficiency treatment,No,Not Applicable
+1156,Mankind Aloe Vera Gel,Skincare,97219599,138.87,Standard Pack,168,2028-07-11,Soothing skin gel,No,Not Applicable
+1157,Zydus Baby Wipes,Sanitary,94127561,1083.7,Standard Pack,388,2028-01-02,Gentle cleansing wipes,No,Not Applicable
+1158,Abbott Sanitary Pads Pack,Sanitary,19183277,367.46,Standard Pack,350,2027-06-11,Women hygiene product,No,Not Applicable
+1159,Mankind Vitamin D3 60000 IU,Supplement,23212812,1145.35,Standard Pack,360,2026-12-01,Vitamin D supplement,No,Not Applicable
+1160,Torrent Antiseptic Liquid,Body Care,13885234,88.07,Standard Pack,407,2026-10-17,Kills germs and bacteria,No,Not Applicable
+1161,Zydus Acne Control Gel,Skincare,67805802,235.44,Standard Pack,271,2027-10-16,Reduces acne and pimples,No,Not Applicable
+1162,Dr Reddy's Tampons Pack,Sanitary,33497411,136.87,Standard Pack,445,2027-09-16,Menstrual hygiene product,No,Not Applicable
+1163,Alkem Tampons Pack,Sanitary,88270025,231.81,Standard Pack,236,2028-06-04,Menstrual hygiene product,No,Not Applicable
+1164,Torrent Moisturizing Cream,Skincare,99501846,33.91,Standard Pack,411,2027-12-10,Hydrates dry skin,No,Not Applicable
+1165,Dr Reddy's Aloe Vera Gel,Skincare,19913576,673.76,Standard Pack,176,2028-04-13,Soothing skin gel,No,Not Applicable
+1166,Torrent Moisturizing Cream,Skincare,71315464,1271.05,Standard Pack,101,2027-09-18,Hydrates dry skin,No,Not Applicable
+1167,Lupin Body Lotion,Body Care,61185849,866.45,Standard Pack,294,2027-06-19,Hydrating body lotion,No,Not Applicable
+1168,Mankind Cetaphil Cleanser,Skincare,46840133,31.98,Standard Pack,442,2028-07-23,Gentle skin cleanser,No,Not Applicable
+1169,Alkem Montelukast 10mg,Medicine,48412328,1168.1,Standard Pack,117,2028-05-03,Asthma prevention,Yes,Avoid alcohol
+1170,Abbott Multivitamin Capsules,Supplement,43638559,1023.09,Standard Pack,369,2028-10-14,General dietary supplement,No,Not Applicable
+1171,Cipla Vitamin D3 60000 IU,Supplement,51464269,1187.14,Standard Pack,17,2028-04-05,Vitamin D supplement,No,Not Applicable
+1172,Sun Pharma Sunscreen SPF 50,Skincare,49609054,503.54,Standard Pack,212,2027-02-16,UV protection lotion,No,Not Applicable
+1173,Glenmark Multivitamin Capsules,Supplement,59104566,805.66,Standard Pack,467,2027-05-27,General dietary supplement,No,Not Applicable
+1174,Alkem Omega 3 Fish Oil,Supplement,49613214,1124.91,Standard Pack,173,2026-12-16,Heart health supplement,No,Not Applicable
+1175,Dr Reddy's Body Lotion,Body Care,40281491,1293.01,Standard Pack,370,2028-07-11,Hydrating body lotion,No,Not Applicable
+1176,Zydus Foot Care Cream,Body Care,22120246,1190.21,Standard Pack,7,2027-05-18,Cracked heel treatment,No,Not Applicable
+1177,Alkem Sanitary Pads Pack,Sanitary,59470729,1015.79,Standard Pack,344,2027-05-16,Women hygiene product,No,Not Applicable
+1178,Zydus Baby Wipes,Sanitary,24541967,1018.76,Standard Pack,241,2026-09-15,Gentle cleansing wipes,No,Not Applicable
+1179,Zydus Face Masks Pack,Sanitary,91883846,347.62,Standard Pack,32,2028-06-01,Protective face masks,No,Not Applicable
+1180,Mankind Hand Sanitizer,Body Care,25659979,226.87,Standard Pack,484,2026-09-28,Alcohol-based hand cleaner,No,Not Applicable
+1181,Sun Pharma Moisturizing Cream,Skincare,23044889,367.5,Standard Pack,275,2027-01-06,Hydrates dry skin,No,Not Applicable
+1182,Zydus Medicated Soap,Body Care,99991136,1425.08,Standard Pack,356,2028-02-25,Skin infection protection,No,Not Applicable
+1183,Dr Reddy's Foot Care Cream,Body Care,65684858,989.28,Standard Pack,426,2028-01-04,Cracked heel treatment,No,Not Applicable
+1184,Torrent Baby Wipes,Sanitary,14391105,1041.62,Standard Pack,111,2027-11-18,Gentle cleansing wipes,No,Not Applicable
+1185,Zydus Antiseptic Liquid,Body Care,23335151,1471.77,Standard Pack,188,2028-02-29,Kills germs and bacteria,No,Not Applicable
+1186,Mankind Cetaphil Cleanser,Skincare,47028180,300.92,Standard Pack,62,2027-11-29,Gentle skin cleanser,No,Not Applicable
+1187,Abbott Amlodipine 5mg,Medicine,12866549,94.86,Standard Pack,170,2027-04-27,Hypertension treatment,Yes,May interact with Metformin
+1188,Sun Pharma Tampons Pack,Sanitary,84384510,326.59,Standard Pack,110,2027-04-16,Menstrual hygiene product,No,Not Applicable
+1189,Abbott Sunscreen SPF 50,Skincare,10380581,430.37,Standard Pack,74,2027-01-01,UV protection lotion,No,Not Applicable
+1190,Dr Reddy's Adult Diapers,Sanitary,24754064,998.37,Standard Pack,13,2027-01-02,Incontinence protection,No,Not Applicable
+1191,Lupin Ibuprofen 400mg,Medicine,89034501,499.18,Standard Pack,89,2027-05-19,Anti-inflammatory pain reliever,No,Avoid with Warfarin
+1192,Glenmark Iron Folic Acid,Supplement,25253751,1123.58,Standard Pack,243,2027-11-23,Iron deficiency treatment,No,Not Applicable
+1193,Abbott Aloe Vera Gel,Skincare,24636981,688.97,Standard Pack,113,2028-05-11,Soothing skin gel,No,Not Applicable
+1194,Torrent Levothyroxine 50mcg,Medicine,71477426,972.14,Standard Pack,15,2026-10-22,Thyroid hormone replacement,Yes,No major interactions reported
+1195,Sun Pharma Medicated Soap,Body Care,75802771,1074.35,Standard Pack,227,2026-11-04,Skin infection protection,No,Not Applicable
+1196,Abbott Ibuprofen 400mg,Medicine,29909029,117.21,Standard Pack,140,2028-05-21,Anti-inflammatory pain reliever,No,Consult doctor if taking BP medication
+1197,Mankind Adult Diapers,Sanitary,90180577,805.22,Standard Pack,232,2028-01-20,Incontinence protection,No,Not Applicable
+1198,Sun Pharma Baby Wipes,Sanitary,25356396,1282.13,Standard Pack,333,2028-10-16,Gentle cleansing wipes,No,Not Applicable
+1199,Mankind Tampons Pack,Sanitary,70606674,1334.37,Standard Pack,211,2027-08-03,Menstrual hygiene product,No,Not Applicable
+1200,Mankind Medicated Soap,Body Care,22762205,482.57,Standard Pack,160,2028-07-02,Skin infection protection,No,Not Applicable
+1201,Dr Reddy's Acne Control Gel,Skincare,73655158,119.36,Standard Pack,425,2026-11-16,Reduces acne and pimples,No,Not Applicable
+1202,Sun Pharma Pantoprazole 40mg,Medicine,60015814,1221.42,Standard Pack,284,2026-10-21,Acidity treatment,Yes,Consult doctor if taking BP medication
+1203,Zydus Face Masks Pack,Sanitary,99927658,200.9,Standard Pack,181,2028-07-02,Protective face masks,No,Not Applicable
+1204,Torrent Body Lotion,Body Care,90585678,482.42,Standard Pack,53,2028-04-03,Hydrating body lotion,No,Not Applicable
+1205,Dr Reddy's Tampons Pack,Sanitary,98145654,733.64,Standard Pack,433,2026-12-09,Menstrual hygiene product,No,Not Applicable
+1206,Zydus Aloe Vera Gel,Skincare,25419645,1148.66,Standard Pack,293,2027-04-09,Soothing skin gel,No,Not Applicable
+1207,Abbott Foot Care Cream,Body Care,92352411,1018.97,Standard Pack,285,2026-09-16,Cracked heel treatment,No,Not Applicable
+1208,Cipla Adult Diapers,Sanitary,34215035,424.44,Standard Pack,390,2027-07-03,Incontinence protection,No,Not Applicable
+1209,Cipla Acne Control Gel,Skincare,34347841,1307.4,Standard Pack,289,2028-06-24,Reduces acne and pimples,No,Not Applicable
+1210,Dr Reddy's Body Lotion,Body Care,94982908,1458.28,Standard Pack,46,2028-09-23,Hydrating body lotion,No,Not Applicable
+1211,Mankind Tampons Pack,Sanitary,66348963,691.4,Standard Pack,80,2027-09-03,Menstrual hygiene product,No,Not Applicable
+1212,Abbott Acne Control Gel,Skincare,90023800,145.74,Standard Pack,26,2027-01-27,Reduces acne and pimples,No,Not Applicable
+1213,Cipla Calcium + Vitamin D,Supplement,20949687,422.71,Standard Pack,338,2027-10-29,Bone health supplement,No,Not Applicable
+1214,Alkem Foot Care Cream,Body Care,65590800,424.29,Standard Pack,386,2028-01-27,Cracked heel treatment,No,Not Applicable
+1215,Mankind Ibuprofen 400mg,Medicine,24883373,439.2,Standard Pack,347,2028-04-19,Anti-inflammatory pain reliever,No,No major interactions reported
+1216,Cipla Adult Diapers,Sanitary,39597483,604.99,Standard Pack,306,2026-10-16,Incontinence protection,No,Not Applicable
+1217,Torrent Amlodipine 5mg,Medicine,38351344,1155.68,Standard Pack,391,2027-05-09,Hypertension treatment,Yes,Avoid alcohol
+1218,Cipla Cetaphil Cleanser,Skincare,76757928,1125.58,Standard Pack,89,2026-12-31,Gentle skin cleanser,No,Not Applicable
+1219,Lupin Foot Care Cream,Body Care,77144075,846.91,Standard Pack,342,2027-08-18,Cracked heel treatment,No,Not Applicable
+1220,Cipla Pantoprazole 40mg,Medicine,68548403,47.74,Standard Pack,471,2026-11-08,Acidity treatment,Yes,Avoid alcohol
+1221,Abbott Baby Wipes,Sanitary,64280720,1070.06,Standard Pack,213,2027-06-13,Gentle cleansing wipes,No,Not Applicable
+1222,Cipla Pantoprazole 40mg,Medicine,53589647,274.37,Standard Pack,485,2028-05-14,Acidity treatment,Yes,No major interactions reported
+1223,Mankind Cetaphil Cleanser,Skincare,24208709,380.11,Standard Pack,301,2027-10-05,Gentle skin cleanser,No,Not Applicable
+1224,Mankind Sanitary Pads Pack,Sanitary,51644346,1123.79,Standard Pack,113,2027-07-28,Women hygiene product,No,Not Applicable
+1225,Glenmark Vitamin D3 60000 IU,Supplement,94989976,188.76,Standard Pack,261,2027-03-07,Vitamin D supplement,No,Not Applicable
+1226,Dr Reddy's Acne Control Gel,Skincare,41711468,172.15,Standard Pack,131,2027-03-11,Reduces acne and pimples,No,Not Applicable
+1227,Dr Reddy's Calcium + Vitamin D,Supplement,97980930,131.52,Standard Pack,487,2028-10-20,Bone health supplement,No,Not Applicable
+1228,Abbott Medicated Soap,Body Care,87774890,684.38,Standard Pack,473,2028-03-21,Skin infection protection,No,Not Applicable
+1229,Zydus Adult Diapers,Sanitary,30261159,670.85,Standard Pack,240,2027-11-16,Incontinence protection,No,Not Applicable
+1230,Abbott Acne Control Gel,Skincare,17539294,540.87,Standard Pack,37,2027-07-04,Reduces acne and pimples,No,Not Applicable
+1231,Cipla Medicated Soap,Body Care,17635653,565.73,Standard Pack,146,2026-11-07,Skin infection protection,No,Not Applicable
+1232,Abbott Montelukast 10mg,Medicine,78057490,589.03,Standard Pack,297,2028-03-10,Asthma prevention,Yes,Avoid with Warfarin
+1233,Lupin Foot Care Cream,Body Care,53154591,915.41,Standard Pack,256,2027-01-22,Cracked heel treatment,No,Not Applicable
+1234,Sun Pharma Insulin Glargine,Medicine,56095437,1473.93,Standard Pack,43,2028-01-19,Long-acting insulin,Yes,May interact with Metformin
+1235,Alkem Amlodipine 5mg,Medicine,68978194,795.62,Standard Pack,312,2027-01-30,Hypertension treatment,Yes,Avoid alcohol
+1236,Mankind Acne Control Gel,Skincare,64864099,1166.21,Standard Pack,347,2028-04-24,Reduces acne and pimples,No,Not Applicable
+1237,Sun Pharma Ibuprofen 400mg,Medicine,54250344,159.87,Standard Pack,347,2027-09-20,Anti-inflammatory pain reliever,No,Avoid alcohol
+1238,Dr Reddy's Aloe Vera Gel,Skincare,54743095,140.62,Standard Pack,339,2027-01-12,Soothing skin gel,No,Not Applicable
+1239,Mankind Acne Control Gel,Skincare,27307598,900.66,Standard Pack,480,2026-11-15,Reduces acne and pimples,No,Not Applicable
+1240,Mankind Aloe Vera Gel,Skincare,96368203,1191.66,Standard Pack,416,2026-12-29,Soothing skin gel,No,Not Applicable
+1241,Mankind Sanitary Pads Pack,Sanitary,78248169,555.51,Standard Pack,185,2027-07-03,Women hygiene product,No,Not Applicable
+1242,Zydus Multivitamin Capsules,Supplement,75266178,304.17,Standard Pack,70,2027-01-26,General dietary supplement,No,Not Applicable
+1243,Sun Pharma Cetirizine 10mg,Medicine,78140959,1160.89,Standard Pack,427,2028-09-15,Allergy relief,No,Consult doctor if taking BP medication
+1244,Abbott Ibuprofen 400mg,Medicine,27589104,903.92,Standard Pack,78,2027-02-03,Anti-inflammatory pain reliever,No,May interact with Metformin
+1245,Alkem Tampons Pack,Sanitary,15864298,628.07,Standard Pack,346,2028-08-26,Menstrual hygiene product,No,Not Applicable
+1246,Abbott Iron Folic Acid,Supplement,48242379,1133.54,Standard Pack,401,2027-11-23,Iron deficiency treatment,No,Not Applicable
+1247,Lupin Calcium + Vitamin D,Supplement,51536077,1449.08,Standard Pack,401,2027-12-14,Bone health supplement,No,Not Applicable
+1248,Abbott Omega 3 Fish Oil,Supplement,69135982,703.29,Standard Pack,144,2028-10-25,Heart health supplement,No,Not Applicable
+1249,Glenmark Foot Care Cream,Body Care,66191704,1450.08,Standard Pack,418,2027-03-13,Cracked heel treatment,No,Not Applicable
+1250,Torrent Tampons Pack,Sanitary,17003454,968.94,Standard Pack,447,2027-09-05,Menstrual hygiene product,No,Not Applicable
+1251,Glenmark Sanitary Pads Pack,Sanitary,26733967,441.89,Standard Pack,390,2027-02-01,Women hygiene product,No,Not Applicable
+1252,Glenmark Moisturizing Cream,Skincare,29776801,1249.95,Standard Pack,46,2027-04-05,Hydrates dry skin,No,Not Applicable
+1253,Cipla Hand Sanitizer,Body Care,65686520,98.82,Standard Pack,257,2027-09-07,Alcohol-based hand cleaner,No,Not Applicable
+1254,Sun Pharma Iron Folic Acid,Supplement,60319927,352.32,Standard Pack,163,2026-11-30,Iron deficiency treatment,No,Not Applicable
+1255,Dr Reddy's Sunscreen SPF 50,Skincare,15140967,444.58,Standard Pack,424,2027-12-17,UV protection lotion,No,Not Applicable
+1256,Alkem Iron Folic Acid,Supplement,92590645,27.77,Standard Pack,40,2026-09-09,Iron deficiency treatment,No,Not Applicable
+1257,Dr Reddy's Sunscreen SPF 50,Skincare,83659258,1411.53,Standard Pack,311,2028-02-12,UV protection lotion,No,Not Applicable
+1258,Torrent Body Lotion,Body Care,41895531,465.7,Standard Pack,24,2027-04-22,Hydrating body lotion,No,Not Applicable
+1259,Alkem Foot Care Cream,Body Care,18429833,184.07,Standard Pack,463,2028-01-14,Cracked heel treatment,No,Not Applicable
+1260,Cipla Face Masks Pack,Sanitary,94819556,782.76,Standard Pack,123,2028-08-25,Protective face masks,No,Not Applicable
+1261,Mankind Omega 3 Fish Oil,Supplement,10209961,929.92,Standard Pack,123,2028-03-27,Heart health supplement,No,Not Applicable
+1262,Sun Pharma Antiseptic Liquid,Body Care,80260907,1462.49,Standard Pack,34,2028-02-10,Kills germs and bacteria,No,Not Applicable
+1263,Glenmark Face Masks Pack,Sanitary,84377016,50.09,Standard Pack,447,2027-12-15,Protective face masks,No,Not Applicable
+1264,Zydus Pantoprazole 40mg,Medicine,44044361,1126.03,Standard Pack,182,2028-11-05,Acidity treatment,Yes,Avoid with Warfarin
+1265,Sun Pharma Sunscreen SPF 50,Skincare,88101741,1108.08,Standard Pack,170,2027-01-04,UV protection lotion,No,Not Applicable
+1266,Glenmark Ibuprofen 400mg,Medicine,55439043,1223.99,Standard Pack,89,2028-10-26,Anti-inflammatory pain reliever,No,No major interactions reported
+1267,Dr Reddy's Antiseptic Liquid,Body Care,18469210,1079.75,Standard Pack,483,2027-12-02,Kills germs and bacteria,No,Not Applicable
+1268,Lupin Cetirizine 10mg,Medicine,15879578,1190.84,Standard Pack,453,2026-10-02,Allergy relief,No,Avoid alcohol
+1269,Mankind Aloe Vera Gel,Skincare,82884346,720.63,Standard Pack,18,2028-09-30,Soothing skin gel,No,Not Applicable
+1270,Zydus Omega 3 Fish Oil,Supplement,16416148,1301.38,Standard Pack,169,2027-05-27,Heart health supplement,No,Not Applicable
+1271,Mankind Ibuprofen 400mg,Medicine,63690013,1120.1,Standard Pack,458,2027-09-20,Anti-inflammatory pain reliever,No,Avoid alcohol
+1272,Alkem Iron Folic Acid,Supplement,59304469,1387.98,Standard Pack,265,2027-05-21,Iron deficiency treatment,No,Not Applicable
+1273,Sun Pharma Pantoprazole 40mg,Medicine,67795113,911.63,Standard Pack,421,2027-02-21,Acidity treatment,Yes,Consult doctor if taking BP medication
+1274,Sun Pharma Acne Control Gel,Skincare,20746667,505.32,Standard Pack,151,2027-06-30,Reduces acne and pimples,No,Not Applicable
+1275,Mankind Foot Care Cream,Body Care,32366682,1040.85,Standard Pack,179,2027-11-21,Cracked heel treatment,No,Not Applicable
+1276,Abbott Ibuprofen 400mg,Medicine,68376726,426.34,Standard Pack,405,2026-10-18,Anti-inflammatory pain reliever,No,Avoid with Warfarin
+1277,Glenmark Hand Sanitizer,Body Care,31473054,1430.13,Standard Pack,73,2028-05-04,Alcohol-based hand cleaner,No,Not Applicable
+1278,Dr Reddy's Body Lotion,Body Care,19023909,369.27,Standard Pack,330,2027-08-31,Hydrating body lotion,No,Not Applicable
+1279,Abbott Moisturizing Cream,Skincare,14346684,915.54,Standard Pack,347,2027-11-24,Hydrates dry skin,No,Not Applicable
+1280,Alkem Acne Control Gel,Skincare,20319387,869.4,Standard Pack,271,2027-08-31,Reduces acne and pimples,No,Not Applicable
+1281,Torrent Hand Sanitizer,Body Care,43502308,1441.57,Standard Pack,13,2028-09-12,Alcohol-based hand cleaner,No,Not Applicable
+1282,Glenmark Iron Folic Acid,Supplement,61940566,1372.04,Standard Pack,60,2027-05-16,Iron deficiency treatment,No,Not Applicable
+1283,Lupin Moisturizing Cream,Skincare,92124765,442.65,Standard Pack,469,2028-01-05,Hydrates dry skin,No,Not Applicable
+1284,Dr Reddy's Vitamin D3 60000 IU,Supplement,19939096,689.02,Standard Pack,460,2028-08-20,Vitamin D supplement,No,Not Applicable
+1285,Zydus Body Lotion,Body Care,99635939,534.19,Standard Pack,33,2028-03-06,Hydrating body lotion,No,Not Applicable
+1286,Torrent Adult Diapers,Sanitary,31139996,1073.48,Standard Pack,474,2028-08-07,Incontinence protection,No,Not Applicable
+1287,Glenmark Omega 3 Fish Oil,Supplement,40097200,199.62,Standard Pack,102,2028-11-09,Heart health supplement,No,Not Applicable
+1288,Alkem Multivitamin Capsules,Supplement,13527782,554.13,Standard Pack,293,2027-09-02,General dietary supplement,No,Not Applicable
+1289,Dr Reddy's Foot Care Cream,Body Care,92134318,1328.68,Standard Pack,33,2027-07-03,Cracked heel treatment,No,Not Applicable
+1290,Glenmark Medicated Soap,Body Care,65135987,1158.36,Standard Pack,421,2028-03-31,Skin infection protection,No,Not Applicable
+1291,Zydus Metformin 500mg,Medicine,96213226,129.76,Standard Pack,238,2028-07-17,Type 2 diabetes management,Yes,Consult doctor if taking BP medication
+1292,Glenmark Sunscreen SPF 50,Skincare,95871687,889.92,Standard Pack,393,2026-12-31,UV protection lotion,No,Not Applicable
+1293,Cipla Foot Care Cream,Body Care,26664623,786.79,Standard Pack,155,2027-02-05,Cracked heel treatment,No,Not Applicable
+1294,Lupin Omega 3 Fish Oil,Supplement,56442431,1422.28,Standard Pack,265,2027-06-07,Heart health supplement,No,Not Applicable
+1295,Lupin Cetirizine 10mg,Medicine,95235919,1435.4,Standard Pack,140,2026-12-27,Allergy relief,No,Avoid alcohol
+1296,Sun Pharma Face Masks Pack,Sanitary,77454225,968.66,Standard Pack,303,2028-04-06,Protective face masks,No,Not Applicable
+1297,Abbott Multivitamin Capsules,Supplement,91220369,519.68,Standard Pack,473,2028-03-20,General dietary supplement,No,Not Applicable
+1298,Sun Pharma Paracetamol 500mg,Medicine,16101779,1423.85,Standard Pack,394,2028-04-02,Pain reliever and fever reducer,No,Avoid alcohol
+1299,Mankind Calcium + Vitamin D,Supplement,92961108,965.71,Standard Pack,254,2028-05-24,Bone health supplement,No,Not Applicable
+1300,Torrent Adult Diapers,Sanitary,74819756,382.42,Standard Pack,413,2028-07-22,Incontinence protection,No,Not Applicable
+1301,Alkem Hand Sanitizer,Body Care,19794273,1039.15,Standard Pack,80,2027-11-14,Alcohol-based hand cleaner,No,Not Applicable
+1302,Alkem Medicated Soap,Body Care,37383505,523.49,Standard Pack,73,2027-07-07,Skin infection protection,No,Not Applicable
+1303,Mankind Acne Control Gel,Skincare,27551135,1145.78,Standard Pack,263,2028-03-18,Reduces acne and pimples,No,Not Applicable
+1304,Lupin Ibuprofen 400mg,Medicine,72608888,201.33,Standard Pack,230,2027-05-01,Anti-inflammatory pain reliever,No,May interact with Metformin
+1305,Torrent Paracetamol 500mg,Medicine,61559717,1298.96,Standard Pack,214,2027-05-02,Pain reliever and fever reducer,No,May interact with Metformin
+1306,Zydus Aloe Vera Gel,Skincare,35479101,1149.42,Standard Pack,255,2028-01-30,Soothing skin gel,No,Not Applicable
+1307,Torrent Medicated Soap,Body Care,76755908,54.3,Standard Pack,483,2027-09-27,Skin infection protection,No,Not Applicable
+1308,Lupin Baby Wipes,Sanitary,38876195,883.35,Standard Pack,24,2026-10-11,Gentle cleansing wipes,No,Not Applicable
+1309,Abbott Moisturizing Cream,Skincare,97813295,1015.33,Standard Pack,146,2028-02-21,Hydrates dry skin,No,Not Applicable
+1310,Mankind Azithromycin 500mg,Medicine,27976443,1326.03,Standard Pack,372,2027-08-30,Antibiotic for bacterial infections,Yes,No major interactions reported
+1311,Mankind Cetaphil Cleanser,Skincare,16866268,864.02,Standard Pack,99,2027-08-27,Gentle skin cleanser,No,Not Applicable
+1312,Sun Pharma Adult Diapers,Sanitary,61854861,766.3,Standard Pack,391,2028-03-06,Incontinence protection,No,Not Applicable
+1313,Abbott Aloe Vera Gel,Skincare,25946545,210.42,Standard Pack,49,2027-09-28,Soothing skin gel,No,Not Applicable
+1314,Glenmark Acne Control Gel,Skincare,59070856,1137.35,Standard Pack,101,2028-04-28,Reduces acne and pimples,No,Not Applicable
+1315,Glenmark Baby Wipes,Sanitary,15402922,87.05,Standard Pack,70,2028-08-20,Gentle cleansing wipes,No,Not Applicable
+1316,Glenmark Moisturizing Cream,Skincare,71335966,240.43,Standard Pack,457,2028-01-30,Hydrates dry skin,No,Not Applicable
+1317,Abbott Omega 3 Fish Oil,Supplement,52752377,260.5,Standard Pack,315,2028-09-16,Heart health supplement,No,Not Applicable
+1318,Zydus Aloe Vera Gel,Skincare,78090664,1245.87,Standard Pack,272,2028-01-04,Soothing skin gel,No,Not Applicable
+1319,Alkem Adult Diapers,Sanitary,12232974,565.17,Standard Pack,344,2026-12-11,Incontinence protection,No,Not Applicable
+1320,Torrent Foot Care Cream,Body Care,94457912,59.44,Standard Pack,242,2027-05-19,Cracked heel treatment,No,Not Applicable
+1321,Lupin Face Masks Pack,Sanitary,16892773,883.61,Standard Pack,87,2028-02-08,Protective face masks,No,Not Applicable
+1322,Dr Reddy's Baby Wipes,Sanitary,42507072,66.72,Standard Pack,485,2028-08-07,Gentle cleansing wipes,No,Not Applicable
+1323,Cipla Amlodipine 5mg,Medicine,69195194,484.26,Standard Pack,77,2027-10-17,Hypertension treatment,Yes,May interact with Metformin
+1324,Abbott Foot Care Cream,Body Care,73297813,1311.77,Standard Pack,376,2028-09-03,Cracked heel treatment,No,Not Applicable
+1325,Glenmark Metformin 500mg,Medicine,37828932,850.11,Standard Pack,339,2027-12-23,Type 2 diabetes management,Yes,Consult doctor if taking BP medication
+1326,Dr Reddy's Hand Sanitizer,Body Care,71694994,1369.94,Standard Pack,175,2028-03-02,Alcohol-based hand cleaner,No,Not Applicable
+1327,Abbott Acne Control Gel,Skincare,74985553,304.55,Standard Pack,126,2027-06-02,Reduces acne and pimples,No,Not Applicable
+1328,Lupin Adult Diapers,Sanitary,49945150,1161.34,Standard Pack,360,2027-03-21,Incontinence protection,No,Not Applicable
+1329,Alkem Hand Sanitizer,Body Care,56815569,849.52,Standard Pack,478,2028-11-12,Alcohol-based hand cleaner,No,Not Applicable
+1330,Sun Pharma Acne Control Gel,Skincare,86970753,1021.4,Standard Pack,194,2027-09-29,Reduces acne and pimples,No,Not Applicable
+1331,Torrent Sunscreen SPF 50,Skincare,15646068,445.69,Standard Pack,365,2026-11-09,UV protection lotion,No,Not Applicable
+1332,Torrent Moisturizing Cream,Skincare,74300930,336.7,Standard Pack,423,2028-02-23,Hydrates dry skin,No,Not Applicable
+1333,Torrent Aloe Vera Gel,Skincare,28424464,181.66,Standard Pack,379,2028-04-12,Soothing skin gel,No,Not Applicable
+1334,Cipla Multivitamin Capsules,Supplement,99903592,1359.67,Standard Pack,115,2028-06-04,General dietary supplement,No,Not Applicable
+1335,Sun Pharma Vitamin D3 60000 IU,Supplement,65472370,508.83,Standard Pack,241,2026-12-01,Vitamin D supplement,No,Not Applicable
+1336,Glenmark Vitamin D3 60000 IU,Supplement,31198492,622.22,Standard Pack,478,2027-12-21,Vitamin D supplement,No,Not Applicable
+1337,Torrent Antiseptic Liquid,Body Care,53106399,442.41,Standard Pack,30,2028-10-16,Kills germs and bacteria,No,Not Applicable
+1338,Lupin Montelukast 10mg,Medicine,81826922,1113.26,Standard Pack,435,2026-09-28,Asthma prevention,Yes,May interact with Metformin
+1339,Cipla Antiseptic Liquid,Body Care,63283709,1186.18,Standard Pack,95,2028-09-25,Kills germs and bacteria,No,Not Applicable
+1340,Cipla Cetaphil Cleanser,Skincare,50049524,860.58,Standard Pack,54,2027-07-30,Gentle skin cleanser,No,Not Applicable
+1341,Glenmark Moisturizing Cream,Skincare,80372842,750.99,Standard Pack,480,2027-01-05,Hydrates dry skin,No,Not Applicable
+1342,Torrent Baby Wipes,Sanitary,35878707,1217.04,Standard Pack,169,2027-02-03,Gentle cleansing wipes,No,Not Applicable
+1343,Dr Reddy's Hand Sanitizer,Body Care,11890348,1110.19,Standard Pack,404,2027-06-19,Alcohol-based hand cleaner,No,Not Applicable
+1344,Dr Reddy's Tampons Pack,Sanitary,92000924,1287.1,Standard Pack,459,2027-10-10,Menstrual hygiene product,No,Not Applicable
+1345,Zydus Foot Care Cream,Body Care,21641746,613.23,Standard Pack,48,2027-02-26,Cracked heel treatment,No,Not Applicable
+1346,Zydus Iron Folic Acid,Supplement,43292316,30.11,Standard Pack,196,2027-04-19,Iron deficiency treatment,No,Not Applicable
+1347,Zydus Hand Sanitizer,Body Care,50526484,882.04,Standard Pack,293,2026-09-01,Alcohol-based hand cleaner,No,Not Applicable
+1348,Lupin Acne Control Gel,Skincare,18338186,1008.32,Standard Pack,238,2027-07-01,Reduces acne and pimples,No,Not Applicable
+1349,Glenmark Iron Folic Acid,Supplement,51738753,1041.63,Standard Pack,327,2027-06-19,Iron deficiency treatment,No,Not Applicable
+1350,Lupin Aloe Vera Gel,Skincare,39410942,1436.89,Standard Pack,244,2027-01-24,Soothing skin gel,No,Not Applicable
+1351,Zydus Foot Care Cream,Body Care,65813853,1058.87,Standard Pack,467,2027-12-16,Cracked heel treatment,No,Not Applicable
+1352,Lupin Tampons Pack,Sanitary,89968863,1312.24,Standard Pack,41,2028-02-10,Menstrual hygiene product,No,Not Applicable
+1353,Zydus Foot Care Cream,Body Care,20482769,1377.52,Standard Pack,57,2026-10-23,Cracked heel treatment,No,Not Applicable
+1354,Lupin Face Masks Pack,Sanitary,86866717,814.26,Standard Pack,84,2027-07-22,Protective face masks,No,Not Applicable
+1355,Sun Pharma Baby Wipes,Sanitary,37568520,1081.04,Standard Pack,250,2026-11-22,Gentle cleansing wipes,No,Not Applicable
+1356,Cipla Baby Wipes,Sanitary,70858653,215.28,Standard Pack,212,2027-12-01,Gentle cleansing wipes,No,Not Applicable
+1357,Glenmark Sanitary Pads Pack,Sanitary,72059365,1015.7,Standard Pack,157,2028-08-30,Women hygiene product,No,Not Applicable
+1358,Torrent Pantoprazole 40mg,Medicine,10404729,1123.79,Standard Pack,296,2026-11-03,Acidity treatment,Yes,Avoid with Warfarin
+1359,Sun Pharma Hand Sanitizer,Body Care,82633735,1491.3,Standard Pack,478,2026-10-30,Alcohol-based hand cleaner,No,Not Applicable
+1360,Torrent Body Lotion,Body Care,64877191,286.37,Standard Pack,69,2028-10-13,Hydrating body lotion,No,Not Applicable
+1361,Mankind Hand Sanitizer,Body Care,70201634,1307.04,Standard Pack,464,2027-09-11,Alcohol-based hand cleaner,No,Not Applicable
+1362,Glenmark Body Lotion,Body Care,27849589,987.23,Standard Pack,178,2026-12-20,Hydrating body lotion,No,Not Applicable
+1363,Mankind Calcium + Vitamin D,Supplement,80980044,208.47,Standard Pack,114,2026-08-24,Bone health supplement,No,Not Applicable
+1364,Alkem Cetirizine 10mg,Medicine,83074216,647.71,Standard Pack,194,2027-04-13,Allergy relief,No,May interact with Metformin
+1365,Dr Reddy's Hand Sanitizer,Body Care,46997080,298.95,Standard Pack,448,2028-09-01,Alcohol-based hand cleaner,No,Not Applicable
+1366,Mankind Paracetamol 500mg,Medicine,92533595,1153.76,Standard Pack,452,2026-09-06,Pain reliever and fever reducer,No,May interact with Metformin
+1367,Sun Pharma Vitamin D3 60000 IU,Supplement,89717834,69.69,Standard Pack,306,2028-07-09,Vitamin D supplement,No,Not Applicable
+1368,Cipla Amlodipine 5mg,Medicine,63991141,669.66,Standard Pack,276,2027-03-31,Hypertension treatment,Yes,Avoid with Warfarin
+1369,Torrent Calcium + Vitamin D,Supplement,41428626,1227.36,Standard Pack,374,2028-04-01,Bone health supplement,No,Not Applicable
+1370,Abbott Aloe Vera Gel,Skincare,53038943,370.62,Standard Pack,448,2027-01-14,Soothing skin gel,No,Not Applicable
+1371,Mankind Tampons Pack,Sanitary,50332555,427.23,Standard Pack,285,2028-04-17,Menstrual hygiene product,No,Not Applicable
+1372,Glenmark Iron Folic Acid,Supplement,76521096,89.39,Standard Pack,176,2028-06-09,Iron deficiency treatment,No,Not Applicable
+1373,Zydus Foot Care Cream,Body Care,65878146,624.22,Standard Pack,153,2027-09-10,Cracked heel treatment,No,Not Applicable
+1374,Alkem Calcium + Vitamin D,Supplement,42342202,1277.02,Standard Pack,153,2028-08-14,Bone health supplement,No,Not Applicable
+1375,Cipla Iron Folic Acid,Supplement,85482164,630.76,Standard Pack,213,2028-03-13,Iron deficiency treatment,No,Not Applicable
+1376,Mankind Tampons Pack,Sanitary,42595918,397.39,Standard Pack,169,2028-06-13,Menstrual hygiene product,No,Not Applicable
+1377,Zydus Insulin Glargine,Medicine,22410307,812.74,Standard Pack,424,2027-03-04,Long-acting insulin,Yes,Avoid with Warfarin
+1378,Abbott Moisturizing Cream,Skincare,90922827,78.53,Standard Pack,37,2027-03-01,Hydrates dry skin,No,Not Applicable
+1379,Lupin Face Masks Pack,Sanitary,74343201,329.16,Standard Pack,464,2027-07-27,Protective face masks,No,Not Applicable
+1380,Lupin Cetaphil Cleanser,Skincare,35504548,1443.87,Standard Pack,60,2028-09-23,Gentle skin cleanser,No,Not Applicable
+1381,Abbott Antiseptic Liquid,Body Care,37449289,607.02,Standard Pack,122,2028-03-08,Kills germs and bacteria,No,Not Applicable
+1382,Mankind Acne Control Gel,Skincare,72579077,809.8,Standard Pack,183,2027-07-02,Reduces acne and pimples,No,Not Applicable
+1383,Glenmark Acne Control Gel,Skincare,76743428,709.69,Standard Pack,411,2028-08-29,Reduces acne and pimples,No,Not Applicable
+1384,Lupin Hand Sanitizer,Body Care,59755172,483.12,Standard Pack,23,2028-03-19,Alcohol-based hand cleaner,No,Not Applicable
+1385,Cipla Multivitamin Capsules,Supplement,45000508,838.9,Standard Pack,299,2028-04-05,General dietary supplement,No,Not Applicable
+1386,Dr Reddy's Hand Sanitizer,Body Care,36332415,508.2,Standard Pack,194,2028-03-26,Alcohol-based hand cleaner,No,Not Applicable
+1387,Glenmark Iron Folic Acid,Supplement,97859993,1416.33,Standard Pack,172,2027-05-11,Iron deficiency treatment,No,Not Applicable
+1388,Alkem Medicated Soap,Body Care,32579937,1104.5,Standard Pack,180,2027-02-10,Skin infection protection,No,Not Applicable
+1389,Alkem Calcium + Vitamin D,Supplement,34702473,1377.01,Standard Pack,277,2028-06-08,Bone health supplement,No,Not Applicable
+1390,Cipla Levothyroxine 50mcg,Medicine,19976458,1418.88,Standard Pack,342,2026-10-09,Thyroid hormone replacement,Yes,Avoid with Warfarin
+1391,Lupin Antiseptic Liquid,Body Care,19122502,1066.61,Standard Pack,4,2027-04-01,Kills germs and bacteria,No,Not Applicable
+1392,Zydus Baby Wipes,Sanitary,18113477,934.4,Standard Pack,341,2028-05-13,Gentle cleansing wipes,No,Not Applicable
+1393,Cipla Medicated Soap,Body Care,10887495,807.67,Standard Pack,210,2026-09-02,Skin infection protection,No,Not Applicable
+1394,Torrent Levothyroxine 50mcg,Medicine,81905550,1466.67,Standard Pack,8,2028-01-17,Thyroid hormone replacement,Yes,No major interactions reported
+1395,Sun Pharma Vitamin D3 60000 IU,Supplement,80381817,240.37,Standard Pack,98,2028-05-16,Vitamin D supplement,No,Not Applicable
+1396,Zydus Adult Diapers,Sanitary,45879718,1196.51,Standard Pack,40,2027-09-07,Incontinence protection,No,Not Applicable
+1397,Abbott Medicated Soap,Body Care,42642810,1485.54,Standard Pack,115,2027-06-24,Skin infection protection,No,Not Applicable
+1398,Sun Pharma Paracetamol 500mg,Medicine,64395532,581.31,Standard Pack,282,2027-12-21,Pain reliever and fever reducer,No,Avoid with Warfarin
+1399,Sun Pharma Metformin 500mg,Medicine,77089857,1271.09,Standard Pack,330,2028-11-01,Type 2 diabetes management,Yes,Avoid alcohol
+1400,Glenmark Sanitary Pads Pack,Sanitary,15711200,360.05,Standard Pack,461,2028-07-29,Women hygiene product,No,Not Applicable
+1401,Torrent Baby Wipes,Sanitary,16249441,1387.76,Standard Pack,350,2027-06-04,Gentle cleansing wipes,No,Not Applicable
+1402,Cipla Face Masks Pack,Sanitary,34072553,1394.57,Standard Pack,161,2026-09-06,Protective face masks,No,Not Applicable
+1403,Dr Reddy's Calcium + Vitamin D,Supplement,63458386,1394.73,Standard Pack,153,2027-02-03,Bone health supplement,No,Not Applicable
+1404,Abbott Tampons Pack,Sanitary,62231715,1022.01,Standard Pack,276,2027-07-26,Menstrual hygiene product,No,Not Applicable
+1405,Sun Pharma Antiseptic Liquid,Body Care,77215278,1123.28,Standard Pack,177,2026-10-14,Kills germs and bacteria,No,Not Applicable
+1406,Lupin Pantoprazole 40mg,Medicine,20202996,524.08,Standard Pack,393,2028-05-10,Acidity treatment,Yes,Consult doctor if taking BP medication
+1407,Cipla Hand Sanitizer,Body Care,95110541,424.52,Standard Pack,230,2028-01-05,Alcohol-based hand cleaner,No,Not Applicable
+1408,Glenmark Omega 3 Fish Oil,Supplement,60388958,659.13,Standard Pack,348,2028-04-11,Heart health supplement,No,Not Applicable
+1409,Abbott Body Lotion,Body Care,49645162,1201.12,Standard Pack,365,2026-11-04,Hydrating body lotion,No,Not Applicable
+1410,Dr Reddy's Cetirizine 10mg,Medicine,61002735,1073.28,Standard Pack,324,2027-01-25,Allergy relief,No,No major interactions reported
+1411,Sun Pharma Acne Control Gel,Skincare,22283664,27.69,Standard Pack,157,2027-11-19,Reduces acne and pimples,No,Not Applicable
+1412,Sun Pharma Acne Control Gel,Skincare,27784789,149.2,Standard Pack,220,2027-11-23,Reduces acne and pimples,No,Not Applicable
+1413,Glenmark Face Masks Pack,Sanitary,64766762,172.87,Standard Pack,45,2027-08-18,Protective face masks,No,Not Applicable
+1414,Abbott Sanitary Pads Pack,Sanitary,90268079,1180.97,Standard Pack,442,2027-09-19,Women hygiene product,No,Not Applicable
+1415,Mankind Cetirizine 10mg,Medicine,62049575,1173.17,Standard Pack,371,2028-03-15,Allergy relief,No,May interact with Metformin
+1416,Dr Reddy's Face Masks Pack,Sanitary,61100987,270.86,Standard Pack,137,2027-06-25,Protective face masks,No,Not Applicable
+1417,Dr Reddy's Moisturizing Cream,Skincare,18491573,267.47,Standard Pack,141,2027-10-26,Hydrates dry skin,No,Not Applicable
+1418,Sun Pharma Moisturizing Cream,Skincare,58469365,392.52,Standard Pack,126,2028-08-28,Hydrates dry skin,No,Not Applicable
+1419,Abbott Foot Care Cream,Body Care,36246038,697.64,Standard Pack,69,2027-06-28,Cracked heel treatment,No,Not Applicable
+1420,Zydus Pantoprazole 40mg,Medicine,93240786,582.24,Standard Pack,441,2027-07-24,Acidity treatment,Yes,No major interactions reported
+1421,Abbott Moisturizing Cream,Skincare,28270317,464.64,Standard Pack,308,2028-08-01,Hydrates dry skin,No,Not Applicable
+1422,Zydus Iron Folic Acid,Supplement,33842070,1447.57,Standard Pack,495,2027-07-13,Iron deficiency treatment,No,Not Applicable
+1423,Abbott Moisturizing Cream,Skincare,42537638,502.31,Standard Pack,143,2028-11-02,Hydrates dry skin,No,Not Applicable
+1424,Sun Pharma Hand Sanitizer,Body Care,85678734,315.7,Standard Pack,279,2027-02-21,Alcohol-based hand cleaner,No,Not Applicable
+1425,Alkem Sanitary Pads Pack,Sanitary,38138531,668.91,Standard Pack,149,2028-07-30,Women hygiene product,No,Not Applicable
+1426,Alkem Pantoprazole 40mg,Medicine,28680305,957.34,Standard Pack,123,2027-05-06,Acidity treatment,Yes,May interact with Metformin
+1427,Sun Pharma Medicated Soap,Body Care,70272714,1486.24,Standard Pack,245,2028-04-08,Skin infection protection,No,Not Applicable
+1428,Glenmark Foot Care Cream,Body Care,66143368,824.59,Standard Pack,404,2027-08-24,Cracked heel treatment,No,Not Applicable
+1429,Sun Pharma Face Masks Pack,Sanitary,24679315,1158.05,Standard Pack,336,2028-07-01,Protective face masks,No,Not Applicable
+1430,Abbott Sunscreen SPF 50,Skincare,15945401,853.57,Standard Pack,330,2028-07-14,UV protection lotion,No,Not Applicable
+1431,Mankind Hand Sanitizer,Body Care,24219637,35.61,Standard Pack,132,2027-04-05,Alcohol-based hand cleaner,No,Not Applicable
+1432,Glenmark Face Masks Pack,Sanitary,87915846,1037.74,Standard Pack,113,2027-11-20,Protective face masks,No,Not Applicable
+1433,Alkem Moisturizing Cream,Skincare,88999206,1041.85,Standard Pack,77,2027-08-09,Hydrates dry skin,No,Not Applicable
+1434,Sun Pharma Insulin Glargine,Medicine,49652241,635.64,Standard Pack,492,2026-11-16,Long-acting insulin,Yes,Avoid with Warfarin
+1435,Torrent Omega 3 Fish Oil,Supplement,56045630,693.89,Standard Pack,105,2028-02-05,Heart health supplement,No,Not Applicable
+1436,Alkem Hand Sanitizer,Body Care,23102741,668.49,Standard Pack,356,2027-11-27,Alcohol-based hand cleaner,No,Not Applicable
+1437,Torrent Cetaphil Cleanser,Skincare,15997257,1219.08,Standard Pack,58,2026-09-13,Gentle skin cleanser,No,Not Applicable
+1438,Dr Reddy's Cetaphil Cleanser,Skincare,42737441,783.67,Standard Pack,282,2027-01-31,Gentle skin cleanser,No,Not Applicable
+1439,Mankind Aloe Vera Gel,Skincare,72015859,363.15,Standard Pack,207,2028-05-26,Soothing skin gel,No,Not Applicable
+1440,Mankind Multivitamin Capsules,Supplement,63094168,63.2,Standard Pack,314,2027-03-11,General dietary supplement,No,Not Applicable
+1441,Mankind Foot Care Cream,Body Care,62188655,26.59,Standard Pack,109,2027-03-19,Cracked heel treatment,No,Not Applicable
+1442,Abbott Cetaphil Cleanser,Skincare,23656928,1203.26,Standard Pack,274,2027-02-28,Gentle skin cleanser,No,Not Applicable
+1443,Lupin Acne Control Gel,Skincare,71411378,188.65,Standard Pack,343,2028-01-04,Reduces acne and pimples,No,Not Applicable
+1444,Abbott Adult Diapers,Sanitary,62162278,924.74,Standard Pack,300,2026-12-15,Incontinence protection,No,Not Applicable
+1445,Alkem Acne Control Gel,Skincare,92861016,275.34,Standard Pack,344,2028-08-12,Reduces acne and pimples,No,Not Applicable
+1446,Abbott Aloe Vera Gel,Skincare,21375216,1014.72,Standard Pack,160,2026-12-19,Soothing skin gel,No,Not Applicable
+1447,Sun Pharma Omega 3 Fish Oil,Supplement,34567819,572.49,Standard Pack,72,2028-01-26,Heart health supplement,No,Not Applicable
+1448,Abbott Medicated Soap,Body Care,28504235,870.71,Standard Pack,216,2027-02-27,Skin infection protection,No,Not Applicable
+1449,Dr Reddy's Foot Care Cream,Body Care,84479105,266.96,Standard Pack,147,2027-01-11,Cracked heel treatment,No,Not Applicable
+1450,Alkem Omega 3 Fish Oil,Supplement,93135800,99.34,Standard Pack,183,2026-08-30,Heart health supplement,No,Not Applicable
+1451,Lupin Antiseptic Liquid,Body Care,61532114,1446.47,Standard Pack,258,2028-06-19,Kills germs and bacteria,No,Not Applicable
+1452,Alkem Medicated Soap,Body Care,65784972,1071.01,Standard Pack,227,2028-01-03,Skin infection protection,No,Not Applicable
+1453,Abbott Vitamin D3 60000 IU,Supplement,14142053,1197.9,Standard Pack,112,2027-06-16,Vitamin D supplement,No,Not Applicable
+1454,Lupin Cetirizine 10mg,Medicine,82156607,447.23,Standard Pack,399,2027-12-02,Allergy relief,No,Consult doctor if taking BP medication
+1455,Glenmark Foot Care Cream,Body Care,25194922,867.62,Standard Pack,137,2028-10-22,Cracked heel treatment,No,Not Applicable
+1456,Glenmark Adult Diapers,Sanitary,15584869,1144.81,Standard Pack,225,2028-03-02,Incontinence protection,No,Not Applicable
+1457,Sun Pharma Iron Folic Acid,Supplement,97734330,1131.99,Standard Pack,152,2026-09-23,Iron deficiency treatment,No,Not Applicable
+1458,Zydus Hand Sanitizer,Body Care,21674661,669.82,Standard Pack,60,2028-10-23,Alcohol-based hand cleaner,No,Not Applicable
+1459,Abbott Multivitamin Capsules,Supplement,57060874,1294.35,Standard Pack,312,2028-05-29,General dietary supplement,No,Not Applicable
+1460,Abbott Antiseptic Liquid,Body Care,28687800,1181.58,Standard Pack,416,2027-03-20,Kills germs and bacteria,No,Not Applicable
+1461,Zydus Montelukast 10mg,Medicine,81441519,436.01,Standard Pack,275,2027-02-09,Asthma prevention,Yes,Avoid alcohol
+1462,Abbott Acne Control Gel,Skincare,45882178,1429.55,Standard Pack,263,2028-07-16,Reduces acne and pimples,No,Not Applicable
+1463,Mankind Metformin 500mg,Medicine,17957216,1488.88,Standard Pack,443,2028-06-22,Type 2 diabetes management,Yes,May interact with Metformin
+1464,Dr Reddy's Multivitamin Capsules,Supplement,53231088,1246.15,Standard Pack,389,2028-07-13,General dietary supplement,No,Not Applicable
+1465,Dr Reddy's Medicated Soap,Body Care,87500742,955.95,Standard Pack,321,2027-10-19,Skin infection protection,No,Not Applicable
+1466,Sun Pharma Medicated Soap,Body Care,95044078,1196.01,Standard Pack,393,2026-11-24,Skin infection protection,No,Not Applicable
+1467,Torrent Foot Care Cream,Body Care,59535894,692.95,Standard Pack,249,2027-07-22,Cracked heel treatment,No,Not Applicable
+1468,Sun Pharma Sanitary Pads Pack,Sanitary,71532017,959.56,Standard Pack,357,2027-08-22,Women hygiene product,No,Not Applicable
+1469,Mankind Levothyroxine 50mcg,Medicine,39236638,1452.83,Standard Pack,422,2027-03-25,Thyroid hormone replacement,Yes,No major interactions reported
+1470,Torrent Acne Control Gel,Skincare,55332729,830.02,Standard Pack,66,2028-03-22,Reduces acne and pimples,No,Not Applicable
+1471,Cipla Hand Sanitizer,Body Care,16166355,167.37,Standard Pack,401,2027-12-04,Alcohol-based hand cleaner,No,Not Applicable
+1472,Dr Reddy's Azithromycin 500mg,Medicine,69228397,695.65,Standard Pack,490,2027-11-02,Antibiotic for bacterial infections,Yes,May interact with Metformin
+1473,Dr Reddy's Omega 3 Fish Oil,Supplement,46778269,158.14,Standard Pack,184,2027-05-04,Heart health supplement,No,Not Applicable
+1474,Dr Reddy's Ibuprofen 400mg,Medicine,16950770,606.59,Standard Pack,156,2028-09-02,Anti-inflammatory pain reliever,No,May interact with Metformin
+1475,Sun Pharma Body Lotion,Body Care,10145801,335.86,Standard Pack,39,2027-01-03,Hydrating body lotion,No,Not Applicable
+1476,Glenmark Tampons Pack,Sanitary,69735865,33.74,Standard Pack,356,2027-08-07,Menstrual hygiene product,No,Not Applicable
+1477,Dr Reddy's Pantoprazole 40mg,Medicine,74115841,124.83,Standard Pack,196,2026-11-20,Acidity treatment,Yes,Avoid with Warfarin
+1478,Zydus Ibuprofen 400mg,Medicine,50165370,222.95,Standard Pack,396,2028-09-30,Anti-inflammatory pain reliever,No,May interact with Metformin
+1479,Glenmark Vitamin D3 60000 IU,Supplement,85603667,32.54,Standard Pack,332,2027-02-05,Vitamin D supplement,No,Not Applicable
+1480,Lupin Hand Sanitizer,Body Care,94299475,1127.44,Standard Pack,470,2027-10-16,Alcohol-based hand cleaner,No,Not Applicable
+1481,Lupin Baby Wipes,Sanitary,21635070,1346.96,Standard Pack,71,2028-09-29,Gentle cleansing wipes,No,Not Applicable
+1482,Mankind Montelukast 10mg,Medicine,57182314,1445.61,Standard Pack,161,2028-11-08,Asthma prevention,Yes,May interact with Metformin
+1483,Sun Pharma Omega 3 Fish Oil,Supplement,43308414,839.03,Standard Pack,307,2028-08-28,Heart health supplement,No,Not Applicable
+1484,Cipla Adult Diapers,Sanitary,98369672,1316.22,Standard Pack,105,2028-02-02,Incontinence protection,No,Not Applicable
+1485,Lupin Face Masks Pack,Sanitary,62579931,457.4,Standard Pack,27,2028-10-31,Protective face masks,No,Not Applicable
+1486,Mankind Iron Folic Acid,Supplement,25132198,376.8,Standard Pack,326,2028-04-20,Iron deficiency treatment,No,Not Applicable
+1487,Cipla Levothyroxine 50mcg,Medicine,58465780,1402.21,Standard Pack,67,2027-09-21,Thyroid hormone replacement,Yes,Consult doctor if taking BP medication
+1488,Glenmark Hand Sanitizer,Body Care,33188838,1148.83,Standard Pack,488,2028-10-17,Alcohol-based hand cleaner,No,Not Applicable
+1489,Abbott Paracetamol 500mg,Medicine,19064068,40.41,Standard Pack,110,2026-09-30,Pain reliever and fever reducer,No,Avoid with Warfarin
+1490,Torrent Foot Care Cream,Body Care,94365330,1074.69,Standard Pack,392,2027-10-20,Cracked heel treatment,No,Not Applicable
+1491,Sun Pharma Medicated Soap,Body Care,95971459,814.12,Standard Pack,315,2027-01-24,Skin infection protection,No,Not Applicable
+1492,Torrent Cetaphil Cleanser,Skincare,20606094,776.73,Standard Pack,104,2027-01-27,Gentle skin cleanser,No,Not Applicable
+1493,Mankind Adult Diapers,Sanitary,88710263,958.76,Standard Pack,427,2028-06-16,Incontinence protection,No,Not Applicable
+1494,Mankind Cetirizine 10mg,Medicine,42029368,105.7,Standard Pack,44,2027-11-08,Allergy relief,No,Avoid with Warfarin
+1495,Abbott Foot Care Cream,Body Care,17385816,477.75,Standard Pack,379,2028-06-24,Cracked heel treatment,No,Not Applicable
+1496,Cipla Vitamin D3 60000 IU,Supplement,28416255,1058.22,Standard Pack,83,2028-01-11,Vitamin D supplement,No,Not Applicable
+1497,Glenmark Aloe Vera Gel,Skincare,44795538,267.11,Standard Pack,64,2028-09-26,Soothing skin gel,No,Not Applicable
+1498,Cipla Cetaphil Cleanser,Skincare,54964418,1214.52,Standard Pack,139,2028-02-08,Gentle skin cleanser,No,Not Applicable
+1499,Abbott Cetirizine 10mg,Medicine,94226031,134.06,Standard Pack,233,2028-01-26,Allergy relief,No,Avoid alcohol
+1500,Abbott Insulin Glargine,Medicine,32398441,564.18,Standard Pack,130,2028-10-20,Long-acting insulin,Yes,Avoid with Warfarin
+1501,Lupin Sanitary Pads Pack,Sanitary,78293320,23.8,Standard Pack,439,2026-09-02,Women hygiene product,No,Not Applicable
+1502,Alkem Vitamin D3 60000 IU,Supplement,58852098,586.81,Standard Pack,76,2027-02-20,Vitamin D supplement,No,Not Applicable
+1503,Mankind Levothyroxine 50mcg,Medicine,40133935,496.27,Standard Pack,213,2028-08-27,Thyroid hormone replacement,Yes,Avoid alcohol
+1504,Abbott Cetaphil Cleanser,Skincare,60037465,196.71,Standard Pack,344,2026-10-13,Gentle skin cleanser,No,Not Applicable
+1505,Glenmark Multivitamin Capsules,Supplement,16164431,1432.04,Standard Pack,35,2027-12-10,General dietary supplement,No,Not Applicable
+1506,Zydus Acne Control Gel,Skincare,21594468,838.58,Standard Pack,4,2027-09-02,Reduces acne and pimples,No,Not Applicable
+1507,Abbott Omega 3 Fish Oil,Supplement,50790016,1114.57,Standard Pack,124,2027-12-09,Heart health supplement,No,Not Applicable
+1508,Alkem Aloe Vera Gel,Skincare,36229153,1104.05,Standard Pack,279,2028-10-07,Soothing skin gel,No,Not Applicable
+1509,Cipla Multivitamin Capsules,Supplement,65034115,55.39,Standard Pack,277,2027-08-10,General dietary supplement,No,Not Applicable
+1510,Cipla Ibuprofen 400mg,Medicine,98221829,576.89,Standard Pack,377,2028-09-03,Anti-inflammatory pain reliever,No,Avoid alcohol
+1511,Glenmark Amlodipine 5mg,Medicine,41966313,641.33,Standard Pack,492,2026-10-21,Hypertension treatment,Yes,May interact with Metformin
+1512,Cipla Cetaphil Cleanser,Skincare,41067722,1347.99,Standard Pack,266,2027-10-17,Gentle skin cleanser,No,Not Applicable
+1513,Sun Pharma Moisturizing Cream,Skincare,87949714,161.45,Standard Pack,68,2028-06-03,Hydrates dry skin,No,Not Applicable
+1514,Abbott Body Lotion,Body Care,86211608,112.18,Standard Pack,339,2027-01-01,Hydrating body lotion,No,Not Applicable
+1515,Torrent Omega 3 Fish Oil,Supplement,52279780,1390.54,Standard Pack,201,2028-08-07,Heart health supplement,No,Not Applicable
+1516,Alkem Acne Control Gel,Skincare,46501299,365.74,Standard Pack,483,2027-03-16,Reduces acne and pimples,No,Not Applicable
+1517,Sun Pharma Calcium + Vitamin D,Supplement,30858851,176.37,Standard Pack,230,2027-12-11,Bone health supplement,No,Not Applicable
+1518,Sun Pharma Moisturizing Cream,Skincare,81930575,550.27,Standard Pack,394,2027-03-21,Hydrates dry skin,No,Not Applicable
+1519,Alkem Hand Sanitizer,Body Care,45568761,1281.67,Standard Pack,46,2027-01-29,Alcohol-based hand cleaner,No,Not Applicable
+1520,Cipla Aloe Vera Gel,Skincare,38859601,1257.17,Standard Pack,167,2027-01-19,Soothing skin gel,No,Not Applicable
+1521,Zydus Amlodipine 5mg,Medicine,63183031,779.92,Standard Pack,346,2027-06-23,Hypertension treatment,Yes,Avoid alcohol
+1522,Mankind Vitamin D3 60000 IU,Supplement,70693413,842.81,Standard Pack,281,2027-05-03,Vitamin D supplement,No,Not Applicable
+1523,Sun Pharma Insulin Glargine,Medicine,28762704,199.75,Standard Pack,31,2028-10-28,Long-acting insulin,Yes,May interact with Metformin
+1524,Mankind Multivitamin Capsules,Supplement,59961172,1035.7,Standard Pack,480,2028-06-11,General dietary supplement,No,Not Applicable
+1525,Abbott Montelukast 10mg,Medicine,44738319,1377.79,Standard Pack,38,2026-09-12,Asthma prevention,Yes,Avoid with Warfarin
+1526,Dr Reddy's Iron Folic Acid,Supplement,22345163,1359.52,Standard Pack,424,2027-07-26,Iron deficiency treatment,No,Not Applicable
+1527,Alkem Paracetamol 500mg,Medicine,16796477,268.62,Standard Pack,293,2027-11-07,Pain reliever and fever reducer,No,No major interactions reported
+1528,Mankind Body Lotion,Body Care,67265875,275.75,Standard Pack,109,2027-02-28,Hydrating body lotion,No,Not Applicable
+1529,Alkem Acne Control Gel,Skincare,29948970,71.28,Standard Pack,317,2028-05-13,Reduces acne and pimples,No,Not Applicable
+1530,Alkem Omega 3 Fish Oil,Supplement,65296657,1326.51,Standard Pack,245,2026-10-22,Heart health supplement,No,Not Applicable
+1531,Mankind Cetirizine 10mg,Medicine,28419506,640.47,Standard Pack,329,2028-11-14,Allergy relief,No,Consult doctor if taking BP medication
+1532,Cipla Calcium + Vitamin D,Supplement,61338023,1177.24,Standard Pack,183,2027-12-25,Bone health supplement,No,Not Applicable
+1533,Zydus Baby Wipes,Sanitary,85920407,763.54,Standard Pack,198,2027-05-24,Gentle cleansing wipes,No,Not Applicable
+1534,Zydus Vitamin D3 60000 IU,Supplement,90143600,344.15,Standard Pack,458,2028-10-26,Vitamin D supplement,No,Not Applicable
+1535,Alkem Cetaphil Cleanser,Skincare,81059199,549.0,Standard Pack,299,2027-04-16,Gentle skin cleanser,No,Not Applicable
+1536,Lupin Vitamin D3 60000 IU,Supplement,98162850,376.91,Standard Pack,273,2028-11-08,Vitamin D supplement,No,Not Applicable
+1537,Abbott Amlodipine 5mg,Medicine,62133188,545.11,Standard Pack,429,2027-02-14,Hypertension treatment,Yes,May interact with Metformin
+1538,Zydus Calcium + Vitamin D,Supplement,58155056,1372.69,Standard Pack,14,2028-08-10,Bone health supplement,No,Not Applicable
+1539,Abbott Aloe Vera Gel,Skincare,29072646,853.4,Standard Pack,96,2028-01-07,Soothing skin gel,No,Not Applicable
+1540,Dr Reddy's Adult Diapers,Sanitary,75825262,76.19,Standard Pack,28,2027-04-16,Incontinence protection,No,Not Applicable
+1541,Cipla Tampons Pack,Sanitary,80658723,727.42,Standard Pack,169,2028-05-10,Menstrual hygiene product,No,Not Applicable
+1542,Zydus Multivitamin Capsules,Supplement,33818260,1379.8,Standard Pack,432,2027-07-18,General dietary supplement,No,Not Applicable
+1543,Dr Reddy's Paracetamol 500mg,Medicine,88733350,1062.95,Standard Pack,72,2028-10-21,Pain reliever and fever reducer,No,Avoid with Warfarin
+1544,Sun Pharma Adult Diapers,Sanitary,60142505,1062.72,Standard Pack,339,2027-09-30,Incontinence protection,No,Not Applicable
+1545,Zydus Sanitary Pads Pack,Sanitary,50502233,497.45,Standard Pack,499,2027-01-29,Women hygiene product,No,Not Applicable
+1546,Zydus Medicated Soap,Body Care,33381086,1066.63,Standard Pack,287,2028-07-31,Skin infection protection,No,Not Applicable
+1547,Lupin Adult Diapers,Sanitary,99326148,891.65,Standard Pack,89,2027-09-12,Incontinence protection,No,Not Applicable
+1548,Dr Reddy's Acne Control Gel,Skincare,33851602,1098.67,Standard Pack,485,2028-08-08,Reduces acne and pimples,No,Not Applicable
+1549,Abbott Baby Wipes,Sanitary,14346338,289.48,Standard Pack,162,2028-05-08,Gentle cleansing wipes,No,Not Applicable
+1550,Sun Pharma Calcium + Vitamin D,Supplement,76596831,228.15,Standard Pack,381,2026-11-08,Bone health supplement,No,Not Applicable
+1551,Zydus Omega 3 Fish Oil,Supplement,32533467,961.56,Standard Pack,493,2026-11-19,Heart health supplement,No,Not Applicable
+1552,Cipla Moisturizing Cream,Skincare,45596211,330.33,Standard Pack,354,2026-10-29,Hydrates dry skin,No,Not Applicable
+1553,Sun Pharma Acne Control Gel,Skincare,10171954,91.26,Standard Pack,224,2028-09-09,Reduces acne and pimples,No,Not Applicable
+1554,Mankind Antiseptic Liquid,Body Care,76180344,1325.02,Standard Pack,179,2028-03-02,Kills germs and bacteria,No,Not Applicable
+1555,Alkem Body Lotion,Body Care,87585294,983.43,Standard Pack,351,2027-04-08,Hydrating body lotion,No,Not Applicable
+1556,Sun Pharma Iron Folic Acid,Supplement,14484588,456.46,Standard Pack,163,2027-05-15,Iron deficiency treatment,No,Not Applicable
+1557,Zydus Azithromycin 500mg,Medicine,32831133,1334.14,Standard Pack,82,2028-09-08,Antibiotic for bacterial infections,Yes,Avoid with Warfarin
+1558,Zydus Sanitary Pads Pack,Sanitary,89729429,1478.21,Standard Pack,457,2027-12-28,Women hygiene product,No,Not Applicable
+1559,Dr Reddy's Pantoprazole 40mg,Medicine,91512791,1336.83,Standard Pack,80,2026-10-14,Acidity treatment,Yes,Avoid with Warfarin
+1560,Lupin Sunscreen SPF 50,Skincare,64932613,1051.85,Standard Pack,369,2028-09-06,UV protection lotion,No,Not Applicable
+1561,Torrent Adult Diapers,Sanitary,49916439,371.57,Standard Pack,25,2027-09-27,Incontinence protection,No,Not Applicable
+1562,Alkem Face Masks Pack,Sanitary,30614492,100.67,Standard Pack,1,2027-11-01,Protective face masks,No,Not Applicable
+1563,Abbott Cetirizine 10mg,Medicine,74468586,315.52,Standard Pack,13,2027-03-20,Allergy relief,No,May interact with Metformin
+1564,Alkem Cetaphil Cleanser,Skincare,25503345,476.36,Standard Pack,203,2027-12-16,Gentle skin cleanser,No,Not Applicable
+1565,Sun Pharma Hand Sanitizer,Body Care,96149847,825.31,Standard Pack,94,2027-09-04,Alcohol-based hand cleaner,No,Not Applicable
+1566,Dr Reddy's Hand Sanitizer,Body Care,69830944,86.03,Standard Pack,225,2027-12-10,Alcohol-based hand cleaner,No,Not Applicable
+1567,Torrent Sunscreen SPF 50,Skincare,85731895,111.23,Standard Pack,385,2028-08-03,UV protection lotion,No,Not Applicable
+1568,Zydus Azithromycin 500mg,Medicine,82672055,632.7,Standard Pack,387,2028-04-15,Antibiotic for bacterial infections,Yes,May interact with Metformin
+1569,Mankind Sanitary Pads Pack,Sanitary,80139805,639.58,Standard Pack,274,2028-07-24,Women hygiene product,No,Not Applicable
+1570,Lupin Foot Care Cream,Body Care,73922841,462.3,Standard Pack,202,2028-08-21,Cracked heel treatment,No,Not Applicable
+1571,Abbott Levothyroxine 50mcg,Medicine,79366056,1204.67,Standard Pack,346,2028-05-17,Thyroid hormone replacement,Yes,May interact with Metformin
+1572,Dr Reddy's Insulin Glargine,Medicine,32436477,1458.8,Standard Pack,413,2027-03-06,Long-acting insulin,Yes,May interact with Metformin
+1573,Sun Pharma Pantoprazole 40mg,Medicine,68437492,318.84,Standard Pack,421,2028-05-24,Acidity treatment,Yes,May interact with Metformin
+1574,Zydus Adult Diapers,Sanitary,18994192,148.8,Standard Pack,284,2027-10-01,Incontinence protection,No,Not Applicable
+1575,Torrent Adult Diapers,Sanitary,79751366,698.07,Standard Pack,447,2026-09-02,Incontinence protection,No,Not Applicable
+1576,Glenmark Face Masks Pack,Sanitary,66316931,186.53,Standard Pack,76,2027-01-19,Protective face masks,No,Not Applicable
+1577,Abbott Face Masks Pack,Sanitary,23449152,1388.89,Standard Pack,288,2028-10-27,Protective face masks,No,Not Applicable
+1578,Glenmark Cetirizine 10mg,Medicine,56153339,1319.28,Standard Pack,135,2027-09-17,Allergy relief,No,No major interactions reported
+1579,Alkem Face Masks Pack,Sanitary,15028557,274.86,Standard Pack,206,2027-01-15,Protective face masks,No,Not Applicable
+1580,Mankind Face Masks Pack,Sanitary,15205303,605.77,Standard Pack,450,2027-07-26,Protective face masks,No,Not Applicable
+1581,Alkem Vitamin D3 60000 IU,Supplement,46048781,1347.61,Standard Pack,10,2027-08-01,Vitamin D supplement,No,Not Applicable
+1582,Torrent Acne Control Gel,Skincare,75984013,1290.19,Standard Pack,350,2026-11-29,Reduces acne and pimples,No,Not Applicable
+1583,Torrent Multivitamin Capsules,Supplement,69473299,1165.57,Standard Pack,164,2027-05-23,General dietary supplement,No,Not Applicable
+1584,Sun Pharma Foot Care Cream,Body Care,35224301,673.74,Standard Pack,467,2027-10-11,Cracked heel treatment,No,Not Applicable
+1585,Zydus Foot Care Cream,Body Care,17543817,782.6,Standard Pack,81,2026-10-27,Cracked heel treatment,No,Not Applicable
+1586,Mankind Aloe Vera Gel,Skincare,28206610,1175.16,Standard Pack,268,2028-03-25,Soothing skin gel,No,Not Applicable
+1587,Lupin Metformin 500mg,Medicine,36941091,1258.73,Standard Pack,127,2026-09-23,Type 2 diabetes management,Yes,No major interactions reported
+1588,Lupin Ibuprofen 400mg,Medicine,46772637,565.16,Standard Pack,237,2028-01-20,Anti-inflammatory pain reliever,No,No major interactions reported
+1589,Lupin Paracetamol 500mg,Medicine,59991642,743.4,Standard Pack,228,2027-02-18,Pain reliever and fever reducer,No,No major interactions reported
+1590,Zydus Face Masks Pack,Sanitary,56204319,262.0,Standard Pack,457,2027-05-12,Protective face masks,No,Not Applicable
+1591,Cipla Cetirizine 10mg,Medicine,61883966,93.48,Standard Pack,437,2028-03-28,Allergy relief,No,May interact with Metformin
+1592,Lupin Multivitamin Capsules,Supplement,46115786,984.35,Standard Pack,262,2026-09-10,General dietary supplement,No,Not Applicable
+1593,Dr Reddy's Insulin Glargine,Medicine,96888739,276.34,Standard Pack,410,2026-08-29,Long-acting insulin,Yes,May interact with Metformin
+1594,Torrent Aloe Vera Gel,Skincare,96267144,427.56,Standard Pack,458,2027-09-10,Soothing skin gel,No,Not Applicable
+1595,Torrent Moisturizing Cream,Skincare,39287523,710.71,Standard Pack,346,2028-02-05,Hydrates dry skin,No,Not Applicable
+1596,Abbott Baby Wipes,Sanitary,23732098,30.87,Standard Pack,339,2027-09-08,Gentle cleansing wipes,No,Not Applicable
+1597,Abbott Face Masks Pack,Sanitary,47940248,461.74,Standard Pack,55,2027-12-27,Protective face masks,No,Not Applicable
+1598,Torrent Ibuprofen 400mg,Medicine,95979171,501.2,Standard Pack,141,2027-05-15,Anti-inflammatory pain reliever,No,Avoid alcohol
+1599,Glenmark Multivitamin Capsules,Supplement,42252798,1351.54,Standard Pack,412,2028-04-26,General dietary supplement,No,Not Applicable
+1600,Dr Reddy's Hand Sanitizer,Body Care,13416548,989.99,Standard Pack,151,2027-05-13,Alcohol-based hand cleaner,No,Not Applicable
+1601,Mankind Medicated Soap,Body Care,14740436,882.88,Standard Pack,292,2027-03-03,Skin infection protection,No,Not Applicable
+1602,Glenmark Sunscreen SPF 50,Skincare,95672999,1181.65,Standard Pack,464,2028-07-08,UV protection lotion,No,Not Applicable
+1603,Torrent Aloe Vera Gel,Skincare,32815223,1264.15,Standard Pack,448,2028-03-14,Soothing skin gel,No,Not Applicable
+1604,Sun Pharma Omega 3 Fish Oil,Supplement,73187139,209.36,Standard Pack,132,2028-09-01,Heart health supplement,No,Not Applicable
+1605,Zydus Tampons Pack,Sanitary,97836731,152.16,Standard Pack,181,2027-04-06,Menstrual hygiene product,No,Not Applicable
+1606,Zydus Moisturizing Cream,Skincare,59886371,405.63,Standard Pack,150,2027-12-08,Hydrates dry skin,No,Not Applicable
+1607,Cipla Insulin Glargine,Medicine,95147289,883.69,Standard Pack,483,2028-05-17,Long-acting insulin,Yes,Avoid with Warfarin
+1608,Glenmark Antiseptic Liquid,Body Care,26081422,1303.9,Standard Pack,195,2028-02-14,Kills germs and bacteria,No,Not Applicable
+1609,Cipla Moisturizing Cream,Skincare,30237141,223.3,Standard Pack,102,2027-08-06,Hydrates dry skin,No,Not Applicable
+1610,Alkem Foot Care Cream,Body Care,29223220,488.25,Standard Pack,366,2027-02-21,Cracked heel treatment,No,Not Applicable
+1611,Zydus Insulin Glargine,Medicine,94695784,1480.23,Standard Pack,160,2028-05-31,Long-acting insulin,Yes,Avoid with Warfarin
+1612,Torrent Insulin Glargine,Medicine,38102825,1146.57,Standard Pack,86,2028-04-02,Long-acting insulin,Yes,May interact with Metformin
+1613,Dr Reddy's Body Lotion,Body Care,92474074,661.89,Standard Pack,219,2027-10-08,Hydrating body lotion,No,Not Applicable
+1614,Mankind Medicated Soap,Body Care,10626681,75.83,Standard Pack,102,2028-09-07,Skin infection protection,No,Not Applicable
+1615,Zydus Cetaphil Cleanser,Skincare,81274148,302.05,Standard Pack,346,2026-08-25,Gentle skin cleanser,No,Not Applicable
+1616,Zydus Multivitamin Capsules,Supplement,51888314,210.82,Standard Pack,196,2028-01-18,General dietary supplement,No,Not Applicable
+1617,Dr Reddy's Adult Diapers,Sanitary,18762675,1239.29,Standard Pack,152,2027-06-14,Incontinence protection,No,Not Applicable
+1618,Abbott Foot Care Cream,Body Care,80345879,520.0,Standard Pack,454,2028-07-24,Cracked heel treatment,No,Not Applicable
+1619,Alkem Omega 3 Fish Oil,Supplement,58217837,1130.17,Standard Pack,84,2027-10-08,Heart health supplement,No,Not Applicable
+1620,Lupin Amlodipine 5mg,Medicine,27610141,332.56,Standard Pack,11,2028-04-15,Hypertension treatment,Yes,Consult doctor if taking BP medication
+1621,Zydus Vitamin D3 60000 IU,Supplement,97314051,1192.35,Standard Pack,192,2028-06-06,Vitamin D supplement,No,Not Applicable
+1622,Abbott Aloe Vera Gel,Skincare,16521231,899.01,Standard Pack,24,2028-06-28,Soothing skin gel,No,Not Applicable
+1623,Cipla Paracetamol 500mg,Medicine,25541047,636.83,Standard Pack,194,2026-12-25,Pain reliever and fever reducer,No,Consult doctor if taking BP medication
+1624,Dr Reddy's Moisturizing Cream,Skincare,37581060,1048.88,Standard Pack,322,2026-08-30,Hydrates dry skin,No,Not Applicable
+1625,Sun Pharma Moisturizing Cream,Skincare,98916958,790.06,Standard Pack,318,2028-05-02,Hydrates dry skin,No,Not Applicable
+1626,Sun Pharma Iron Folic Acid,Supplement,78663747,1083.77,Standard Pack,60,2027-06-06,Iron deficiency treatment,No,Not Applicable
+1627,Alkem Azithromycin 500mg,Medicine,36661903,921.32,Standard Pack,398,2027-05-17,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+1628,Mankind Omega 3 Fish Oil,Supplement,49641367,257.35,Standard Pack,280,2028-01-11,Heart health supplement,No,Not Applicable
+1629,Zydus Iron Folic Acid,Supplement,41474764,24.05,Standard Pack,343,2026-11-20,Iron deficiency treatment,No,Not Applicable
+1630,Alkem Montelukast 10mg,Medicine,30017834,1425.18,Standard Pack,399,2028-01-26,Asthma prevention,Yes,Avoid with Warfarin
+1631,Lupin Cetirizine 10mg,Medicine,71304112,1483.23,Standard Pack,151,2027-05-18,Allergy relief,No,No major interactions reported
+1632,Dr Reddy's Azithromycin 500mg,Medicine,15294153,1281.33,Standard Pack,184,2028-11-18,Antibiotic for bacterial infections,Yes,Avoid alcohol
+1633,Sun Pharma Body Lotion,Body Care,16159129,34.32,Standard Pack,70,2028-06-30,Hydrating body lotion,No,Not Applicable
+1634,Zydus Omega 3 Fish Oil,Supplement,68749047,1433.53,Standard Pack,137,2028-09-09,Heart health supplement,No,Not Applicable
+1635,Zydus Ibuprofen 400mg,Medicine,34544318,188.47,Standard Pack,204,2027-12-01,Anti-inflammatory pain reliever,No,Avoid alcohol
+1636,Mankind Medicated Soap,Body Care,97086700,1331.46,Standard Pack,85,2026-12-14,Skin infection protection,No,Not Applicable
+1637,Dr Reddy's Vitamin D3 60000 IU,Supplement,23920137,635.72,Standard Pack,302,2027-12-28,Vitamin D supplement,No,Not Applicable
+1638,Dr Reddy's Baby Wipes,Sanitary,92050405,582.03,Standard Pack,183,2028-05-08,Gentle cleansing wipes,No,Not Applicable
+1639,Alkem Metformin 500mg,Medicine,75514730,187.15,Standard Pack,210,2027-11-15,Type 2 diabetes management,Yes,Avoid with Warfarin
+1640,Zydus Cetirizine 10mg,Medicine,11658959,1062.76,Standard Pack,347,2028-02-09,Allergy relief,No,Consult doctor if taking BP medication
+1641,Zydus Tampons Pack,Sanitary,79672379,794.19,Standard Pack,358,2028-05-15,Menstrual hygiene product,No,Not Applicable
+1642,Lupin Pantoprazole 40mg,Medicine,74683506,531.71,Standard Pack,346,2028-06-07,Acidity treatment,Yes,No major interactions reported
+1643,Abbott Calcium + Vitamin D,Supplement,17323740,37.23,Standard Pack,478,2027-01-28,Bone health supplement,No,Not Applicable
+1644,Alkem Baby Wipes,Sanitary,32200132,130.8,Standard Pack,251,2027-07-15,Gentle cleansing wipes,No,Not Applicable
+1645,Torrent Omega 3 Fish Oil,Supplement,16757958,770.26,Standard Pack,281,2028-06-09,Heart health supplement,No,Not Applicable
+1646,Lupin Medicated Soap,Body Care,20580463,699.46,Standard Pack,410,2028-03-29,Skin infection protection,No,Not Applicable
+1647,Alkem Body Lotion,Body Care,70004467,487.77,Standard Pack,254,2028-09-22,Hydrating body lotion,No,Not Applicable
+1648,Mankind Azithromycin 500mg,Medicine,65343143,73.03,Standard Pack,281,2026-08-21,Antibiotic for bacterial infections,Yes,Avoid with Warfarin
+1649,Torrent Face Masks Pack,Sanitary,78227936,852.25,Standard Pack,335,2028-07-08,Protective face masks,No,Not Applicable
+1650,Zydus Hand Sanitizer,Body Care,17284695,1228.55,Standard Pack,432,2027-11-29,Alcohol-based hand cleaner,No,Not Applicable
+1651,Abbott Aloe Vera Gel,Skincare,90524080,720.24,Standard Pack,336,2027-08-28,Soothing skin gel,No,Not Applicable
+1652,Sun Pharma Body Lotion,Body Care,98437437,348.19,Standard Pack,174,2027-08-19,Hydrating body lotion,No,Not Applicable
+1653,Glenmark Aloe Vera Gel,Skincare,60182714,1059.1,Standard Pack,23,2027-02-05,Soothing skin gel,No,Not Applicable
+1654,Mankind Antiseptic Liquid,Body Care,24356130,396.35,Standard Pack,100,2027-03-01,Kills germs and bacteria,No,Not Applicable
+1655,Lupin Pantoprazole 40mg,Medicine,71343676,1240.34,Standard Pack,97,2028-08-23,Acidity treatment,Yes,Avoid alcohol
+1656,Cipla Pantoprazole 40mg,Medicine,94992096,1259.45,Standard Pack,301,2026-12-25,Acidity treatment,Yes,No major interactions reported
+1657,Glenmark Foot Care Cream,Body Care,28070539,1446.51,Standard Pack,2,2028-02-15,Cracked heel treatment,No,Not Applicable
+1658,Mankind Levothyroxine 50mcg,Medicine,88533572,734.74,Standard Pack,260,2028-10-28,Thyroid hormone replacement,Yes,May interact with Metformin
+1659,Dr Reddy's Tampons Pack,Sanitary,23898777,593.36,Standard Pack,307,2028-05-02,Menstrual hygiene product,No,Not Applicable
+1660,Mankind Aloe Vera Gel,Skincare,66192230,1469.66,Standard Pack,468,2028-07-30,Soothing skin gel,No,Not Applicable
+1661,Mankind Omega 3 Fish Oil,Supplement,56017729,1456.33,Standard Pack,231,2027-01-04,Heart health supplement,No,Not Applicable
+1662,Abbott Iron Folic Acid,Supplement,78759020,462.39,Standard Pack,359,2028-03-03,Iron deficiency treatment,No,Not Applicable
+1663,Lupin Aloe Vera Gel,Skincare,36962876,330.37,Standard Pack,365,2027-06-14,Soothing skin gel,No,Not Applicable
+1664,Dr Reddy's Sunscreen SPF 50,Skincare,77631432,822.89,Standard Pack,326,2027-07-17,UV protection lotion,No,Not Applicable
+1665,Glenmark Ibuprofen 400mg,Medicine,74474159,882.55,Standard Pack,482,2028-07-04,Anti-inflammatory pain reliever,No,No major interactions reported
+1666,Mankind Adult Diapers,Sanitary,11714029,793.64,Standard Pack,12,2027-09-15,Incontinence protection,No,Not Applicable
+1667,Cipla Vitamin D3 60000 IU,Supplement,36830448,415.13,Standard Pack,402,2027-02-01,Vitamin D supplement,No,Not Applicable
+1668,Dr Reddy's Acne Control Gel,Skincare,18325904,1042.08,Standard Pack,151,2027-03-17,Reduces acne and pimples,No,Not Applicable
+1669,Zydus Sanitary Pads Pack,Sanitary,70746206,171.67,Standard Pack,444,2028-07-12,Women hygiene product,No,Not Applicable
+1670,Glenmark Tampons Pack,Sanitary,62195484,371.64,Standard Pack,401,2028-11-13,Menstrual hygiene product,No,Not Applicable
+1671,Mankind Cetaphil Cleanser,Skincare,62016704,636.52,Standard Pack,403,2028-07-22,Gentle skin cleanser,No,Not Applicable
+1672,Cipla Aloe Vera Gel,Skincare,11740164,1120.63,Standard Pack,103,2028-05-17,Soothing skin gel,No,Not Applicable
+1673,Zydus Antiseptic Liquid,Body Care,88971743,828.99,Standard Pack,308,2027-03-10,Kills germs and bacteria,No,Not Applicable
+1674,Alkem Omega 3 Fish Oil,Supplement,33813700,1475.51,Standard Pack,38,2027-02-28,Heart health supplement,No,Not Applicable
+1675,Sun Pharma Calcium + Vitamin D,Supplement,60626689,80.14,Standard Pack,142,2028-03-12,Bone health supplement,No,Not Applicable
+1676,Dr Reddy's Sunscreen SPF 50,Skincare,88381281,1272.1,Standard Pack,2,2027-07-25,UV protection lotion,No,Not Applicable
+1677,Cipla Antiseptic Liquid,Body Care,30629718,1394.37,Standard Pack,305,2026-10-12,Kills germs and bacteria,No,Not Applicable
+1678,Alkem Adult Diapers,Sanitary,86863404,834.24,Standard Pack,37,2028-10-31,Incontinence protection,No,Not Applicable
+1679,Lupin Aloe Vera Gel,Skincare,34678492,790.5,Standard Pack,402,2028-01-20,Soothing skin gel,No,Not Applicable
+1680,Glenmark Iron Folic Acid,Supplement,82079745,617.06,Standard Pack,178,2027-04-04,Iron deficiency treatment,No,Not Applicable
+1681,Zydus Omega 3 Fish Oil,Supplement,58425464,454.49,Standard Pack,486,2028-09-29,Heart health supplement,No,Not Applicable
+1682,Alkem Face Masks Pack,Sanitary,85341065,1239.06,Standard Pack,332,2026-08-30,Protective face masks,No,Not Applicable
+1683,Alkem Ibuprofen 400mg,Medicine,42258945,1358.65,Standard Pack,314,2028-05-18,Anti-inflammatory pain reliever,No,May interact with Metformin
+1684,Mankind Ibuprofen 400mg,Medicine,25216804,591.1,Standard Pack,276,2028-08-31,Anti-inflammatory pain reliever,No,Avoid alcohol
+1685,Zydus Levothyroxine 50mcg,Medicine,79029393,1208.17,Standard Pack,228,2028-01-01,Thyroid hormone replacement,Yes,Avoid with Warfarin
+1686,Zydus Sunscreen SPF 50,Skincare,78973779,141.87,Standard Pack,49,2027-02-08,UV protection lotion,No,Not Applicable
+1687,Cipla Face Masks Pack,Sanitary,94145533,116.9,Standard Pack,343,2028-05-26,Protective face masks,No,Not Applicable
+1688,Sun Pharma Iron Folic Acid,Supplement,37592422,815.88,Standard Pack,359,2028-09-18,Iron deficiency treatment,No,Not Applicable
+1689,Dr Reddy's Body Lotion,Body Care,13188066,699.65,Standard Pack,169,2026-09-28,Hydrating body lotion,No,Not Applicable
+1690,Cipla Azithromycin 500mg,Medicine,33889703,1195.44,Standard Pack,285,2026-11-01,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+1691,Mankind Omega 3 Fish Oil,Supplement,62080854,687.67,Standard Pack,207,2027-11-07,Heart health supplement,No,Not Applicable
+1692,Mankind Cetaphil Cleanser,Skincare,25878730,811.55,Standard Pack,328,2028-08-27,Gentle skin cleanser,No,Not Applicable
+1693,Abbott Sanitary Pads Pack,Sanitary,16109168,1057.31,Standard Pack,37,2027-08-22,Women hygiene product,No,Not Applicable
+1694,Torrent Sanitary Pads Pack,Sanitary,50446607,917.72,Standard Pack,144,2028-10-12,Women hygiene product,No,Not Applicable
+1695,Mankind Medicated Soap,Body Care,98680762,65.61,Standard Pack,80,2028-02-18,Skin infection protection,No,Not Applicable
+1696,Mankind Multivitamin Capsules,Supplement,83245898,456.57,Standard Pack,324,2027-01-15,General dietary supplement,No,Not Applicable
+1697,Cipla Acne Control Gel,Skincare,84292758,1314.66,Standard Pack,72,2026-12-25,Reduces acne and pimples,No,Not Applicable
+1698,Abbott Paracetamol 500mg,Medicine,90081663,603.24,Standard Pack,280,2026-11-16,Pain reliever and fever reducer,No,Avoid alcohol
+1699,Lupin Omega 3 Fish Oil,Supplement,65385548,1360.33,Standard Pack,435,2028-01-27,Heart health supplement,No,Not Applicable
+1700,Dr Reddy's Multivitamin Capsules,Supplement,39633659,932.99,Standard Pack,129,2027-03-07,General dietary supplement,No,Not Applicable
+1701,Abbott Metformin 500mg,Medicine,17299874,1280.05,Standard Pack,477,2028-03-05,Type 2 diabetes management,Yes,No major interactions reported
+1702,Torrent Sanitary Pads Pack,Sanitary,19041276,391.02,Standard Pack,101,2028-09-02,Women hygiene product,No,Not Applicable
+1703,Zydus Baby Wipes,Sanitary,57934299,209.76,Standard Pack,335,2027-04-18,Gentle cleansing wipes,No,Not Applicable
+1704,Abbott Cetirizine 10mg,Medicine,19369589,1352.18,Standard Pack,162,2027-12-31,Allergy relief,No,No major interactions reported
+1705,Torrent Aloe Vera Gel,Skincare,88405961,245.54,Standard Pack,290,2027-08-29,Soothing skin gel,No,Not Applicable
+1706,Dr Reddy's Moisturizing Cream,Skincare,10648524,483.56,Standard Pack,402,2027-04-04,Hydrates dry skin,No,Not Applicable
+1707,Zydus Hand Sanitizer,Body Care,28026223,1025.78,Standard Pack,169,2027-12-25,Alcohol-based hand cleaner,No,Not Applicable
+1708,Zydus Medicated Soap,Body Care,50999730,740.72,Standard Pack,55,2027-02-16,Skin infection protection,No,Not Applicable
+1709,Torrent Sanitary Pads Pack,Sanitary,28790705,1339.12,Standard Pack,100,2027-05-17,Women hygiene product,No,Not Applicable
+1710,Cipla Azithromycin 500mg,Medicine,78072320,954.81,Standard Pack,416,2028-04-07,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+1711,Lupin Foot Care Cream,Body Care,14919926,836.36,Standard Pack,278,2028-02-24,Cracked heel treatment,No,Not Applicable
+1712,Zydus Antiseptic Liquid,Body Care,62680236,350.49,Standard Pack,395,2028-04-15,Kills germs and bacteria,No,Not Applicable
+1713,Alkem Sunscreen SPF 50,Skincare,77259613,775.41,Standard Pack,203,2027-08-28,UV protection lotion,No,Not Applicable
+1714,Lupin Sanitary Pads Pack,Sanitary,92414513,1032.56,Standard Pack,387,2028-01-29,Women hygiene product,No,Not Applicable
+1715,Dr Reddy's Iron Folic Acid,Supplement,34044459,858.21,Standard Pack,289,2028-06-26,Iron deficiency treatment,No,Not Applicable
+1716,Zydus Iron Folic Acid,Supplement,15425057,343.85,Standard Pack,249,2027-04-15,Iron deficiency treatment,No,Not Applicable
+1717,Zydus Cetirizine 10mg,Medicine,41409454,83.36,Standard Pack,105,2028-02-02,Allergy relief,No,Avoid alcohol
+1718,Alkem Medicated Soap,Body Care,16232730,79.06,Standard Pack,332,2027-07-18,Skin infection protection,No,Not Applicable
+1719,Torrent Levothyroxine 50mcg,Medicine,45341684,876.37,Standard Pack,291,2027-02-15,Thyroid hormone replacement,Yes,No major interactions reported
+1720,Abbott Hand Sanitizer,Body Care,97689346,1349.38,Standard Pack,39,2028-02-01,Alcohol-based hand cleaner,No,Not Applicable
+1721,Lupin Moisturizing Cream,Skincare,79306247,620.65,Standard Pack,418,2027-08-09,Hydrates dry skin,No,Not Applicable
+1722,Abbott Medicated Soap,Body Care,10885526,762.72,Standard Pack,71,2027-11-14,Skin infection protection,No,Not Applicable
+1723,Sun Pharma Multivitamin Capsules,Supplement,79060560,972.35,Standard Pack,108,2027-01-21,General dietary supplement,No,Not Applicable
+1724,Zydus Multivitamin Capsules,Supplement,90801793,1081.61,Standard Pack,60,2028-06-27,General dietary supplement,No,Not Applicable
+1725,Zydus Iron Folic Acid,Supplement,25212062,732.64,Standard Pack,245,2027-12-24,Iron deficiency treatment,No,Not Applicable
+1726,Dr Reddy's Calcium + Vitamin D,Supplement,96873663,1253.38,Standard Pack,11,2027-04-27,Bone health supplement,No,Not Applicable
+1727,Abbott Metformin 500mg,Medicine,89503557,258.47,Standard Pack,322,2028-01-27,Type 2 diabetes management,Yes,Avoid with Warfarin
+1728,Cipla Tampons Pack,Sanitary,32325960,402.22,Standard Pack,92,2028-02-01,Menstrual hygiene product,No,Not Applicable
+1729,Abbott Foot Care Cream,Body Care,95580271,47.56,Standard Pack,368,2028-09-04,Cracked heel treatment,No,Not Applicable
+1730,Lupin Cetaphil Cleanser,Skincare,70291054,917.66,Standard Pack,241,2027-12-27,Gentle skin cleanser,No,Not Applicable
+1731,Mankind Multivitamin Capsules,Supplement,90643207,231.21,Standard Pack,298,2028-10-14,General dietary supplement,No,Not Applicable
+1732,Glenmark Calcium + Vitamin D,Supplement,45503367,268.23,Standard Pack,351,2027-08-06,Bone health supplement,No,Not Applicable
+1733,Abbott Foot Care Cream,Body Care,19239937,360.12,Standard Pack,197,2027-01-03,Cracked heel treatment,No,Not Applicable
+1734,Lupin Paracetamol 500mg,Medicine,80157128,1292.2,Standard Pack,258,2028-07-21,Pain reliever and fever reducer,No,No major interactions reported
+1735,Sun Pharma Calcium + Vitamin D,Supplement,33813202,724.29,Standard Pack,314,2028-04-26,Bone health supplement,No,Not Applicable
+1736,Glenmark Levothyroxine 50mcg,Medicine,25772785,157.92,Standard Pack,337,2027-01-01,Thyroid hormone replacement,Yes,Consult doctor if taking BP medication
+1737,Mankind Sanitary Pads Pack,Sanitary,80067590,642.61,Standard Pack,447,2026-10-04,Women hygiene product,No,Not Applicable
+1738,Lupin Baby Wipes,Sanitary,74709513,1188.54,Standard Pack,195,2027-08-14,Gentle cleansing wipes,No,Not Applicable
+1739,Sun Pharma Face Masks Pack,Sanitary,67108220,218.15,Standard Pack,244,2028-10-13,Protective face masks,No,Not Applicable
+1740,Torrent Vitamin D3 60000 IU,Supplement,90301439,1317.61,Standard Pack,209,2027-05-11,Vitamin D supplement,No,Not Applicable
+1741,Cipla Vitamin D3 60000 IU,Supplement,87576121,793.36,Standard Pack,266,2026-08-28,Vitamin D supplement,No,Not Applicable
+1742,Zydus Antiseptic Liquid,Body Care,64874257,556.16,Standard Pack,79,2027-10-31,Kills germs and bacteria,No,Not Applicable
+1743,Torrent Adult Diapers,Sanitary,81954780,646.87,Standard Pack,187,2028-05-08,Incontinence protection,No,Not Applicable
+1744,Lupin Moisturizing Cream,Skincare,65462544,837.12,Standard Pack,285,2027-12-28,Hydrates dry skin,No,Not Applicable
+1745,Glenmark Omega 3 Fish Oil,Supplement,84478941,735.97,Standard Pack,157,2028-04-03,Heart health supplement,No,Not Applicable
+1746,Dr Reddy's Moisturizing Cream,Skincare,98487446,196.25,Standard Pack,117,2027-11-21,Hydrates dry skin,No,Not Applicable
+1747,Lupin Vitamin D3 60000 IU,Supplement,78228715,612.83,Standard Pack,173,2028-11-18,Vitamin D supplement,No,Not Applicable
+1748,Cipla Face Masks Pack,Sanitary,31573890,595.87,Standard Pack,325,2026-08-26,Protective face masks,No,Not Applicable
+1749,Alkem Metformin 500mg,Medicine,90563579,664.36,Standard Pack,32,2027-05-17,Type 2 diabetes management,Yes,May interact with Metformin
+1750,Abbott Cetaphil Cleanser,Skincare,15067435,1092.25,Standard Pack,476,2027-10-05,Gentle skin cleanser,No,Not Applicable
+1751,Torrent Face Masks Pack,Sanitary,90191410,105.05,Standard Pack,396,2027-02-16,Protective face masks,No,Not Applicable
+1752,Cipla Medicated Soap,Body Care,37072687,1278.84,Standard Pack,476,2028-02-02,Skin infection protection,No,Not Applicable
+1753,Cipla Sunscreen SPF 50,Skincare,90465529,775.61,Standard Pack,357,2027-04-15,UV protection lotion,No,Not Applicable
+1754,Cipla Tampons Pack,Sanitary,58283485,374.1,Standard Pack,0,2027-01-29,Menstrual hygiene product,No,Not Applicable
+1755,Mankind Cetirizine 10mg,Medicine,57395992,1011.1,Standard Pack,207,2028-04-12,Allergy relief,No,May interact with Metformin
+1756,Sun Pharma Sanitary Pads Pack,Sanitary,22101856,833.4,Standard Pack,371,2028-03-15,Women hygiene product,No,Not Applicable
+1757,Zydus Adult Diapers,Sanitary,47112255,354.92,Standard Pack,493,2027-03-08,Incontinence protection,No,Not Applicable
+1758,Abbott Medicated Soap,Body Care,10624307,406.44,Standard Pack,208,2028-01-21,Skin infection protection,No,Not Applicable
+1759,Sun Pharma Levothyroxine 50mcg,Medicine,77534222,455.49,Standard Pack,484,2026-12-18,Thyroid hormone replacement,Yes,Consult doctor if taking BP medication
+1760,Abbott Aloe Vera Gel,Skincare,43573422,1047.4,Standard Pack,494,2027-09-11,Soothing skin gel,No,Not Applicable
+1761,Lupin Baby Wipes,Sanitary,55588495,1442.63,Standard Pack,234,2028-07-18,Gentle cleansing wipes,No,Not Applicable
+1762,Cipla Foot Care Cream,Body Care,74688940,192.08,Standard Pack,34,2027-09-16,Cracked heel treatment,No,Not Applicable
+1763,Zydus Multivitamin Capsules,Supplement,65354876,1434.06,Standard Pack,264,2028-02-20,General dietary supplement,No,Not Applicable
+1764,Lupin Cetirizine 10mg,Medicine,48559355,157.65,Standard Pack,344,2028-09-25,Allergy relief,No,Avoid alcohol
+1765,Dr Reddy's Levothyroxine 50mcg,Medicine,73962190,484.53,Standard Pack,111,2028-03-30,Thyroid hormone replacement,Yes,Avoid alcohol
+1766,Alkem Multivitamin Capsules,Supplement,36798789,367.59,Standard Pack,123,2027-05-19,General dietary supplement,No,Not Applicable
+1767,Lupin Multivitamin Capsules,Supplement,43513553,1257.78,Standard Pack,182,2027-01-27,General dietary supplement,No,Not Applicable
+1768,Sun Pharma Azithromycin 500mg,Medicine,99043272,749.14,Standard Pack,3,2028-10-11,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+1769,Zydus Insulin Glargine,Medicine,93304578,486.82,Standard Pack,459,2028-03-31,Long-acting insulin,Yes,Avoid alcohol
+1770,Glenmark Antiseptic Liquid,Body Care,47616749,608.86,Standard Pack,384,2028-04-02,Kills germs and bacteria,No,Not Applicable
+1771,Glenmark Vitamin D3 60000 IU,Supplement,66797703,727.91,Standard Pack,276,2026-09-23,Vitamin D supplement,No,Not Applicable
+1772,Mankind Adult Diapers,Sanitary,33461307,696.65,Standard Pack,61,2028-08-05,Incontinence protection,No,Not Applicable
+1773,Zydus Baby Wipes,Sanitary,11129926,37.49,Standard Pack,107,2027-09-13,Gentle cleansing wipes,No,Not Applicable
+1774,Zydus Sanitary Pads Pack,Sanitary,58533442,926.91,Standard Pack,132,2027-02-28,Women hygiene product,No,Not Applicable
+1775,Lupin Adult Diapers,Sanitary,46159360,717.59,Standard Pack,313,2027-08-07,Incontinence protection,No,Not Applicable
+1776,Alkem Sunscreen SPF 50,Skincare,66900650,331.59,Standard Pack,358,2028-09-29,UV protection lotion,No,Not Applicable
+1777,Mankind Acne Control Gel,Skincare,47531240,687.08,Standard Pack,292,2027-01-02,Reduces acne and pimples,No,Not Applicable
+1778,Sun Pharma Tampons Pack,Sanitary,46231955,1210.05,Standard Pack,284,2027-11-06,Menstrual hygiene product,No,Not Applicable
+1779,Dr Reddy's Antiseptic Liquid,Body Care,30072000,720.02,Standard Pack,4,2027-02-17,Kills germs and bacteria,No,Not Applicable
+1780,Dr Reddy's Medicated Soap,Body Care,94644676,785.17,Standard Pack,368,2027-07-10,Skin infection protection,No,Not Applicable
+1781,Torrent Hand Sanitizer,Body Care,85448945,1290.58,Standard Pack,24,2027-10-02,Alcohol-based hand cleaner,No,Not Applicable
+1782,Cipla Metformin 500mg,Medicine,38919534,1224.45,Standard Pack,243,2028-05-26,Type 2 diabetes management,Yes,Avoid with Warfarin
+1783,Torrent Hand Sanitizer,Body Care,58447502,553.25,Standard Pack,285,2027-05-11,Alcohol-based hand cleaner,No,Not Applicable
+1784,Mankind Cetaphil Cleanser,Skincare,26272220,539.61,Standard Pack,347,2028-05-02,Gentle skin cleanser,No,Not Applicable
+1785,Abbott Calcium + Vitamin D,Supplement,97223468,980.71,Standard Pack,89,2028-10-28,Bone health supplement,No,Not Applicable
+1786,Zydus Acne Control Gel,Skincare,78510704,741.49,Standard Pack,377,2027-11-21,Reduces acne and pimples,No,Not Applicable
+1787,Abbott Pantoprazole 40mg,Medicine,48456543,706.35,Standard Pack,489,2027-01-16,Acidity treatment,Yes,May interact with Metformin
+1788,Abbott Moisturizing Cream,Skincare,86723896,619.06,Standard Pack,464,2026-11-02,Hydrates dry skin,No,Not Applicable
+1789,Zydus Metformin 500mg,Medicine,40630893,483.95,Standard Pack,334,2027-06-15,Type 2 diabetes management,Yes,Avoid alcohol
+1790,Torrent Baby Wipes,Sanitary,69713250,1175.84,Standard Pack,480,2027-08-27,Gentle cleansing wipes,No,Not Applicable
+1791,Alkem Face Masks Pack,Sanitary,65564671,267.63,Standard Pack,437,2026-09-13,Protective face masks,No,Not Applicable
+1792,Torrent Multivitamin Capsules,Supplement,20746107,331.65,Standard Pack,203,2026-12-04,General dietary supplement,No,Not Applicable
+1793,Alkem Azithromycin 500mg,Medicine,83609531,99.66,Standard Pack,394,2027-10-01,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+1794,Torrent Azithromycin 500mg,Medicine,92960269,249.81,Standard Pack,335,2027-09-24,Antibiotic for bacterial infections,Yes,Avoid alcohol
+1795,Torrent Multivitamin Capsules,Supplement,69479985,947.19,Standard Pack,67,2028-02-11,General dietary supplement,No,Not Applicable
+1796,Cipla Vitamin D3 60000 IU,Supplement,99060057,548.13,Standard Pack,468,2027-07-20,Vitamin D supplement,No,Not Applicable
+1797,Glenmark Medicated Soap,Body Care,46562845,831.85,Standard Pack,69,2028-08-04,Skin infection protection,No,Not Applicable
+1798,Abbott Tampons Pack,Sanitary,90206393,695.68,Standard Pack,383,2028-06-02,Menstrual hygiene product,No,Not Applicable
+1799,Glenmark Baby Wipes,Sanitary,95870691,966.5,Standard Pack,158,2027-08-11,Gentle cleansing wipes,No,Not Applicable
+1800,Lupin Foot Care Cream,Body Care,22019737,673.95,Standard Pack,187,2027-10-17,Cracked heel treatment,No,Not Applicable
+1801,Torrent Sunscreen SPF 50,Skincare,11416778,20.14,Standard Pack,417,2028-10-05,UV protection lotion,No,Not Applicable
+1802,Torrent Omega 3 Fish Oil,Supplement,72974683,811.95,Standard Pack,352,2028-01-06,Heart health supplement,No,Not Applicable
+1803,Cipla Hand Sanitizer,Body Care,67772049,1200.99,Standard Pack,305,2027-04-14,Alcohol-based hand cleaner,No,Not Applicable
+1804,Zydus Levothyroxine 50mcg,Medicine,35309568,629.37,Standard Pack,287,2027-11-11,Thyroid hormone replacement,Yes,No major interactions reported
+1805,Mankind Multivitamin Capsules,Supplement,60782359,346.48,Standard Pack,40,2027-10-27,General dietary supplement,No,Not Applicable
+1806,Abbott Calcium + Vitamin D,Supplement,46489118,441.32,Standard Pack,380,2028-02-16,Bone health supplement,No,Not Applicable
+1807,Lupin Moisturizing Cream,Skincare,19189076,289.96,Standard Pack,148,2026-12-12,Hydrates dry skin,No,Not Applicable
+1808,Alkem Foot Care Cream,Body Care,46525224,1056.7,Standard Pack,251,2027-03-01,Cracked heel treatment,No,Not Applicable
+1809,Dr Reddy's Cetaphil Cleanser,Skincare,16661503,1455.18,Standard Pack,11,2027-02-27,Gentle skin cleanser,No,Not Applicable
+1810,Torrent Cetirizine 10mg,Medicine,26782477,1078.49,Standard Pack,372,2026-08-29,Allergy relief,No,May interact with Metformin
+1811,Cipla Metformin 500mg,Medicine,76247126,341.44,Standard Pack,215,2027-07-06,Type 2 diabetes management,Yes,No major interactions reported
+1812,Cipla Moisturizing Cream,Skincare,54325223,138.73,Standard Pack,384,2027-01-17,Hydrates dry skin,No,Not Applicable
+1813,Mankind Cetirizine 10mg,Medicine,19581091,823.92,Standard Pack,92,2027-03-05,Allergy relief,No,Avoid alcohol
+1814,Sun Pharma Body Lotion,Body Care,43415162,589.5,Standard Pack,499,2027-11-17,Hydrating body lotion,No,Not Applicable
+1815,Lupin Vitamin D3 60000 IU,Supplement,71852177,1108.28,Standard Pack,48,2028-02-05,Vitamin D supplement,No,Not Applicable
+1816,Mankind Iron Folic Acid,Supplement,51890609,1405.6,Standard Pack,81,2028-05-26,Iron deficiency treatment,No,Not Applicable
+1817,Glenmark Levothyroxine 50mcg,Medicine,26393556,394.9,Standard Pack,326,2027-06-22,Thyroid hormone replacement,Yes,May interact with Metformin
+1818,Lupin Cetaphil Cleanser,Skincare,25157001,369.23,Standard Pack,222,2027-07-19,Gentle skin cleanser,No,Not Applicable
+1819,Torrent Metformin 500mg,Medicine,88476684,197.08,Standard Pack,404,2027-04-26,Type 2 diabetes management,Yes,Avoid with Warfarin
+1820,Alkem Montelukast 10mg,Medicine,90022258,249.39,Standard Pack,394,2026-11-20,Asthma prevention,Yes,May interact with Metformin
+1821,Sun Pharma Iron Folic Acid,Supplement,93033107,520.86,Standard Pack,496,2028-10-06,Iron deficiency treatment,No,Not Applicable
+1822,Zydus Paracetamol 500mg,Medicine,96513378,247.8,Standard Pack,274,2028-11-08,Pain reliever and fever reducer,No,Avoid with Warfarin
+1823,Lupin Iron Folic Acid,Supplement,52512063,1472.88,Standard Pack,403,2028-06-11,Iron deficiency treatment,No,Not Applicable
+1824,Lupin Moisturizing Cream,Skincare,12865928,1040.09,Standard Pack,183,2028-08-31,Hydrates dry skin,No,Not Applicable
+1825,Cipla Omega 3 Fish Oil,Supplement,75136149,1065.81,Standard Pack,286,2027-06-18,Heart health supplement,No,Not Applicable
+1826,Lupin Baby Wipes,Sanitary,86061419,296.21,Standard Pack,178,2027-07-18,Gentle cleansing wipes,No,Not Applicable
+1827,Abbott Hand Sanitizer,Body Care,84426456,257.31,Standard Pack,271,2027-01-26,Alcohol-based hand cleaner,No,Not Applicable
+1828,Torrent Hand Sanitizer,Body Care,82693120,563.33,Standard Pack,0,2028-10-23,Alcohol-based hand cleaner,No,Not Applicable
+1829,Dr Reddy's Baby Wipes,Sanitary,12512536,937.21,Standard Pack,186,2028-10-23,Gentle cleansing wipes,No,Not Applicable
+1830,Zydus Tampons Pack,Sanitary,18501586,994.27,Standard Pack,275,2027-09-21,Menstrual hygiene product,No,Not Applicable
+1831,Alkem Calcium + Vitamin D,Supplement,84016756,248.11,Standard Pack,144,2027-07-17,Bone health supplement,No,Not Applicable
+1832,Sun Pharma Hand Sanitizer,Body Care,22919301,794.34,Standard Pack,34,2026-10-04,Alcohol-based hand cleaner,No,Not Applicable
+1833,Cipla Multivitamin Capsules,Supplement,37122588,178.44,Standard Pack,98,2026-11-30,General dietary supplement,No,Not Applicable
+1834,Mankind Montelukast 10mg,Medicine,98304696,745.07,Standard Pack,319,2028-08-08,Asthma prevention,Yes,Consult doctor if taking BP medication
+1835,Zydus Cetaphil Cleanser,Skincare,39624910,916.81,Standard Pack,36,2026-09-03,Gentle skin cleanser,No,Not Applicable
+1836,Sun Pharma Iron Folic Acid,Supplement,72821834,1205.51,Standard Pack,31,2027-08-25,Iron deficiency treatment,No,Not Applicable
+1837,Zydus Baby Wipes,Sanitary,17824896,1238.99,Standard Pack,136,2028-02-13,Gentle cleansing wipes,No,Not Applicable
+1838,Torrent Azithromycin 500mg,Medicine,20460308,1418.01,Standard Pack,491,2028-02-03,Antibiotic for bacterial infections,Yes,Avoid with Warfarin
+1839,Glenmark Amlodipine 5mg,Medicine,61718263,300.4,Standard Pack,269,2028-06-23,Hypertension treatment,Yes,May interact with Metformin
+1840,Glenmark Tampons Pack,Sanitary,84912498,634.47,Standard Pack,54,2028-10-13,Menstrual hygiene product,No,Not Applicable
+1841,Alkem Adult Diapers,Sanitary,99287317,652.07,Standard Pack,53,2027-02-07,Incontinence protection,No,Not Applicable
+1842,Mankind Calcium + Vitamin D,Supplement,77738718,519.52,Standard Pack,80,2028-02-18,Bone health supplement,No,Not Applicable
+1843,Zydus Baby Wipes,Sanitary,52299387,834.12,Standard Pack,166,2027-09-05,Gentle cleansing wipes,No,Not Applicable
+1844,Zydus Medicated Soap,Body Care,91659860,376.27,Standard Pack,279,2027-03-28,Skin infection protection,No,Not Applicable
+1845,Torrent Foot Care Cream,Body Care,58319528,1443.24,Standard Pack,229,2027-10-01,Cracked heel treatment,No,Not Applicable
+1846,Torrent Paracetamol 500mg,Medicine,89961933,44.13,Standard Pack,69,2027-06-26,Pain reliever and fever reducer,No,Avoid with Warfarin
+1847,Lupin Sunscreen SPF 50,Skincare,52265790,52.12,Standard Pack,420,2028-07-27,UV protection lotion,No,Not Applicable
+1848,Glenmark Aloe Vera Gel,Skincare,84668420,864.59,Standard Pack,292,2027-01-26,Soothing skin gel,No,Not Applicable
+1849,Alkem Paracetamol 500mg,Medicine,57735307,251.04,Standard Pack,135,2027-08-31,Pain reliever and fever reducer,No,Consult doctor if taking BP medication
+1850,Torrent Multivitamin Capsules,Supplement,50305910,156.02,Standard Pack,204,2028-03-25,General dietary supplement,No,Not Applicable
+1851,Zydus Vitamin D3 60000 IU,Supplement,74764506,275.9,Standard Pack,422,2028-07-27,Vitamin D supplement,No,Not Applicable
+1852,Abbott Sanitary Pads Pack,Sanitary,96201956,464.58,Standard Pack,374,2028-04-02,Women hygiene product,No,Not Applicable
+1853,Cipla Body Lotion,Body Care,54881018,534.94,Standard Pack,418,2027-11-08,Hydrating body lotion,No,Not Applicable
+1854,Lupin Body Lotion,Body Care,97614538,1277.23,Standard Pack,475,2026-09-01,Hydrating body lotion,No,Not Applicable
+1855,Torrent Body Lotion,Body Care,80381542,80.95,Standard Pack,276,2028-03-21,Hydrating body lotion,No,Not Applicable
+1856,Glenmark Omega 3 Fish Oil,Supplement,39634895,246.73,Standard Pack,344,2028-09-08,Heart health supplement,No,Not Applicable
+1857,Abbott Medicated Soap,Body Care,87209399,767.0,Standard Pack,113,2027-11-06,Skin infection protection,No,Not Applicable
+1858,Dr Reddy's Moisturizing Cream,Skincare,27742113,517.53,Standard Pack,243,2028-03-28,Hydrates dry skin,No,Not Applicable
+1859,Mankind Levothyroxine 50mcg,Medicine,45239935,145.92,Standard Pack,256,2027-11-08,Thyroid hormone replacement,Yes,May interact with Metformin
+1860,Glenmark Iron Folic Acid,Supplement,36589676,742.03,Standard Pack,333,2028-03-28,Iron deficiency treatment,No,Not Applicable
+1861,Abbott Calcium + Vitamin D,Supplement,80363346,384.44,Standard Pack,36,2027-05-20,Bone health supplement,No,Not Applicable
+1862,Abbott Hand Sanitizer,Body Care,22025190,186.54,Standard Pack,211,2027-10-28,Alcohol-based hand cleaner,No,Not Applicable
+1863,Lupin Acne Control Gel,Skincare,53048774,529.9,Standard Pack,335,2026-09-14,Reduces acne and pimples,No,Not Applicable
+1864,Zydus Sunscreen SPF 50,Skincare,92707781,1235.94,Standard Pack,411,2027-11-16,UV protection lotion,No,Not Applicable
+1865,Alkem Tampons Pack,Sanitary,16023362,1387.84,Standard Pack,119,2027-03-13,Menstrual hygiene product,No,Not Applicable
+1866,Sun Pharma Sunscreen SPF 50,Skincare,25082279,1114.58,Standard Pack,124,2028-05-17,UV protection lotion,No,Not Applicable
+1867,Cipla Omega 3 Fish Oil,Supplement,56073103,1046.82,Standard Pack,56,2027-06-29,Heart health supplement,No,Not Applicable
+1868,Cipla Medicated Soap,Body Care,54543739,329.33,Standard Pack,275,2027-03-25,Skin infection protection,No,Not Applicable
+1869,Glenmark Calcium + Vitamin D,Supplement,44716489,832.22,Standard Pack,318,2028-09-06,Bone health supplement,No,Not Applicable
+1870,Mankind Vitamin D3 60000 IU,Supplement,88249598,1360.94,Standard Pack,269,2026-10-04,Vitamin D supplement,No,Not Applicable
+1871,Cipla Sunscreen SPF 50,Skincare,48119652,317.03,Standard Pack,356,2028-05-14,UV protection lotion,No,Not Applicable
+1872,Alkem Cetaphil Cleanser,Skincare,97880113,1418.86,Standard Pack,34,2027-09-22,Gentle skin cleanser,No,Not Applicable
+1873,Sun Pharma Acne Control Gel,Skincare,12560649,452.89,Standard Pack,452,2028-06-15,Reduces acne and pimples,No,Not Applicable
+1874,Mankind Antiseptic Liquid,Body Care,78255127,1465.39,Standard Pack,50,2027-07-10,Kills germs and bacteria,No,Not Applicable
+1875,Glenmark Foot Care Cream,Body Care,21813934,295.9,Standard Pack,256,2027-12-02,Cracked heel treatment,No,Not Applicable
+1876,Cipla Sanitary Pads Pack,Sanitary,43204410,1384.96,Standard Pack,156,2027-07-28,Women hygiene product,No,Not Applicable
+1877,Dr Reddy's Medicated Soap,Body Care,12465878,533.23,Standard Pack,180,2027-08-19,Skin infection protection,No,Not Applicable
+1878,Glenmark Sunscreen SPF 50,Skincare,47027755,1221.6,Standard Pack,320,2027-05-11,UV protection lotion,No,Not Applicable
+1879,Glenmark Body Lotion,Body Care,47606981,353.86,Standard Pack,174,2027-09-27,Hydrating body lotion,No,Not Applicable
+1880,Mankind Vitamin D3 60000 IU,Supplement,79889565,1441.7,Standard Pack,313,2028-05-22,Vitamin D supplement,No,Not Applicable
+1881,Lupin Iron Folic Acid,Supplement,86893142,246.07,Standard Pack,496,2027-07-06,Iron deficiency treatment,No,Not Applicable
+1882,Alkem Adult Diapers,Sanitary,82777382,215.02,Standard Pack,334,2027-01-09,Incontinence protection,No,Not Applicable
+1883,Lupin Face Masks Pack,Sanitary,28536762,477.32,Standard Pack,361,2028-02-08,Protective face masks,No,Not Applicable
+1884,Dr Reddy's Iron Folic Acid,Supplement,98077934,1400.88,Standard Pack,469,2027-01-29,Iron deficiency treatment,No,Not Applicable
+1885,Glenmark Cetaphil Cleanser,Skincare,81532887,1423.93,Standard Pack,60,2027-02-25,Gentle skin cleanser,No,Not Applicable
+1886,Cipla Sunscreen SPF 50,Skincare,52773504,1322.6,Standard Pack,211,2027-10-16,UV protection lotion,No,Not Applicable
+1887,Torrent Moisturizing Cream,Skincare,30395330,1173.08,Standard Pack,54,2027-01-02,Hydrates dry skin,No,Not Applicable
+1888,Abbott Vitamin D3 60000 IU,Supplement,92805158,414.96,Standard Pack,290,2028-05-09,Vitamin D supplement,No,Not Applicable
+1889,Lupin Calcium + Vitamin D,Supplement,40992534,1037.32,Standard Pack,183,2026-11-10,Bone health supplement,No,Not Applicable
+1890,Glenmark Antiseptic Liquid,Body Care,91163038,713.77,Standard Pack,332,2027-09-07,Kills germs and bacteria,No,Not Applicable
+1891,Alkem Iron Folic Acid,Supplement,73598657,223.52,Standard Pack,98,2027-04-09,Iron deficiency treatment,No,Not Applicable
+1892,Cipla Pantoprazole 40mg,Medicine,46219821,1426.29,Standard Pack,113,2028-09-19,Acidity treatment,Yes,May interact with Metformin
+1893,Dr Reddy's Vitamin D3 60000 IU,Supplement,68959861,1303.35,Standard Pack,250,2028-07-25,Vitamin D supplement,No,Not Applicable
+1894,Lupin Moisturizing Cream,Skincare,67385552,619.2,Standard Pack,21,2028-05-04,Hydrates dry skin,No,Not Applicable
+1895,Mankind Hand Sanitizer,Body Care,92074794,1409.93,Standard Pack,292,2028-04-20,Alcohol-based hand cleaner,No,Not Applicable
+1896,Cipla Face Masks Pack,Sanitary,79880338,181.79,Standard Pack,233,2026-10-03,Protective face masks,No,Not Applicable
+1897,Glenmark Calcium + Vitamin D,Supplement,63098035,1476.07,Standard Pack,20,2028-03-14,Bone health supplement,No,Not Applicable
+1898,Cipla Foot Care Cream,Body Care,35481281,450.95,Standard Pack,203,2027-06-28,Cracked heel treatment,No,Not Applicable
+1899,Dr Reddy's Moisturizing Cream,Skincare,66701914,455.74,Standard Pack,470,2026-10-15,Hydrates dry skin,No,Not Applicable
+1900,Alkem Tampons Pack,Sanitary,96718276,688.51,Standard Pack,369,2028-01-15,Menstrual hygiene product,No,Not Applicable
+1901,Abbott Metformin 500mg,Medicine,83337520,220.25,Standard Pack,211,2027-07-18,Type 2 diabetes management,Yes,No major interactions reported
+1902,Alkem Metformin 500mg,Medicine,89230801,1346.99,Standard Pack,458,2027-03-15,Type 2 diabetes management,Yes,No major interactions reported
+1903,Zydus Cetirizine 10mg,Medicine,97050454,1362.6,Standard Pack,407,2027-02-04,Allergy relief,No,Avoid with Warfarin
+1904,Alkem Azithromycin 500mg,Medicine,95103759,557.16,Standard Pack,268,2028-08-14,Antibiotic for bacterial infections,Yes,No major interactions reported
+1905,Dr Reddy's Face Masks Pack,Sanitary,60825385,834.51,Standard Pack,22,2028-10-15,Protective face masks,No,Not Applicable
+1906,Abbott Omega 3 Fish Oil,Supplement,98520663,1296.76,Standard Pack,83,2027-01-16,Heart health supplement,No,Not Applicable
+1907,Mankind Vitamin D3 60000 IU,Supplement,51347409,478.09,Standard Pack,393,2027-11-20,Vitamin D supplement,No,Not Applicable
+1908,Sun Pharma Sunscreen SPF 50,Skincare,27659164,1441.44,Standard Pack,1,2028-05-19,UV protection lotion,No,Not Applicable
+1909,Alkem Cetaphil Cleanser,Skincare,76790446,1286.01,Standard Pack,278,2026-08-26,Gentle skin cleanser,No,Not Applicable
+1910,Lupin Baby Wipes,Sanitary,39108314,891.52,Standard Pack,243,2027-11-28,Gentle cleansing wipes,No,Not Applicable
+1911,Sun Pharma Medicated Soap,Body Care,90693921,908.15,Standard Pack,125,2028-03-03,Skin infection protection,No,Not Applicable
+1912,Glenmark Aloe Vera Gel,Skincare,37868647,92.4,Standard Pack,75,2026-10-16,Soothing skin gel,No,Not Applicable
+1913,Dr Reddy's Cetaphil Cleanser,Skincare,14352961,1007.15,Standard Pack,429,2028-04-29,Gentle skin cleanser,No,Not Applicable
+1914,Sun Pharma Acne Control Gel,Skincare,16580878,181.15,Standard Pack,91,2027-02-02,Reduces acne and pimples,No,Not Applicable
+1915,Abbott Aloe Vera Gel,Skincare,86810468,1185.22,Standard Pack,90,2027-11-30,Soothing skin gel,No,Not Applicable
+1916,Cipla Adult Diapers,Sanitary,22499198,1157.4,Standard Pack,165,2027-09-02,Incontinence protection,No,Not Applicable
+1917,Mankind Body Lotion,Body Care,83882978,116.09,Standard Pack,241,2027-01-05,Hydrating body lotion,No,Not Applicable
+1918,Zydus Cetirizine 10mg,Medicine,80739820,632.36,Standard Pack,107,2028-08-02,Allergy relief,No,May interact with Metformin
+1919,Sun Pharma Sanitary Pads Pack,Sanitary,86687590,1100.0,Standard Pack,322,2028-02-13,Women hygiene product,No,Not Applicable
+1920,Abbott Insulin Glargine,Medicine,48545627,652.04,Standard Pack,434,2027-07-11,Long-acting insulin,Yes,Avoid alcohol
+1921,Abbott Face Masks Pack,Sanitary,57493391,1392.12,Standard Pack,314,2028-03-19,Protective face masks,No,Not Applicable
+1922,Alkem Foot Care Cream,Body Care,76102828,1215.81,Standard Pack,452,2028-05-06,Cracked heel treatment,No,Not Applicable
+1923,Lupin Omega 3 Fish Oil,Supplement,10212187,194.95,Standard Pack,238,2028-05-22,Heart health supplement,No,Not Applicable
+1924,Abbott Amlodipine 5mg,Medicine,65650977,632.78,Standard Pack,170,2027-08-14,Hypertension treatment,Yes,Consult doctor if taking BP medication
+1925,Lupin Vitamin D3 60000 IU,Supplement,47799296,396.54,Standard Pack,34,2027-07-02,Vitamin D supplement,No,Not Applicable
+1926,Glenmark Aloe Vera Gel,Skincare,53476321,1155.21,Standard Pack,58,2028-07-23,Soothing skin gel,No,Not Applicable
+1927,Mankind Acne Control Gel,Skincare,86359356,931.67,Standard Pack,14,2027-02-16,Reduces acne and pimples,No,Not Applicable
+1928,Zydus Omega 3 Fish Oil,Supplement,74304823,1375.92,Standard Pack,408,2026-09-26,Heart health supplement,No,Not Applicable
+1929,Dr Reddy's Iron Folic Acid,Supplement,94181424,701.71,Standard Pack,442,2028-02-21,Iron deficiency treatment,No,Not Applicable
+1930,Mankind Moisturizing Cream,Skincare,17519183,1255.96,Standard Pack,153,2028-03-21,Hydrates dry skin,No,Not Applicable
+1931,Glenmark Aloe Vera Gel,Skincare,12512345,328.23,Standard Pack,350,2027-07-26,Soothing skin gel,No,Not Applicable
+1932,Dr Reddy's Cetaphil Cleanser,Skincare,47642707,1264.29,Standard Pack,173,2027-09-09,Gentle skin cleanser,No,Not Applicable
+1933,Abbott Tampons Pack,Sanitary,91294213,596.56,Standard Pack,304,2026-12-18,Menstrual hygiene product,No,Not Applicable
+1934,Cipla Acne Control Gel,Skincare,46439766,632.53,Standard Pack,254,2027-04-21,Reduces acne and pimples,No,Not Applicable
+1935,Torrent Moisturizing Cream,Skincare,39009803,797.15,Standard Pack,89,2026-12-13,Hydrates dry skin,No,Not Applicable
+1936,Lupin Cetaphil Cleanser,Skincare,22429114,676.79,Standard Pack,12,2028-11-16,Gentle skin cleanser,No,Not Applicable
+1937,Dr Reddy's Foot Care Cream,Body Care,35529779,523.37,Standard Pack,247,2028-09-09,Cracked heel treatment,No,Not Applicable
+1938,Zydus Adult Diapers,Sanitary,29232735,1158.83,Standard Pack,50,2028-01-31,Incontinence protection,No,Not Applicable
+1939,Cipla Multivitamin Capsules,Supplement,71655384,593.63,Standard Pack,442,2028-02-06,General dietary supplement,No,Not Applicable
+1940,Torrent Paracetamol 500mg,Medicine,15909601,1036.84,Standard Pack,304,2026-11-18,Pain reliever and fever reducer,No,Avoid alcohol
+1941,Sun Pharma Body Lotion,Body Care,79870757,1153.95,Standard Pack,381,2027-07-06,Hydrating body lotion,No,Not Applicable
+1942,Torrent Montelukast 10mg,Medicine,95745109,1340.36,Standard Pack,164,2027-03-14,Asthma prevention,Yes,May interact with Metformin
+1943,Glenmark Acne Control Gel,Skincare,52835559,1163.72,Standard Pack,343,2026-12-19,Reduces acne and pimples,No,Not Applicable
+1944,Dr Reddy's Sunscreen SPF 50,Skincare,46726921,189.4,Standard Pack,490,2028-05-19,UV protection lotion,No,Not Applicable
+1945,Sun Pharma Face Masks Pack,Sanitary,37726346,822.94,Standard Pack,281,2027-07-13,Protective face masks,No,Not Applicable
+1946,Torrent Sunscreen SPF 50,Skincare,87052108,382.34,Standard Pack,36,2027-07-05,UV protection lotion,No,Not Applicable
+1947,Glenmark Adult Diapers,Sanitary,69545378,95.07,Standard Pack,14,2027-12-16,Incontinence protection,No,Not Applicable
+1948,Mankind Azithromycin 500mg,Medicine,17220897,147.46,Standard Pack,200,2027-02-20,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+1949,Abbott Baby Wipes,Sanitary,57731087,482.41,Standard Pack,418,2027-03-11,Gentle cleansing wipes,No,Not Applicable
+1950,Alkem Sanitary Pads Pack,Sanitary,86207390,215.06,Standard Pack,416,2028-08-05,Women hygiene product,No,Not Applicable
+1951,Alkem Body Lotion,Body Care,51660066,1033.03,Standard Pack,363,2028-10-13,Hydrating body lotion,No,Not Applicable
+1952,Lupin Medicated Soap,Body Care,40037183,232.71,Standard Pack,458,2028-05-13,Skin infection protection,No,Not Applicable
+1953,Mankind Acne Control Gel,Skincare,34609232,1055.43,Standard Pack,340,2027-07-25,Reduces acne and pimples,No,Not Applicable
+1954,Alkem Moisturizing Cream,Skincare,14061983,116.74,Standard Pack,57,2027-08-15,Hydrates dry skin,No,Not Applicable
+1955,Dr Reddy's Medicated Soap,Body Care,47883942,1156.55,Standard Pack,309,2028-03-31,Skin infection protection,No,Not Applicable
+1956,Sun Pharma Calcium + Vitamin D,Supplement,64450250,1229.98,Standard Pack,407,2026-12-08,Bone health supplement,No,Not Applicable
+1957,Sun Pharma Aloe Vera Gel,Skincare,50549608,808.46,Standard Pack,205,2028-04-16,Soothing skin gel,No,Not Applicable
+1958,Abbott Antiseptic Liquid,Body Care,42707660,830.96,Standard Pack,498,2027-12-27,Kills germs and bacteria,No,Not Applicable
+1959,Zydus Body Lotion,Body Care,37949250,1224.6,Standard Pack,302,2027-11-05,Hydrating body lotion,No,Not Applicable
+1960,Zydus Foot Care Cream,Body Care,83085160,1047.32,Standard Pack,88,2028-06-29,Cracked heel treatment,No,Not Applicable
+1961,Alkem Montelukast 10mg,Medicine,25344154,896.4,Standard Pack,237,2027-07-20,Asthma prevention,Yes,Consult doctor if taking BP medication
+1962,Dr Reddy's Insulin Glargine,Medicine,51343854,1434.71,Standard Pack,35,2028-04-24,Long-acting insulin,Yes,Avoid with Warfarin
+1963,Zydus Baby Wipes,Sanitary,76343171,974.58,Standard Pack,31,2026-11-21,Gentle cleansing wipes,No,Not Applicable
+1964,Abbott Multivitamin Capsules,Supplement,95380301,1218.56,Standard Pack,387,2027-01-18,General dietary supplement,No,Not Applicable
+1965,Glenmark Iron Folic Acid,Supplement,49124904,597.17,Standard Pack,295,2027-11-21,Iron deficiency treatment,No,Not Applicable
+1966,Zydus Multivitamin Capsules,Supplement,50229795,864.01,Standard Pack,467,2028-07-16,General dietary supplement,No,Not Applicable
+1967,Zydus Moisturizing Cream,Skincare,21983952,882.44,Standard Pack,313,2028-01-25,Hydrates dry skin,No,Not Applicable
+1968,Torrent Antiseptic Liquid,Body Care,18376603,566.45,Standard Pack,281,2026-10-14,Kills germs and bacteria,No,Not Applicable
+1969,Zydus Levothyroxine 50mcg,Medicine,24723458,1294.65,Standard Pack,443,2026-09-21,Thyroid hormone replacement,Yes,May interact with Metformin
+1970,Mankind Foot Care Cream,Body Care,93914843,490.83,Standard Pack,195,2027-10-10,Cracked heel treatment,No,Not Applicable
+1971,Glenmark Medicated Soap,Body Care,38348941,1000.48,Standard Pack,243,2027-01-10,Skin infection protection,No,Not Applicable
+1972,Mankind Calcium + Vitamin D,Supplement,58357021,1263.14,Standard Pack,78,2027-06-12,Bone health supplement,No,Not Applicable
+1973,Cipla Multivitamin Capsules,Supplement,19629584,979.62,Standard Pack,73,2028-08-28,General dietary supplement,No,Not Applicable
+1974,Dr Reddy's Medicated Soap,Body Care,21363335,223.09,Standard Pack,412,2027-10-20,Skin infection protection,No,Not Applicable
+1975,Mankind Foot Care Cream,Body Care,93650995,286.1,Standard Pack,260,2027-10-29,Cracked heel treatment,No,Not Applicable
+1976,Mankind Baby Wipes,Sanitary,57688529,354.1,Standard Pack,217,2028-05-01,Gentle cleansing wipes,No,Not Applicable
+1977,Alkem Montelukast 10mg,Medicine,41776042,1073.95,Standard Pack,137,2027-10-15,Asthma prevention,Yes,Consult doctor if taking BP medication
+1978,Cipla Adult Diapers,Sanitary,15082158,860.86,Standard Pack,360,2027-09-02,Incontinence protection,No,Not Applicable
+1979,Alkem Montelukast 10mg,Medicine,20745888,230.29,Standard Pack,374,2028-02-11,Asthma prevention,Yes,Avoid alcohol
+1980,Sun Pharma Foot Care Cream,Body Care,80243759,1337.07,Standard Pack,45,2027-04-29,Cracked heel treatment,No,Not Applicable
+1981,Glenmark Body Lotion,Body Care,87796412,482.5,Standard Pack,27,2027-08-07,Hydrating body lotion,No,Not Applicable
+1982,Alkem Sanitary Pads Pack,Sanitary,70939515,778.74,Standard Pack,240,2028-03-30,Women hygiene product,No,Not Applicable
+1983,Zydus Moisturizing Cream,Skincare,49542951,448.03,Standard Pack,18,2028-08-01,Hydrates dry skin,No,Not Applicable
+1984,Abbott Adult Diapers,Sanitary,44956086,110.9,Standard Pack,242,2028-04-04,Incontinence protection,No,Not Applicable
+1985,Cipla Calcium + Vitamin D,Supplement,98089763,1485.74,Standard Pack,414,2028-09-14,Bone health supplement,No,Not Applicable
+1986,Torrent Sanitary Pads Pack,Sanitary,75063411,142.12,Standard Pack,258,2026-11-07,Women hygiene product,No,Not Applicable
+1987,Dr Reddy's Acne Control Gel,Skincare,92650976,435.84,Standard Pack,439,2027-05-11,Reduces acne and pimples,No,Not Applicable
+1988,Abbott Azithromycin 500mg,Medicine,33436273,1366.99,Standard Pack,378,2027-01-22,Antibiotic for bacterial infections,Yes,No major interactions reported
+1989,Torrent Sunscreen SPF 50,Skincare,41701674,737.68,Standard Pack,409,2028-02-12,UV protection lotion,No,Not Applicable
+1990,Sun Pharma Ibuprofen 400mg,Medicine,29470999,901.41,Standard Pack,420,2027-01-25,Anti-inflammatory pain reliever,No,No major interactions reported
+1991,Lupin Medicated Soap,Body Care,98673262,671.47,Standard Pack,326,2027-02-08,Skin infection protection,No,Not Applicable
+1992,Zydus Calcium + Vitamin D,Supplement,17291483,970.55,Standard Pack,386,2026-12-17,Bone health supplement,No,Not Applicable
+1993,Alkem Metformin 500mg,Medicine,63518621,724.82,Standard Pack,243,2028-09-23,Type 2 diabetes management,Yes,Consult doctor if taking BP medication
+1994,Mankind Iron Folic Acid,Supplement,73698335,408.69,Standard Pack,271,2027-11-09,Iron deficiency treatment,No,Not Applicable
+1995,Alkem Cetirizine 10mg,Medicine,61271721,1024.17,Standard Pack,492,2028-02-14,Allergy relief,No,Avoid with Warfarin
+1996,Zydus Levothyroxine 50mcg,Medicine,67953319,923.52,Standard Pack,333,2027-05-27,Thyroid hormone replacement,Yes,Avoid alcohol
+1997,Sun Pharma Acne Control Gel,Skincare,44271680,988.43,Standard Pack,200,2027-12-06,Reduces acne and pimples,No,Not Applicable
+1998,Lupin Calcium + Vitamin D,Supplement,79786819,519.36,Standard Pack,353,2027-02-21,Bone health supplement,No,Not Applicable
+1999,Cipla Aloe Vera Gel,Skincare,11137651,1250.9,Standard Pack,6,2027-10-16,Soothing skin gel,No,Not Applicable
+2000,Sun Pharma Levothyroxine 50mcg,Medicine,69853349,540.24,Standard Pack,371,2027-06-07,Thyroid hormone replacement,Yes,Avoid alcohol
+2001,Cipla Vitamin D3 60000 IU,Supplement,93134088,156.07,Standard Pack,480,2028-04-20,Vitamin D supplement,No,Not Applicable
+2002,Sun Pharma Calcium + Vitamin D,Supplement,26103055,147.85,Standard Pack,309,2027-01-01,Bone health supplement,No,Not Applicable
+2003,Dr Reddy's Foot Care Cream,Body Care,24877375,1049.57,Standard Pack,129,2027-06-18,Cracked heel treatment,No,Not Applicable
+2004,Alkem Body Lotion,Body Care,47095573,1158.65,Standard Pack,354,2028-07-04,Hydrating body lotion,No,Not Applicable
+2005,Dr Reddy's Acne Control Gel,Skincare,19931717,430.39,Standard Pack,31,2027-09-16,Reduces acne and pimples,No,Not Applicable
+2006,Cipla Hand Sanitizer,Body Care,44660198,1434.3,Standard Pack,135,2027-02-19,Alcohol-based hand cleaner,No,Not Applicable
+2007,Alkem Body Lotion,Body Care,36933352,923.25,Standard Pack,91,2028-06-11,Hydrating body lotion,No,Not Applicable
+2008,Dr Reddy's Body Lotion,Body Care,82562419,1157.69,Standard Pack,111,2028-05-10,Hydrating body lotion,No,Not Applicable
+2009,Torrent Insulin Glargine,Medicine,23862962,71.59,Standard Pack,36,2028-03-28,Long-acting insulin,Yes,Avoid alcohol
+2010,Alkem Body Lotion,Body Care,29978882,986.24,Standard Pack,0,2026-09-28,Hydrating body lotion,No,Not Applicable
+2011,Dr Reddy's Hand Sanitizer,Body Care,54269149,1358.83,Standard Pack,294,2026-08-24,Alcohol-based hand cleaner,No,Not Applicable
+2012,Alkem Baby Wipes,Sanitary,68526669,617.79,Standard Pack,372,2028-10-28,Gentle cleansing wipes,No,Not Applicable
+2013,Lupin Levothyroxine 50mcg,Medicine,10443906,588.95,Standard Pack,352,2028-10-27,Thyroid hormone replacement,Yes,No major interactions reported
+2014,Glenmark Montelukast 10mg,Medicine,58173202,513.49,Standard Pack,155,2027-10-05,Asthma prevention,Yes,Avoid with Warfarin
+2015,Glenmark Ibuprofen 400mg,Medicine,55642455,139.08,Standard Pack,235,2028-10-07,Anti-inflammatory pain reliever,No,Avoid alcohol
+2016,Glenmark Multivitamin Capsules,Supplement,15278941,1451.92,Standard Pack,338,2027-03-04,General dietary supplement,No,Not Applicable
+2017,Sun Pharma Moisturizing Cream,Skincare,94639988,1039.49,Standard Pack,249,2026-11-15,Hydrates dry skin,No,Not Applicable
+2018,Dr Reddy's Antiseptic Liquid,Body Care,14791343,305.78,Standard Pack,368,2028-04-19,Kills germs and bacteria,No,Not Applicable
+2019,Mankind Iron Folic Acid,Supplement,18454727,1193.25,Standard Pack,329,2027-07-02,Iron deficiency treatment,No,Not Applicable
+2020,Alkem Foot Care Cream,Body Care,12203625,74.82,Standard Pack,28,2027-08-01,Cracked heel treatment,No,Not Applicable
+2021,Sun Pharma Pantoprazole 40mg,Medicine,38410963,1214.51,Standard Pack,341,2028-02-07,Acidity treatment,Yes,No major interactions reported
+2022,Abbott Tampons Pack,Sanitary,41270805,1388.73,Standard Pack,18,2028-09-12,Menstrual hygiene product,No,Not Applicable
+2023,Cipla Iron Folic Acid,Supplement,73246028,1362.62,Standard Pack,316,2026-10-06,Iron deficiency treatment,No,Not Applicable
+2024,Cipla Multivitamin Capsules,Supplement,33118870,956.34,Standard Pack,463,2027-07-01,General dietary supplement,No,Not Applicable
+2025,Abbott Insulin Glargine,Medicine,32909541,1256.32,Standard Pack,32,2026-12-07,Long-acting insulin,Yes,Avoid with Warfarin
+2026,Abbott Foot Care Cream,Body Care,39604743,113.4,Standard Pack,103,2027-10-31,Cracked heel treatment,No,Not Applicable
+2027,Zydus Moisturizing Cream,Skincare,26213828,1464.26,Standard Pack,294,2028-03-01,Hydrates dry skin,No,Not Applicable
+2028,Lupin Omega 3 Fish Oil,Supplement,16118522,897.77,Standard Pack,171,2026-10-24,Heart health supplement,No,Not Applicable
+2029,Dr Reddy's Cetirizine 10mg,Medicine,65721070,268.72,Standard Pack,189,2028-03-09,Allergy relief,No,May interact with Metformin
+2030,Abbott Antiseptic Liquid,Body Care,15462513,217.39,Standard Pack,405,2028-05-29,Kills germs and bacteria,No,Not Applicable
+2031,Dr Reddy's Baby Wipes,Sanitary,12097866,1321.85,Standard Pack,41,2026-08-27,Gentle cleansing wipes,No,Not Applicable
+2032,Sun Pharma Metformin 500mg,Medicine,97477181,898.72,Standard Pack,145,2027-10-21,Type 2 diabetes management,Yes,No major interactions reported
+2033,Dr Reddy's Multivitamin Capsules,Supplement,95875952,421.01,Standard Pack,230,2027-10-16,General dietary supplement,No,Not Applicable
+2034,Abbott Multivitamin Capsules,Supplement,15049433,902.48,Standard Pack,367,2028-01-14,General dietary supplement,No,Not Applicable
+2035,Torrent Sanitary Pads Pack,Sanitary,56688115,639.8,Standard Pack,285,2027-04-19,Women hygiene product,No,Not Applicable
+2036,Glenmark Vitamin D3 60000 IU,Supplement,22842469,936.0,Standard Pack,441,2028-10-08,Vitamin D supplement,No,Not Applicable
+2037,Lupin Face Masks Pack,Sanitary,72306017,1160.09,Standard Pack,337,2027-03-22,Protective face masks,No,Not Applicable
+2038,Lupin Cetaphil Cleanser,Skincare,25123535,1198.99,Standard Pack,350,2027-12-19,Gentle skin cleanser,No,Not Applicable
+2039,Dr Reddy's Antiseptic Liquid,Body Care,99945021,1385.56,Standard Pack,27,2028-06-11,Kills germs and bacteria,No,Not Applicable
+2040,Lupin Acne Control Gel,Skincare,68340640,392.05,Standard Pack,315,2028-10-05,Reduces acne and pimples,No,Not Applicable
+2041,Sun Pharma Body Lotion,Body Care,17040602,1388.79,Standard Pack,90,2027-01-29,Hydrating body lotion,No,Not Applicable
+2042,Glenmark Insulin Glargine,Medicine,25577992,124.87,Standard Pack,120,2028-08-28,Long-acting insulin,Yes,No major interactions reported
+2043,Zydus Face Masks Pack,Sanitary,66246123,314.15,Standard Pack,346,2027-07-20,Protective face masks,No,Not Applicable
+2044,Zydus Vitamin D3 60000 IU,Supplement,40572391,165.13,Standard Pack,377,2027-10-17,Vitamin D supplement,No,Not Applicable
+2045,Lupin Iron Folic Acid,Supplement,19868991,717.07,Standard Pack,248,2026-10-15,Iron deficiency treatment,No,Not Applicable
+2046,Lupin Antiseptic Liquid,Body Care,91796786,693.39,Standard Pack,198,2027-09-07,Kills germs and bacteria,No,Not Applicable
+2047,Lupin Iron Folic Acid,Supplement,94828438,550.71,Standard Pack,138,2027-03-16,Iron deficiency treatment,No,Not Applicable
+2048,Cipla Sunscreen SPF 50,Skincare,86325036,108.28,Standard Pack,69,2026-12-12,UV protection lotion,No,Not Applicable
+2049,Mankind Medicated Soap,Body Care,32978251,1145.3,Standard Pack,112,2027-06-19,Skin infection protection,No,Not Applicable
+2050,Abbott Tampons Pack,Sanitary,32808354,875.62,Standard Pack,283,2027-04-13,Menstrual hygiene product,No,Not Applicable
+2051,Glenmark Pantoprazole 40mg,Medicine,75661110,1296.05,Standard Pack,110,2028-04-17,Acidity treatment,Yes,No major interactions reported
+2052,Cipla Hand Sanitizer,Body Care,67460000,1109.54,Standard Pack,126,2027-05-01,Alcohol-based hand cleaner,No,Not Applicable
+2053,Abbott Moisturizing Cream,Skincare,39850909,1339.9,Standard Pack,302,2027-01-20,Hydrates dry skin,No,Not Applicable
+2054,Mankind Sanitary Pads Pack,Sanitary,15935671,79.29,Standard Pack,240,2028-09-10,Women hygiene product,No,Not Applicable
+2055,Mankind Sanitary Pads Pack,Sanitary,81285951,603.59,Standard Pack,414,2028-11-15,Women hygiene product,No,Not Applicable
+2056,Alkem Insulin Glargine,Medicine,42280906,142.98,Standard Pack,385,2026-09-02,Long-acting insulin,Yes,No major interactions reported
+2057,Zydus Multivitamin Capsules,Supplement,49700319,373.81,Standard Pack,46,2026-09-06,General dietary supplement,No,Not Applicable
+2058,Dr Reddy's Hand Sanitizer,Body Care,71643898,1289.72,Standard Pack,382,2028-04-09,Alcohol-based hand cleaner,No,Not Applicable
+2059,Alkem Insulin Glargine,Medicine,28605786,1313.81,Standard Pack,207,2027-02-26,Long-acting insulin,Yes,Avoid alcohol
+2060,Sun Pharma Body Lotion,Body Care,61657620,1342.28,Standard Pack,170,2028-02-15,Hydrating body lotion,No,Not Applicable
+2061,Mankind Cetirizine 10mg,Medicine,46210517,1053.12,Standard Pack,313,2028-02-27,Allergy relief,No,Consult doctor if taking BP medication
+2062,Abbott Vitamin D3 60000 IU,Supplement,55056176,1108.93,Standard Pack,28,2028-01-30,Vitamin D supplement,No,Not Applicable
+2063,Sun Pharma Cetaphil Cleanser,Skincare,61399349,561.07,Standard Pack,316,2026-10-01,Gentle skin cleanser,No,Not Applicable
+2064,Dr Reddy's Acne Control Gel,Skincare,96996261,847.01,Standard Pack,34,2028-03-17,Reduces acne and pimples,No,Not Applicable
+2065,Zydus Multivitamin Capsules,Supplement,42028739,818.66,Standard Pack,332,2027-12-23,General dietary supplement,No,Not Applicable
+2066,Lupin Tampons Pack,Sanitary,53011925,542.01,Standard Pack,136,2028-01-18,Menstrual hygiene product,No,Not Applicable
+2067,Cipla Hand Sanitizer,Body Care,18505267,571.76,Standard Pack,231,2027-12-31,Alcohol-based hand cleaner,No,Not Applicable
+2068,Sun Pharma Face Masks Pack,Sanitary,73104323,1070.54,Standard Pack,347,2028-02-17,Protective face masks,No,Not Applicable
+2069,Abbott Moisturizing Cream,Skincare,59411699,1203.86,Standard Pack,484,2028-07-30,Hydrates dry skin,No,Not Applicable
+2070,Alkem Amlodipine 5mg,Medicine,21718382,138.65,Standard Pack,459,2027-02-20,Hypertension treatment,Yes,Avoid alcohol
+2071,Dr Reddy's Azithromycin 500mg,Medicine,47036407,185.8,Standard Pack,75,2028-01-11,Antibiotic for bacterial infections,Yes,May interact with Metformin
+2072,Cipla Calcium + Vitamin D,Supplement,49348536,636.47,Standard Pack,349,2028-02-26,Bone health supplement,No,Not Applicable
+2073,Zydus Iron Folic Acid,Supplement,66388890,676.91,Standard Pack,330,2026-09-11,Iron deficiency treatment,No,Not Applicable
+2074,Sun Pharma Sunscreen SPF 50,Skincare,12957704,1310.25,Standard Pack,118,2028-02-04,UV protection lotion,No,Not Applicable
+2075,Abbott Moisturizing Cream,Skincare,56008827,990.53,Standard Pack,402,2027-07-21,Hydrates dry skin,No,Not Applicable
+2076,Glenmark Foot Care Cream,Body Care,83614224,678.98,Standard Pack,155,2028-03-23,Cracked heel treatment,No,Not Applicable
+2077,Dr Reddy's Omega 3 Fish Oil,Supplement,44897610,355.64,Standard Pack,190,2027-06-12,Heart health supplement,No,Not Applicable
+2078,Zydus Metformin 500mg,Medicine,48169110,694.77,Standard Pack,85,2028-05-15,Type 2 diabetes management,Yes,May interact with Metformin
+2079,Dr Reddy's Adult Diapers,Sanitary,33536332,1262.21,Standard Pack,354,2028-07-03,Incontinence protection,No,Not Applicable
+2080,Lupin Multivitamin Capsules,Supplement,25692379,80.9,Standard Pack,162,2028-03-31,General dietary supplement,No,Not Applicable
+2081,Torrent Iron Folic Acid,Supplement,59616555,293.05,Standard Pack,287,2028-08-14,Iron deficiency treatment,No,Not Applicable
+2082,Zydus Ibuprofen 400mg,Medicine,29856736,571.91,Standard Pack,276,2027-02-03,Anti-inflammatory pain reliever,No,Consult doctor if taking BP medication
+2083,Cipla Cetaphil Cleanser,Skincare,64299436,1397.98,Standard Pack,393,2027-01-16,Gentle skin cleanser,No,Not Applicable
+2084,Dr Reddy's Hand Sanitizer,Body Care,10576371,1455.82,Standard Pack,279,2028-01-22,Alcohol-based hand cleaner,No,Not Applicable
+2085,Alkem Acne Control Gel,Skincare,48899945,1455.02,Standard Pack,386,2028-03-30,Reduces acne and pimples,No,Not Applicable
+2086,Alkem Calcium + Vitamin D,Supplement,55457454,1039.94,Standard Pack,374,2027-12-24,Bone health supplement,No,Not Applicable
+2087,Glenmark Metformin 500mg,Medicine,25686844,475.96,Standard Pack,205,2028-05-14,Type 2 diabetes management,Yes,May interact with Metformin
+2088,Sun Pharma Hand Sanitizer,Body Care,53804166,101.45,Standard Pack,328,2027-03-08,Alcohol-based hand cleaner,No,Not Applicable
+2089,Lupin Face Masks Pack,Sanitary,47302753,309.66,Standard Pack,42,2028-02-23,Protective face masks,No,Not Applicable
+2090,Glenmark Body Lotion,Body Care,62938641,307.79,Standard Pack,162,2028-04-29,Hydrating body lotion,No,Not Applicable
+2091,Cipla Face Masks Pack,Sanitary,99491869,554.38,Standard Pack,75,2028-08-23,Protective face masks,No,Not Applicable
+2092,Mankind Hand Sanitizer,Body Care,60040550,38.04,Standard Pack,176,2027-08-15,Alcohol-based hand cleaner,No,Not Applicable
+2093,Glenmark Moisturizing Cream,Skincare,21757289,339.23,Standard Pack,454,2027-11-18,Hydrates dry skin,No,Not Applicable
+2094,Torrent Medicated Soap,Body Care,31983567,1212.4,Standard Pack,496,2027-10-29,Skin infection protection,No,Not Applicable
+2095,Abbott Antiseptic Liquid,Body Care,90253572,147.4,Standard Pack,106,2027-06-27,Kills germs and bacteria,No,Not Applicable
+2096,Zydus Foot Care Cream,Body Care,18873909,1401.07,Standard Pack,302,2028-10-03,Cracked heel treatment,No,Not Applicable
+2097,Cipla Body Lotion,Body Care,64956876,965.43,Standard Pack,139,2027-10-19,Hydrating body lotion,No,Not Applicable
+2098,Alkem Calcium + Vitamin D,Supplement,86224438,1137.76,Standard Pack,70,2027-03-13,Bone health supplement,No,Not Applicable
+2099,Torrent Iron Folic Acid,Supplement,84338760,746.07,Standard Pack,421,2027-06-26,Iron deficiency treatment,No,Not Applicable
+2100,Alkem Adult Diapers,Sanitary,85065432,1114.99,Standard Pack,114,2026-09-17,Incontinence protection,No,Not Applicable
+2101,Torrent Metformin 500mg,Medicine,50288055,1434.92,Standard Pack,427,2028-06-02,Type 2 diabetes management,Yes,No major interactions reported
+2102,Mankind Cetirizine 10mg,Medicine,34074943,747.99,Standard Pack,352,2028-06-11,Allergy relief,No,May interact with Metformin
+2103,Torrent Azithromycin 500mg,Medicine,76176080,1491.61,Standard Pack,34,2028-04-25,Antibiotic for bacterial infections,Yes,Avoid alcohol
+2104,Abbott Baby Wipes,Sanitary,68528124,1305.15,Standard Pack,321,2028-07-23,Gentle cleansing wipes,No,Not Applicable
+2105,Zydus Body Lotion,Body Care,78790057,1104.78,Standard Pack,8,2027-05-13,Hydrating body lotion,No,Not Applicable
+2106,Cipla Calcium + Vitamin D,Supplement,29614192,493.13,Standard Pack,449,2028-07-30,Bone health supplement,No,Not Applicable
+2107,Dr Reddy's Omega 3 Fish Oil,Supplement,17098551,423.55,Standard Pack,214,2028-06-02,Heart health supplement,No,Not Applicable
+2108,Torrent Cetaphil Cleanser,Skincare,49146492,803.83,Standard Pack,479,2026-11-07,Gentle skin cleanser,No,Not Applicable
+2109,Dr Reddy's Tampons Pack,Sanitary,22684736,906.17,Standard Pack,85,2028-02-28,Menstrual hygiene product,No,Not Applicable
+2110,Torrent Acne Control Gel,Skincare,46434606,1034.46,Standard Pack,352,2027-08-27,Reduces acne and pimples,No,Not Applicable
+2111,Abbott Levothyroxine 50mcg,Medicine,57194894,1238.51,Standard Pack,6,2027-01-08,Thyroid hormone replacement,Yes,Consult doctor if taking BP medication
+2112,Alkem Acne Control Gel,Skincare,65296966,523.66,Standard Pack,466,2027-02-03,Reduces acne and pimples,No,Not Applicable
+2113,Dr Reddy's Amlodipine 5mg,Medicine,77562908,347.25,Standard Pack,96,2028-11-12,Hypertension treatment,Yes,Consult doctor if taking BP medication
+2114,Glenmark Face Masks Pack,Sanitary,83969111,1059.35,Standard Pack,410,2026-12-15,Protective face masks,No,Not Applicable
+2115,Sun Pharma Medicated Soap,Body Care,25645176,1231.89,Standard Pack,472,2026-09-07,Skin infection protection,No,Not Applicable
+2116,Torrent Hand Sanitizer,Body Care,58663129,225.74,Standard Pack,226,2028-04-23,Alcohol-based hand cleaner,No,Not Applicable
+2117,Dr Reddy's Adult Diapers,Sanitary,50894029,62.56,Standard Pack,417,2026-12-20,Incontinence protection,No,Not Applicable
+2118,Dr Reddy's Multivitamin Capsules,Supplement,40410305,474.99,Standard Pack,107,2027-01-01,General dietary supplement,No,Not Applicable
+2119,Sun Pharma Pantoprazole 40mg,Medicine,20433455,47.83,Standard Pack,247,2028-10-04,Acidity treatment,Yes,No major interactions reported
+2120,Sun Pharma Amlodipine 5mg,Medicine,14401363,1193.72,Standard Pack,262,2028-04-19,Hypertension treatment,Yes,Avoid with Warfarin
+2121,Torrent Body Lotion,Body Care,15809144,118.05,Standard Pack,341,2026-08-31,Hydrating body lotion,No,Not Applicable
+2122,Abbott Azithromycin 500mg,Medicine,37568480,889.65,Standard Pack,102,2027-02-26,Antibiotic for bacterial infections,Yes,Avoid alcohol
+2123,Dr Reddy's Azithromycin 500mg,Medicine,47228730,1424.21,Standard Pack,178,2027-08-16,Antibiotic for bacterial infections,Yes,May interact with Metformin
+2124,Lupin Face Masks Pack,Sanitary,77767769,863.95,Standard Pack,50,2028-04-04,Protective face masks,No,Not Applicable
+2125,Lupin Levothyroxine 50mcg,Medicine,35709072,1447.11,Standard Pack,87,2028-10-01,Thyroid hormone replacement,Yes,Consult doctor if taking BP medication
+2126,Lupin Azithromycin 500mg,Medicine,77671943,1279.92,Standard Pack,243,2027-08-31,Antibiotic for bacterial infections,Yes,Consult doctor if taking BP medication
+2127,Sun Pharma Iron Folic Acid,Supplement,34273079,1255.42,Standard Pack,194,2027-10-29,Iron deficiency treatment,No,Not Applicable
+2128,Lupin Calcium + Vitamin D,Supplement,64704189,187.01,Standard Pack,160,2026-12-25,Bone health supplement,No,Not Applicable
+2129,Glenmark Body Lotion,Body Care,28241849,753.81,Standard Pack,184,2028-08-11,Hydrating body lotion,No,Not Applicable
+2130,Cipla Aloe Vera Gel,Skincare,21039132,505.61,Standard Pack,59,2027-09-19,Soothing skin gel,No,Not Applicable
+2131,Abbott Moisturizing Cream,Skincare,51876858,1036.83,Standard Pack,430,2027-11-18,Hydrates dry skin,No,Not Applicable
+2132,Mankind Calcium + Vitamin D,Supplement,49002238,1477.74,Standard Pack,219,2027-03-02,Bone health supplement,No,Not Applicable
+2133,Zydus Insulin Glargine,Medicine,34064874,38.92,Standard Pack,345,2028-01-06,Long-acting insulin,Yes,Avoid with Warfarin
+2134,Glenmark Medicated Soap,Body Care,98388851,1021.25,Standard Pack,61,2027-01-14,Skin infection protection,No,Not Applicable
+2135,Abbott Medicated Soap,Body Care,23652916,1117.32,Standard Pack,456,2027-02-09,Skin infection protection,No,Not Applicable
+2136,Lupin Ibuprofen 400mg,Medicine,55450370,316.39,Standard Pack,432,2027-10-08,Anti-inflammatory pain reliever,No,Avoid with Warfarin
+2137,Alkem Iron Folic Acid,Supplement,47382097,1151.93,Standard Pack,392,2028-04-07,Iron deficiency treatment,No,Not Applicable
+2138,Mankind Adult Diapers,Sanitary,57794571,724.22,Standard Pack,308,2027-10-09,Incontinence protection,No,Not Applicable
+2139,Torrent Foot Care Cream,Body Care,29780216,1156.64,Standard Pack,55,2026-12-24,Cracked heel treatment,No,Not Applicable
+2140,Alkem Moisturizing Cream,Skincare,40980376,949.99,Standard Pack,68,2026-09-20,Hydrates dry skin,No,Not Applicable
+2141,Sun Pharma Paracetamol 500mg,Medicine,76858535,1023.6,Standard Pack,497,2027-02-20,Pain reliever and fever reducer,No,No major interactions reported
+2142,Dr Reddy's Adult Diapers,Sanitary,50634767,940.51,Standard Pack,49,2028-10-07,Incontinence protection,No,Not Applicable
+2143,Alkem Levothyroxine 50mcg,Medicine,72548391,318.86,Standard Pack,338,2028-01-12,Thyroid hormone replacement,Yes,No major interactions reported
+2144,Glenmark Adult Diapers,Sanitary,56119311,1218.03,Standard Pack,276,2028-03-02,Incontinence protection,No,Not Applicable
+2145,Mankind Paracetamol 500mg,Medicine,25989909,587.77,Standard Pack,161,2027-09-10,Pain reliever and fever reducer,No,No major interactions reported
+2146,Cipla Body Lotion,Body Care,33738978,843.87,Standard Pack,440,2028-10-27,Hydrating body lotion,No,Not Applicable
+2147,Alkem Sunscreen SPF 50,Skincare,67805041,219.04,Standard Pack,366,2027-09-23,UV protection lotion,No,Not Applicable
+2148,Abbott Body Lotion,Body Care,75841004,996.92,Standard Pack,350,2028-02-24,Hydrating body lotion,No,Not Applicable
+2149,Alkem Baby Wipes,Sanitary,85464643,1284.44,Standard Pack,259,2026-10-17,Gentle cleansing wipes,No,Not Applicable
+2150,Alkem Hand Sanitizer,Body Care,89328732,1456.89,Standard Pack,315,2028-07-13,Alcohol-based hand cleaner,No,Not Applicable
+2151,Zydus Acne Control Gel,Skincare,18244186,61.66,Standard Pack,23,2026-12-30,Reduces acne and pimples,No,Not Applicable
+2152,Abbott Acne Control Gel,Skincare,13610435,1152.49,Standard Pack,320,2027-08-05,Reduces acne and pimples,No,Not Applicable
+2153,Mankind Body Lotion,Body Care,56324312,1488.08,Standard Pack,210,2027-08-15,Hydrating body lotion,No,Not Applicable
+2154,Lupin Amlodipine 5mg,Medicine,41490443,979.16,Standard Pack,303,2026-11-15,Hypertension treatment,Yes,Avoid with Warfarin
+2155,Zydus Cetaphil Cleanser,Skincare,32787384,49.17,Standard Pack,166,2026-09-28,Gentle skin cleanser,No,Not Applicable
+2156,Abbott Medicated Soap,Body Care,79089893,1354.09,Standard Pack,136,2026-09-10,Skin infection protection,No,Not Applicable
+2157,Cipla Foot Care Cream,Body Care,52481834,579.05,Standard Pack,199,2027-07-17,Cracked heel treatment,No,Not Applicable
+2158,Alkem Sanitary Pads Pack,Sanitary,23429380,1042.48,Standard Pack,105,2027-07-31,Women hygiene product,No,Not Applicable
+2159,Zydus Foot Care Cream,Body Care,32364326,929.95,Standard Pack,186,2027-11-10,Cracked heel treatment,No,Not Applicable
+2160,Sun Pharma Iron Folic Acid,Supplement,81918425,336.84,Standard Pack,135,2026-10-08,Iron deficiency treatment,No,Not Applicable
+2161,Mankind Aloe Vera Gel,Skincare,40317902,944.37,Standard Pack,490,2026-11-23,Soothing skin gel,No,Not Applicable
+2162,Abbott Sanitary Pads Pack,Sanitary,55209639,424.58,Standard Pack,290,2028-11-18,Women hygiene product,No,Not Applicable
+2163,Mankind Baby Wipes,Sanitary,38150713,534.03,Standard Pack,39,2028-06-18,Gentle cleansing wipes,No,Not Applicable
+2164,Torrent Aloe Vera Gel,Skincare,68104261,1001.92,Standard Pack,160,2027-03-13,Soothing skin gel,No,Not Applicable
+2165,Torrent Medicated Soap,Body Care,93881231,782.75,Standard Pack,343,2028-10-10,Skin infection protection,No,Not Applicable
+2166,Cipla Tampons Pack,Sanitary,94267786,1060.93,Standard Pack,441,2027-02-28,Menstrual hygiene product,No,Not Applicable
+2167,Lupin Baby Wipes,Sanitary,98691908,1443.93,Standard Pack,380,2027-12-12,Gentle cleansing wipes,No,Not Applicable
+2168,Abbott Aloe Vera Gel,Skincare,68213514,1403.26,Standard Pack,372,2028-05-23,Soothing skin gel,No,Not Applicable
+2169,Lupin Levothyroxine 50mcg,Medicine,58892118,704.48,Standard Pack,123,2027-01-22,Thyroid hormone replacement,Yes,Avoid alcohol
+2170,Zydus Medicated Soap,Body Care,18647316,958.21,Standard Pack,433,2027-10-17,Skin infection protection,No,Not Applicable
+2171,Dr Reddy's Acne Control Gel,Skincare,44419684,1036.55,Standard Pack,120,2027-10-10,Reduces acne and pimples,No,Not Applicable
+2172,Dr Reddy's Vitamin D3 60000 IU,Supplement,35758531,61.0,Standard Pack,408,2027-07-04,Vitamin D supplement,No,Not Applicable
+2173,Glenmark Medicated Soap,Body Care,68536768,644.59,Standard Pack,463,2026-09-27,Skin infection protection,No,Not Applicable
+2174,Torrent Multivitamin Capsules,Supplement,28311409,63.13,Standard Pack,404,2027-06-01,General dietary supplement,No,Not Applicable
+2175,Cipla Tampons Pack,Sanitary,75208604,1177.71,Standard Pack,28,2026-11-14,Menstrual hygiene product,No,Not Applicable
+2176,Torrent Aloe Vera Gel,Skincare,18533790,1352.85,Standard Pack,208,2027-08-28,Soothing skin gel,No,Not Applicable
+2177,Dr Reddy's Pantoprazole 40mg,Medicine,41680907,185.66,Standard Pack,376,2028-01-15,Acidity treatment,Yes,Avoid with Warfarin
+2178,Glenmark Face Masks Pack,Sanitary,43797105,754.75,Standard Pack,46,2027-04-21,Protective face masks,No,Not Applicable
+2179,Zydus Sanitary Pads Pack,Sanitary,54196006,1251.85,Standard Pack,377,2027-09-24,Women hygiene product,No,Not Applicable
+2180,Lupin Iron Folic Acid,Supplement,29364653,178.08,Standard Pack,109,2027-05-29,Iron deficiency treatment,No,Not Applicable
+2181,Torrent Medicated Soap,Body Care,89118793,102.77,Standard Pack,273,2027-09-08,Skin infection protection,No,Not Applicable
+2182,Glenmark Ibuprofen 400mg,Medicine,66878965,722.78,Standard Pack,126,2027-06-01,Anti-inflammatory pain reliever,No,May interact with Metformin
+2183,Zydus Moisturizing Cream,Skincare,51362065,51.19,Standard Pack,495,2028-05-02,Hydrates dry skin,No,Not Applicable
+2184,Lupin Paracetamol 500mg,Medicine,43954789,838.04,Standard Pack,158,2028-06-05,Pain reliever and fever reducer,No,Avoid alcohol
+2185,Lupin Levothyroxine 50mcg,Medicine,69378298,594.94,Standard Pack,465,2027-09-27,Thyroid hormone replacement,Yes,Avoid alcohol
+2186,Lupin Cetaphil Cleanser,Skincare,49919426,331.37,Standard Pack,455,2027-02-01,Gentle skin cleanser,No,Not Applicable
+2187,Mankind Hand Sanitizer,Body Care,14547522,425.57,Standard Pack,41,2028-10-27,Alcohol-based hand cleaner,No,Not Applicable
+2188,Mankind Medicated Soap,Body Care,54657219,1081.73,Standard Pack,448,2026-12-01,Skin infection protection,No,Not Applicable
+2189,Glenmark Omega 3 Fish Oil,Supplement,18907659,540.75,Standard Pack,308,2028-09-05,Heart health supplement,No,Not Applicable
+2190,Alkem Adult Diapers,Sanitary,13670974,1147.72,Standard Pack,328,2028-06-07,Incontinence protection,No,Not Applicable
+2191,Dr Reddy's Iron Folic Acid,Supplement,10412827,612.98,Standard Pack,321,2027-06-29,Iron deficiency treatment,No,Not Applicable
+2192,Sun Pharma Aloe Vera Gel,Skincare,24875109,253.58,Standard Pack,264,2028-08-20,Soothing skin gel,No,Not Applicable
+2193,Mankind Calcium + Vitamin D,Supplement,52869025,688.21,Standard Pack,447,2028-09-11,Bone health supplement,No,Not Applicable
+2194,Dr Reddy's Omega 3 Fish Oil,Supplement,89593852,1243.62,Standard Pack,409,2027-06-05,Heart health supplement,No,Not Applicable
+2195,Mankind Vitamin D3 60000 IU,Supplement,59338378,289.2,Standard Pack,448,2027-09-11,Vitamin D supplement,No,Not Applicable
+2196,Cipla Tampons Pack,Sanitary,13082993,1386.21,Standard Pack,331,2028-05-08,Menstrual hygiene product,No,Not Applicable
+2197,Alkem Vitamin D3 60000 IU,Supplement,36610839,407.44,Standard Pack,436,2027-02-09,Vitamin D supplement,No,Not Applicable
+2198,Abbott Pantoprazole 40mg,Medicine,67566435,908.58,Standard Pack,76,2026-11-20,Acidity treatment,Yes,Avoid alcohol
+2199,Sun Pharma Calcium + Vitamin D,Supplement,11894470,1083.5,Standard Pack,222,2028-10-20,Bone health supplement,No,Not Applicable
+2200,Sun Pharma Medicated Soap,Body Care,40129725,1076.07,Standard Pack,97,2028-10-29,Skin infection protection,No,Not Applicable

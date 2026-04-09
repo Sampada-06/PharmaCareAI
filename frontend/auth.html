@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCare AI — Secure Access</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: #0B1220;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        .auth-container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 420px;
+            padding: 20px;
+        }
+
+        .auth-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+            transition: var(--transition);
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .logo-mark {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-weight: 900;
+            color: #0B1220;
+            font-size: 18px;
+        }
+
+        .auth-title {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .auth-sub {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 8px;
+            opacity: 0.8;
+        }
+
+        .form-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            transition: var(--transition);
+            box-sizing: border-box;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.1);
+        }
+
+        .auth-btn {
+            width: 100%;
+            background: var(--primary);
+            color: #0B1220;
+            border: none;
+            border-radius: 12px;
+            padding: 14px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 8px;
+        }
+
+        .auth-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(20, 184, 166, 0.3);
+        }
+
+        .auth-toggle {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .auth-toggle a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .auth-toggle a:hover {
+            text-decoration: underline;
+        }
+
+        .error-msg {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: #FCA5A5;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        /* Blobs */
+        .blob {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: 1;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .blob-1 {
+            background: var(--primary);
+            top: -200px;
+            left: -200px;
+        }
+
+        .blob-2 {
+            background: var(--accent);
+            bottom: -200px;
+            right: -200px;
+        }
+
+        /* Hidden initially for switch */
+        .register-only {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo-mark">Rx</div>
+                <h1 class="auth-title" id="formTitle">Welcome Back</h1>
+                <p class="auth-sub" id="formSub">Please enter your credentials to access your portal</p>
+            </div>
+
+            <div id="errorMessage" class="error-msg"></div>
+
+            <form id="authForm">
+                <div class="form-group register-only">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group register-only">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" id="phone" class="form-input" placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="form-group register-only">
+                    <label class="form-label">Shipping Address</label>
+                    <input type="text" id="address" class="form-input" placeholder="123 Street, City, Country">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="auth-btn" id="submitBtn">Login to Portal</button>
+            </form>
+
+            <div class="auth-toggle">
+                <span id="toggleText">Don't have an account?</span>
+                <a href="#" id="toggleLink">Create Account</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import api from './services/api.js';
+
+        const form = document.getElementById('authForm');
+        const title = document.getElementById('formTitle');
+        const sub = document.getElementById('formSub');
+        const submitBtn = document.getElementById('submitBtn');
+        const toggleLink = document.getElementById('toggleLink');
+        const toggleText = document.getElementById('toggleText');
+        const errorMsg = document.getElementById('errorMessage');
+        const registerFields = document.querySelectorAll('.register-only');
+
+        let isLogin = true;
+
+        toggleLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            isLogin = !isLogin;
+
+            title.textContent = isLogin ? 'Welcome Back' : 'Create Account';
+            sub.textContent = isLogin ? 'Please enter your credentials' : 'Join our healthcare ecosystem today';
+            submitBtn.textContent = isLogin ? 'Login to Portal' : 'Register Now';
+            toggleText.textContent = isLogin ? "Don't have an account?" : "Already have an account?";
+            toggleLink.textContent = isLogin ? 'Create Account' : 'Login';
+
+            registerFields.forEach(f => f.style.display = isLogin ? 'none' : 'block');
+            errorMsg.style.display = 'none';
+        });
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            errorMsg.style.display = 'none';
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Processing...';
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                if (isLogin) {
+                    const data = await api.login(email, password);
+
+                    // api.login already stores auth_token
+                    // We need to store user info if missing
+                    if (data.user) {
+                        localStorage.setItem('user', JSON.stringify(data.user));
+                    } else {
+                        // Fallback: fetch user info if login didn't return it
+                        const user = await api.getCurrentUser();
+                        if (user) localStorage.setItem('user', JSON.stringify(user));
+                    }
+
+                    const user = JSON.parse(localStorage.getItem('user'));
+                    if (!user) throw new Error("Could not retrieve user profile");
+
+                    // Redirect based on role
+                    const role = user.role;
+                    if (role === 'admin') {
+                        window.location.href = 'admin-dashboard.html';
+                    } else if (role === 'pharmacist') {
+                        window.location.href = 'pharmacist-dashboard.html';
+                    } else {
+                        window.location.href = 'user-dashboard.html';
+                    }
+                } else {
+                    const name = document.getElementById('name').value;
+                    const phone = document.getElementById('phone').value;
+                    const address = document.getElementById('address').value;
+
+                    await api.register({ name, email, password, phone, address });
+
+                    // Auto-login
+                    const loginData = await api.login(email, password);
+                    if (loginData.user) {
+                        localStorage.setItem('user', JSON.stringify(loginData.user));
+                    } else {
+                        const user = await api.getCurrentUser();
+                        if (user) localStorage.setItem('user', JSON.stringify(user));
+                    }
+
+                    const user = JSON.parse(localStorage.getItem('user'));
+                    const role = user ? user.role : 'customer';
+
+                    if (role === 'admin') {
+                        window.location.href = 'admin-dashboard.html';
+                    } else if (role === 'pharmacist') {
+                        window.location.href = 'pharmacist-dashboard.html';
+                    } else {
+                        window.location.href = 'user-dashboard.html';
+                    }
+                }
+            } catch (err) {
+                console.error('Auth Error:', err);
+                errorMsg.textContent = err.message;
+                errorMsg.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.textContent = isLogin ? 'Login to Portal' : 'Register Now';
+            }
+        });
+
+        // Check if already logged in
+        const token = localStorage.getItem('auth_token');
+        const userStr = localStorage.getItem('user');
+        console.log('Checking existing session:', { token: !!token, user: !!userStr });
+
+        if (token && userStr) {
+            try {
+                const user = JSON.parse(userStr);
+                console.log('Redirecting existing user:', user.role);
+                if (user.role === 'admin') {
+                    window.location.href = 'admin-dashboard.html';
+                } else if (user.role === 'pharmacist') {
+                    window.location.href = 'pharmacist-dashboard.html';
+                } else {
+                    window.location.href = 'user-dashboard.html';
+                }
+            } catch (e) {
+                console.error('Error parsing user session:', e);
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user');
+            }
+        }
+    </script>
+</body>
+
+</html>

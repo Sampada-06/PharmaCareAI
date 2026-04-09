@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 10px 20px; margin: 10px; cursor: pointer; }
+        #output { background: #f5f5f5; padding: 15px; margin-top: 20px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h1>Cart Test Page</h1>
+    
+    <div>
+        <h3>1. Check Login Status</h3>
+        <button onclick="checkLogin()">Check Login</button>
+        <button onclick="clearAndRelogin()" style="background: #dc3545; color: white;">Clear Token & Re-login</button>
+    </div>
+    
+    <div>
+        <h3>2. Add Item to Cart</h3>
+        <input type="text" id="medId" placeholder="Medicine ID" value="1">
+        <input type="text" id="medName" placeholder="Medicine Name" value="Test Medicine">
+        <input type="number" id="price" placeholder="Price" value="100">
+        <input type="number" id="qty" placeholder="Quantity" value="2">
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    
+    <div>
+        <h3>3. View Cart</h3>
+        <button onclick="viewCart()">View Cart</button>
+    </div>
+    
+    <div id="output"></div>
+    
+    <script>
+        const API = 'http://127.0.0.1:8001';
+        
+        function log(msg) {
+            document.getElementById('output').textContent += msg + '\n\n';
+        }
+        
+        function checkLogin() {
+            const token = localStorage.getItem('auth_token');
+            log('Token exists: ' + !!token);
+            if (token) {
+                log('Token preview: ' + token.substring(0, 50) + '...');
+            } else {
+                log('NOT LOGGED IN! Go to auth.html first');
+            }
+        }
+        
+        function clearAndRelogin() {
+            localStorage.clear();
+            log('✅ Cleared all tokens. Redirecting to login...');
+            setTimeout(() => {
+                window.location.href = 'auth.html';
+            }, 1000);
+        }
+        
+        async function addToCart() {
+            const token = localStorage.getItem('auth_token');
+            if (!token) {
+                log('ERROR: Not logged in!');
+                return;
+            }
+            
+            const data = {
+                medicine_id: document.getElementById('medId').value,
+                medicine_name: document.getElementById('medName').value,
+                price_inr: parseFloat(document.getElementById('price').value),
+                qty: parseInt(document.getElementById('qty').value)
+            };
+            
+            log('Sending request...');
+            log('Data: ' + JSON.stringify(data, null, 2));
+            
+            try {
+                const response = await fetch(API + '/cart/add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + token
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                log('Response status: ' + response.status);
+                
+                const result = await response.json();
+                log('Response body: ' + JSON.stringify(result, null, 2));
+                
+                if (response.ok && result.status === 'success') {
+                    log('✅ SUCCESS! Item added to cart');
+                } else {
+                    log('❌ FAILED: ' + (result.detail || result.message || 'Unknown error'));
+                }
+            } catch (error) {
+                log('❌ ERROR: ' + error.message);
+            }
+        }
+        
+        async function viewCart() {
+            const token = localStorage.getItem('auth_token');
+            if (!token) {
+                log('ERROR: Not logged in!');
+                return;
+            }
+            
+            try {
+                const response = await fetch(API + '/cart', {
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    }
+                });
+                
+                log('Cart response status: ' + response.status);
+                
+                const result = await response.json();
+                log('Cart contents: ' + JSON.stringify(result, null, 2));
+                
+                if (result.items && result.items.length > 0) {
+                    log('✅ Cart has ' + result.items.length + ' items');
+                } else {
+                    log('⚠️ Cart is empty');
+                }
+            } catch (error) {
+                log('❌ ERROR: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html>

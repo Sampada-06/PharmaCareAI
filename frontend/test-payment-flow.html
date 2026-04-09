@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Flow Test</title>
+    <style>
+        body { 
+            font-family: Arial; 
+            padding: 20px; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        button { 
+            padding: 10px 20px; 
+            margin: 10px 5px; 
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn-primary { background: #14b8a6; color: white; }
+        .btn-danger { background: #dc3545; color: white; }
+        .btn-success { background: #22c55e; color: white; }
+        .btn-info { background: #38bdf8; color: white; }
+        #output { 
+            background: #fff; 
+            padding: 15px; 
+            margin-top: 20px; 
+            white-space: pre-wrap;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .status { 
+            padding: 10px; 
+            margin: 10px 0; 
+            border-radius: 4px;
+        }
+        .status.success { background: #d1fae5; color: #065f46; }
+        .status.error { background: #fee2e2; color: #991b1b; }
+        .status.warning { background: #fef3c7; color: #92400e; }
+        h2 { color: #14b8a6; }
+        h3 { color: #334155; margin-top: 0; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Complete Payment Flow Test</h1>
+    <p>This page tests the entire payment process from login to checkout.</p>
+    
+    <div class="section">
+        <h3>Step 1: Authentication</h3>
+        <button class="btn-primary" onclick="checkLogin()">Check Login Status</button>
+        <button class="btn-danger" onclick="clearAndRelogin()">Clear Token & Re-login</button>
+        <div id="authStatus"></div>
+    </div>
+    
+    <div class="section">
+        <h3>Step 2: View Current Cart</h3>
+        <button class="btn-info" onclick="viewCart()">Fetch Cart</button>
+        <div id="cartStatus"></div>
+    </div>
+    
+    <div class="section">
+        <h3>Step 3: Test Payment Modal Data</h3>
+        <button class="btn-success" onclick="testPaymentModal()">Simulate Payment Modal</button>
+        <div id="paymentStatus"></div>
+    </div>
+    
+    <div class="section">
+        <h3>Step 4: Test Checkout API</h3>
+        <select id="paymentMethod">
+            <option value="UPI">UPI</option>
+            <option value="Card">Card</option>
+            <option value="Cash">Cash on Delivery</option>
+        </select>
+        <button class="btn-success" onclick="testCheckout()">Execute Checkout</button>
+        <div id="checkoutStatus"></div>
+    </div>
+    
+    <div class="section">
+        <h3>Console Output</h3>
+        <button onclick="clearOutput()">Clear Output</button>
+        <div id="output"></div>
+    </div>
+    
+    <script>
+        const API = 'http://127.0.0.1:8001';
+        let cartData = null;
+        
+        function log(msg, type = 'info') {
+            const output = document.getElementById('output');
+            const timestamp = new Date().toLocaleTimeString();
+            output.textContent += `[${timestamp}] ${msg}\n`;
+            output.scrollTop = output.scrollHeight;
+        }
+        
+        function clearOutput() {
+            document.getElementById('output').textContent = '';
+        }
+        
+        function showStatus(elementId, message, type = 'success') {
+            const el = document.getElementById(elementId);
+            el.innerHTML = `<div class="status ${type}">${message}</div>`;
+        }
+        
+        function checkLogin() {
+            const token = localStorage.getItem('auth_token');
+            const user = localStorage.getItem('user');
+            
+            if (token && user) {
+                const userData = JSON.parse(user);
+                log('✅ Logged in as: ' + userData.email);
+                log('Token preview: ' + token.substring(0, 50) + '...');
+                showStatus('authStatus', `✅ Logged in as: ${userData.email}`, 'success');
+            } else {
+                log('❌ NOT LOGGED IN!');
+                showStatus('authStatus', '❌ Not logged in. Please login first.', 'error');
+            }
+        }
+        
+        function clearAndRelogin() {
+            localStorage.clear();
+            log('✅ Cleared all tokens. Redirecting to login...');
+            showStatus('authStatus', '✅ Tokens cleared. Redirecting...', 'warning');
+            setTimeout(() => {
+                window.location.href = 'auth.html';
+            }, 1500);
+        }
+        
+        async function viewCart() {
+            const token = localStorage.getItem('auth_token');
+            if (!token) {
+                log('❌ ERROR: Not logged in!');
+                showStatus('cartStatus', '❌ Not logged in', 'error');
+                return;
+            }
+            
+            try {
+                log('Fetching cart...');
+                const response = await fetch(API + '/cart', {
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    }
+                });
+                
+                log('Cart response status: ' + response.status);
+                
+                if (response.status === 401) {
+                    log('❌ Token expired! Please re-login.');
+                    showStatus('cartStatus', '❌ Token expired. Please clear token and re-login.', 'error');
+                    return;
+                }
+                
+                cartData = await response.json();
+                log('Cart data: ' + JSON.stringify(cartData, null, 2));
+                
+                if (cartData.items && cartData.items.length > 0) {
+                    log(`✅ Cart has ${cartData.items.length} items`);
+                    log(`Total: ₹${cartData.total}`);
+                    showStatus('cartStatus', 
+                        `✅ Cart loaded: ${cartData.items.length} items, Total: ₹${cartData.total.toFixed(2)}`, 
+                        'success');
+                } else {
+                    log('⚠️ Cart is empty');
+                    showStatus('cartStatus', '⚠️ Cart is empty', 'warning');
+                }
+            } catch (error) {
+                log('❌ ERROR: ' + error.message);
+                showStatus('cartStatus', '❌ Error: ' + error.message, 'error');
+            }
+        }
+        
+        function testPaymentModal() {
+            if (!cartData || !cartData.items || cartData.items.length === 0) {
+                log('❌ Cart is empty. Fetch cart first.');
+                showStatus('paymentStatus', '❌ Cart is empty. Fetch cart first.', 'error');
+                return;
+            }
+            
+            log('Testing payment modal logic...');
+            log('Cart state:', 'info');
+            log('  Items: ' + cartData.items.length);
+            log('  Total: ₹' + cartData.total);
+            
+            // Check for prescription requirements
+            const requiresPrescription = cartData.items.filter(item => item.requires_prescription);
+            const missingPrescriptions = requiresPrescription.filter(item => {
+                const rxUploaded = item.prescription_url || localStorage.getItem(`prescription_${item.id}`);
+                return !rxUploaded;
+            });
+            
+            if (missingPrescriptions.length > 0) {
+                log('⚠️ WARNING: ' + missingPrescriptions.length + ' items require prescription');
+                missingPrescriptions.forEach(item => {
+                    log('  - ' + item.name + ' (ID: ' + item.id + ')');
+                });
+                showStatus('paymentStatus', 
+                    `⚠️ ${missingPrescriptions.length} items require prescription upload`, 
+                    'warning');
+            } else {
+                log('✅ All prescription requirements met (or none required)');
+                showStatus('paymentStatus', 
+                    `✅ Payment modal ready. Total: ₹${cartData.total.toFixed(2)}`, 
+                    'success');
+            }
+        }
+        
+        async function testCheckout() {
+            const token = localStorage.getItem('auth_token');
+            const user = localStorage.getItem('user');
+            
+            if (!token || !user) {
+                log('❌ ERROR: Not logged in!');
+                showStatus('checkoutStatus', '❌ Not logged in', 'error');
+                return;
+            }
+            
+            if (!cartData || !cartData.items || cartData.items.length === 0) {
+                log('❌ ERROR: Cart is empty. Fetch cart first.');
+                showStatus('checkoutStatus', '❌ Cart is empty', 'error');
+                return;
+            }
+            
+            const userData = JSON.parse(user);
+            const paymentMethod = document.getElementById('paymentMethod').value;
+            
+            // Collect prescriptions from localStorage
+            const prescriptions = {};
+            cartData.items.forEach(item => {
+                if (item.requires_prescription) {
+                    const prescriptionData = localStorage.getItem(`prescription_${item.id}`);
+                    if (prescriptionData) {
+                        prescriptions[item.id] = prescriptionData;
+                    }
+                }
+            });
+            
+            const checkoutData = {
+                payment_method: paymentMethod,
+                user_id: userData.id,
+                name: userData.name,
+                email: userData.email,
+                phone: userData.phone,
+                prescriptions: prescriptions
+            };
+            
+            log('Sending checkout request...');
+            log('Payment method: ' + paymentMethod);
+            log('Total amount: ₹' + cartData.total);
+            
+            try {
+                const response = await fetch(API + '/checkout', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + token
+                    },
+                    body: JSON.stringify(checkoutData)
+                });
+                
+                log('Checkout response status: ' + response.status);
+                
+                const result = await response.json();
+                log('Checkout result: ' + JSON.stringify(result, null, 2));
+                
+                if (response.ok && result.success) {
+                    log('✅ CHECKOUT SUCCESS!');
+                    log('Order ID: ' + result.order_id);
+                    log('Payment Status: ' + result.payment_status);
+                    log('Total Amount: ₹' + result.total_amount);
+                    showStatus('checkoutStatus', 
+                        `✅ Order placed! Order ID: ${result.order_id}, Amount: ₹${result.total_amount}`, 
+                        'success');
+                    
+                    // Clear cart data
+                    cartData = null;
+                    showStatus('cartStatus', '✅ Cart cleared after checkout', 'success');
+                } else {
+                    log('❌ CHECKOUT FAILED: ' + (result.detail || result.message || 'Unknown error'));
+                    showStatus('checkoutStatus', 
+                        '❌ Checkout failed: ' + (result.detail || result.message), 
+                        'error');
+                }
+            } catch (error) {
+                log('❌ ERROR: ' + error.message);
+                showStatus('checkoutStatus', '❌ Error: ' + error.message, 'error');
+            }
+        }
+        
+        // Auto-check login on page load
+        window.addEventListener('load', () => {
+            checkLogin();
+        });
+    </script>
+</body>
+</html>

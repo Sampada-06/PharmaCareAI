@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaCare AI — Your Intelligent Pharmacy</title>
+    <meta name="description" content="AI-Powered Pharmacy Platform for Patients and Pharmacists" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            background: var(--bg);
+            overflow-x: hidden;
+        }
+
+        .landing {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .blob {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+            z-index: 0;
+            animation: floatBlob 8s ease-in-out infinite;
+        }
+
+        .blob-1 {
+            width: 500px;
+            height: 500px;
+            background: rgba(20, 184, 166, 0.12);
+            top: -150px;
+            left: -150px;
+        }
+
+        .blob-2 {
+            width: 400px;
+            height: 400px;
+            background: rgba(56, 189, 248, 0.1);
+            bottom: -100px;
+            right: -100px;
+            animation-delay: 3s;
+        }
+
+        .blob-3 {
+            width: 300px;
+            height: 300px;
+            background: rgba(124, 58, 237, 0.08);
+            top: 40%;
+            left: 30%;
+            animation-delay: 5s;
+        }
+
+        @keyframes floatBlob {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(30px, 20px) scale(1.05);
+            }
+        }
+
+        .landing-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+        }
+
+        .landing-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(20, 184, 166, 0.12);
+            border: 1px solid rgba(20, 184, 166, 0.25);
+            border-radius: 99px;
+            padding: 6px 16px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 24px;
+            letter-spacing: 0.3px;
+        }
+
+        .landing-title {
+            font-size: clamp(36px, 6vw, 64px);
+            font-weight: 900;
+            color: var(--text);
+            line-height: 1.1;
+            margin-bottom: 18px;
+            letter-spacing: -1.5px;
+        }
+
+        .landing-title span {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .landing-sub {
+            font-size: 17px;
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 44px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .portal-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .portal-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            width: 280px;
+            text-align: left;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portal-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .portal-card.user::before {
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.08), rgba(56, 189, 248, 0.05));
+        }
+
+        .portal-card.pharma::before {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(56, 189, 248, 0.05));
+        }
+
+        .portal-card:hover::before {
+            opacity: 1;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        .portal-card.user:hover {
+            border-color: rgba(20, 184, 166, 0.4);
+        }
+
+        .portal-card.pharma:hover {
+            border-color: rgba(124, 58, 237, 0.4);
+        }
+
+        /* Accent tag replacing icon box */
+        .pc-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 99px;
+            margin-bottom: 18px;
+        }
+
+        .pc-tag.user {
+            background: rgba(20, 184, 166, 0.15);
+            color: var(--primary);
+            border: 1px solid rgba(20, 184, 166, 0.3);
+        }
+
+        .pc-tag.pharma {
+            background: rgba(124, 58, 237, 0.15);
+            color: #A78BFA;
+            border: 1px solid rgba(124, 58, 237, 0.35);
+        }
+
+        .pc-title {
+            font-size: 17px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .pc-desc {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .pc-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .pc-features li {
+            font-size: 12.5px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .pc-features li::before {
+            content: '✓';
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 11px;
+        }
+
+        .pc-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 18px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            width: 100%;
+            justify-content: center;
+        }
+
+        .pc-btn.user {
+            background: var(--primary);
+            color: var(--bg);
+        }
+
+        .pc-btn.pharma {
+            background: linear-gradient(135deg, #7C3AED, #38BDF8);
+            color: #fff;
+        }
+
+        .pc-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 36px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-val {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--muted);
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        .divider {
+            width: 1px;
+            height: 36px;
+            background: var(--border);
+        }
+
+        .landing-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(11, 18, 32, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 50;
+        }
+
+        .logo-mark {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 900;
+            color: #0B1220;
+            letter-spacing: -0.5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Top Nav -->
+    <nav class="landing-nav">
+        <div style="display:flex;align-items:center;gap:10px;">
+            <div class="logo-mark">Rx</div>
+            <span style="font-size:15px;font-weight:800;color:var(--text);">PharmaCare <span
+                    style="color:var(--primary);">AI</span></span>
+        </div>
+        <div style="display:flex;gap:10px;">
+            <a href="prescription-scanner-interactive.html" class="btn btn-ghost btn-sm">📸 Scanner</a>
+            <a href="user-dashboard.html" class="btn btn-ghost btn-sm">Patient Portal</a>
+            <a href="pharmacist-dashboard.html" class="btn btn-primary btn-sm">Pharmacist Portal</a>
+        </div>
+    </nav>
+
+    <!-- Landing -->
+    <div class="landing">
+        <div class="landing-content">
+
+            <div class="landing-badge">Powered by AI &middot; HIPAA Compliant</div>
+
+            <h1 class="landing-title">
+                Your Intelligent<br><span>Pharmacy Platform</span>
+            </h1>
+
+            <p class="landing-sub">
+                A complete healthcare ecosystem — shop medicines, get AI-powered drug consultations, manage
+                prescriptions, and streamline pharmacy operations with advanced analytics.
+            </p>
+
+            <div class="portal-cards">
+
+                <a class="portal-card user" href="user-dashboard.html">
+                    <div class="pc-tag user">Patient Portal</div>
+                    <div class="pc-title">Patient Dashboard</div>
+                    <div class="pc-desc">Your personal health portal for medicine shopping, AI consultation &amp;
+                        reminders.</div>
+                    <ul class="pc-features">
+                        <li>Shop 1000+ medicines online</li>
+                        <li>AI Assistant for drug queries</li>
+                        <li>Upload &amp; verify prescriptions</li>
+                        <li>Dose &amp; expiry reminders</li>
+                        <li>Real-time order tracking</li>
+                    </ul>
+                    <div class="pc-btn user">Enter Patient Portal →</div>
+                </a>
+
+                <a class="portal-card pharma" href="pharmacist-dashboard.html">
+                    <div class="pc-tag pharma">Pharmacist Portal</div>
+                    <div class="pc-title">Pharmacist Dashboard</div>
+                    <div class="pc-desc">Comprehensive pharmacy management with inventory, orders &amp; analytics.</div>
+                    <ul class="pc-features">
+                        <li>Inventory management</li>
+                        <li>Prescription approvals</li>
+                        <li>Order tracking &amp; fulfilment</li>
+                        <li>Patient management</li>
+                        <li>Revenue analytics</li>
+                    </ul>
+                    <div class="pc-btn pharma">Enter Pharmacist Portal →</div>
+                </a>
+
+                <a class="portal-card user" href="delivery-dashboard.html" style="border-color:rgba(16,185,129,0.3);">
+                    <div class="pc-tag user" style="background:rgba(16,185,129,0.15);color:#34d399;">Delivery Agency
+                    </div>
+                    <div class="pc-title">Delivery Dashboard</div>
+                    <div class="pc-desc">Manage deliveries, assign agents, track orders & update delivery status.</div>
+                    <ul class="pc-features">
+                        <li>View approved orders</li>
+                        <li>Assign delivery agents</li>
+                        <li>Real-time order tracking</li>
+                        <li>Update delivery status</li>
+                        <li>Delivery timeline management</li>
+                    </ul>
+                    <div class="pc-btn user" style="background:rgba(16,185,129,0.15);color:#34d399;">Enter Delivery Portal →</div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="stats-row">
+            <div class="stat">
+                <div class="stat-val">1,200+</div>
+                <div class="stat-label">Medicines in Stock</div>
+            </div>
+            <div class="divider"></div>
+            <div class="stat">
+                <div class="stat-val">348</div>
+                <div class="stat-label">Active Patients</div>
+            </div>
+            <div class="divider"></div>
+            <div class="stat">
+                <div class="stat-val">99.8%</div>
+                <div class="stat-label">Uptime SLA</div>
+            </div>
+            <div class="divider"></div>
+            <div class="stat">
+                <div class="stat-val">4.8 ★</div>
+                <div class="stat-label">Patient Rating</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

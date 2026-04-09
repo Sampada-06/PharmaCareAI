@@ -1,0 +1,14 @@
+{
+  "name": "pharamacist-app",
+  "version": "1.0.0",
+  "description": "AI-Powered Pharmacist Application",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && uvicorn app.main:app --host 127.0.0.1 --port 8001",
+    "frontend": "npx -y serve frontend -p 3000"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+

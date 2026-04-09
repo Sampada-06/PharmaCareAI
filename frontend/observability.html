@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blastoise - Transparent Agentic AI Pharmacy System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --surface-color: #ffffff;
+            --primary-color: #0f172a;
+            /* Deep Enterprise Blue/Black */
+            --accent-color: #2563eb;
+            /* Royal Blue Accent */
+            --secondary-color: #3b82f6;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+
+            --success: #059669;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --info: #2563eb;
+            --skipped: #94a3b8;
+
+            --radius-md: 6px;
+            --radius-lg: 10px;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            z-index: 10;
+        }
+
+        .header-titles h1 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .header-titles p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .integration-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.375rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #f1f5f9;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .integration-badge.active::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--success);
+            box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2);
+        }
+
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            padding: 1.5rem;
+            gap: 1.5rem;
+        }
+
+        .column {
+            background: var(--surface-color);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .col-left {
+            width: 26%;
+        }
+
+        .col-center {
+            width: 38%;
+        }
+
+        .col-right {
+            width: 36%;
+        }
+
+        .col-header {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+            background: #f8fafc;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .col-content {
+            padding: 1.25rem;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .data-panel {
+            margin-bottom: 1.5rem;
+        }
+
+        .data-panel h3 {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .data-card {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            background: #fff;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .kv-pair {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.8125rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed #f1f5f9;
+        }
+
+        .kv-pair:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .kv-key {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .kv-val {
+            font-weight: 600;
+            text-align: right;
+            color: var(--text-main);
+        }
+
+        .badge {
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .badge.danger {
+            background: #fee2e2;
+            color: var(--danger);
+        }
+
+        .badge.success {
+            background: #d1fae5;
+            color: var(--success);
+        }
+
+        .badge.warning {
+            background: #fef3c7;
+            color: var(--warning);
+        }
+
+        .badge.info {
+            background: #dbeafe;
+            color: var(--info);
+        }
+
+        .demo-input {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-input select {
+            width: 100%;
+            padding: 0.6rem;
+            margin-top: 0.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid #cbd5e1;
+            font-family: inherit;
+            font-weight: 600;
+            color: var(--primary-color);
+            background: white;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .demo-input select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        }
+
+        .demo-btn {
+            width: 100%;
+            padding: 0.875rem;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 0.5rem;
+            letter-spacing: 0.025em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .demo-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        .demo-btn:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Agent Flow */
+        .agent-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .agent-flow::before {
+            content: '';
+            position: absolute;
+            left: 35px;
+            top: 24px;
+            bottom: 40px;
+            width: 2px;
+            background: #e2e8f0;
+            z-index: 1;
+        }
+
+        .agent-node {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+            transition: 0.4s ease;
+        }
+
+        .node-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: white;
+            border: 2px solid #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+            color: #94a3b8;
+            flex-shrink: 0;
+            margin-top: 4px;
+            transition: 0.3s;
+        }
+
+        .agent-node.idle {
+            opacity: 0.5;
+        }
+
+        .agent-node.active,
+        .agent-node.completed,
+        .agent-node.skipped {
+            opacity: 1;
+        }
+
+        .agent-node.active .node-icon {
+            border-color: var(--accent-color);
+            background: var(--accent-color);
+            color: white;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+        }
+
+        .agent-node.success-node .node-icon {
+            border-color: var(--success);
+            background: var(--success);
+            color: white;
+        }
+
+        .agent-node.error-node .node-icon {
+            border-color: var(--danger);
+            background: var(--danger);
+            color: white;
+        }
+
+        .agent-node.warning-node .node-icon {
+            border-color: var(--warning);
+            background: var(--warning);
+            color: white;
+        }
+
+        .agent-node.skipped .node-icon {
+            border-color: #cbd5e1;
+            background: #f8fafc;
+            color: #cbd5e1;
+        }
+
+        .node-content {
+            flex: 1;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1rem 1.25rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+        }
+
+        .agent-node.active .node-content {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1);
+        }
+
+        .agent-node.error-node .node-content {
+            border-color: var(--danger);
+            background: #fef2f2;
+        }
+
+        .agent-node.warning-node .node-content {
+            border-color: var(--warning);
+            background: #fffbeb;
+        }
+
+        .agent-node.skipped .node-content {
+            border-style: dashed;
+            border-color: #cbd5e1;
+            background: #f8fafc;
+            opacity: 0.7;
+        }
+
+        .node-title {
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-main);
+        }
+
+        .agent-node.skipped .node-title {
+            color: var(--text-muted);
+        }
+
+        .node-status {
+            font-size: 0.65rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: #f1f5f9;
+            color: var(--text-muted);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .agent-node.active .node-status {
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--accent-color);
+        }
+
+        .agent-node.success-node .node-status {
+            background: rgba(5, 150, 105, 0.1);
+            color: var(--success);
+        }
+
+        .agent-node.error-node .node-status {
+            background: rgba(220, 38, 38, 0.1);
+            color: var(--danger);
+        }
+
+        .agent-node.warning-node .node-status {
+            background: rgba(217, 119, 6, 0.1);
+            color: var(--warning);
+        }
+
+        .agent-node.skipped .node-status {
+            background: transparent;
+            color: var(--skipped);
+            border: 1px solid #e2e8f0;
+        }
+
+        .node-details {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .node-details strong {
+            color: var(--text-main);
+        }
+
+        .agent-node.error-node .node-details strong {
+            color: var(--danger);
+        }
+
+        .agent-node.warning-node .node-details strong {
+            color: var(--warning);
+        }
+
+        .agent-node.skipped .node-details strong {
+            color: var(--skipped);
+        }
+
+        .loader {
+            display: none;
+            width: 14px;
+            height: 14px;
+            border: 2px solid rgba(37, 99, 235, 0.2);
+            border-top-color: var(--accent-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        .agent-node.active .loader {
+            display: block;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Langfuse Trace Explorer */
+        .trace-explorer-container {
+            background: #0f172a;
+            /* Dark sleek terminal background */
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #1e293b;
+        }
+
+        .trace-header {
+            padding: 1.25rem;
+            background: #1e293b;
+            color: white;
+            border-bottom: 1px solid #334155;
+        }
+
+        .trace-title {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .trace-meta {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            display: flex;
+            gap: 1.5rem;
+            font-family: monospace;
+        }
+
+        .trace-body {
+            padding: 1.25rem;
+            min-height: 400px;
+            overflow-y: auto;
+        }
+
+        .trace-parent {
+            color: #f8fafc;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        .trace-span {
+            margin-left: 0.5rem;
+            border-left: 1px dashed #475569;
+            padding-left: 1.25rem;
+            margin-bottom: 0.75rem;
+            position: relative;
+            opacity: 0;
+            transform: translateY(5px);
+            transition: 0.3s;
+        }
+
+        .trace-span.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .trace-span::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 6px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #3b82f6;
+            box-shadow: 0 0 0 2px #0f172a;
+        }
+
+        .trace-span.span-skipped::before {
+            background: #64748b;
+        }
+
+        .trace-span.span-error::before {
+            background: #ef4444;
+        }
+
+        .trace-span.span-warning::before {
+            background: #f59e0b;
+        }
+
+        .span-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.25rem;
+            cursor: pointer;
+            padding: 0.25rem 0;
+        }
+
+        .span-header:hover {
+            opacity: 0.8;
+        }
+
+        .span-name {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            color: #38bdf8;
+            font-size: 0.85rem;
+        }
+
+        .trace-span.span-skipped .span-name {
+            color: #94a3b8;
+        }
+
+        .trace-span.span-error .span-name {
+            color: #f87171;
+        }
+
+        .span-latency {
+            font-size: 0.75rem;
+            color: #64748b;
+            font-family: monospace;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .span-content {
+            display: none;
+            background: #1e293b;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid #334155;
+            margin-top: 0.5rem;
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .span-content.open {
+            display: block;
+        }
+
+        .code-block {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: #e2e8f0;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+        }
+
+        .json-key {
+            color: #7dd3fc;
+        }
+
+        .json-string {
+            color: #a7f3d0;
+        }
+
+        .json-number {
+            color: #fde047;
+        }
+
+        .json-boolean {
+            color: #c084fc;
+        }
+
+        @keyframes flashGreen {
+            0% {
+                background-color: rgba(16, 185, 129, 0.2);
+            }
+
+            100% {
+                background-color: transparent;
+            }
+        }
+
+        .flash-update {
+            animation: flashGreen 1.5s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-titles">
+            <h1>Blastoise – Transparent Agentic AI Pharmacy System</h1>
+            <p>Every decision. Fully traceable.</p>
+        </div>
+        <div class="header-badges">
+            <div class="integration-badge active">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                Supabase Verified
+            </div>
+            <div class="integration-badge" style="border-color: #3b82f6; color: #1d4ed8; background: #eff6ff;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                Langfuse Tracing
+            </div>
+        </div>
+    </header>
+
+    <div class="workspace">
+
+        <!-- LEFT COL -->
+        <div class="column col-left">
+            <div class="col-header">Live Data Context</div>
+            <div class="col-content">
+
+                <div class="demo-input">
+                    <label
+                        style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700; display:block; margin-bottom: 0.25rem;">
+                        Select Demo Scenario
+                    </label>
+                    <select id="scenarioSelector" onchange="updateContextUI()">
+                        <option value="otc">Scenario A: OTC Medicine (Straight Approval)</option>
+                        <option value="rx">Scenario B: Rx Required (Policy Enforcement Block)</option>
+                        <option value="risk">Scenario C: High Risk Match (Clinical Block/Review)</option>
+                        <option value="refill">Scenario D: Early Refill (Warning Trigger)</option>
+                    </select>
+                </div>
+
+                <div class="data-panel">
+                    <h3>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Table: users
+                    </h3>
+                    <div class="data-card">
+                        <div class="kv-pair"><span class="kv-key">id</span><span class="kv-val">usr_8891ac</span></div>
+                        <div class="kv-pair"><span class="kv-key">name</span><span class="kv-val">Jane Doe</span></div>
+                        <div class="kv-pair"><span class="kv-key">allergies</span><span class="kv-val" id="uiAllergies"
+                                style="color:var(--text-muted); font-weight:700;"></span></div>
+                    </div>
+                </div>
+
+                <div class="data-panel">
+                    <h3>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M10.5 20.5l-6-6a2.828 2.828 0 1 1 4-4l6 6m5-5l-6-6a2.828 2.828 0 0 1 4-4l6 6a2.828 2.828 0 0 1-4 4z">
+                            </path>
+                        </svg>
+                        Table: medicines
+                    </h3>
+                    <div class="data-card" id="medicineCard">
+                        <div class="kv-pair"><span class="kv-key">name</span><span class="kv-val" id="uiMedName"
+                                style="color:var(--primary-color);"></span></div>
+                        <div class="kv-pair"><span class="kv-key">cart_quantity</span><span class="kv-val"
+                                id="uiTargetQty"></span></div>
+                        <div class="kv-pair"><span class="kv-key">req_prescription</span><span class="kv-val"
+                                id="uiRx"></span></div>
+                        <div class="kv-pair"><span class="kv-key">risk_level</span><span class="kv-val"
+                                id="uiRisk"></span></div>
+                        <div class="kv-pair"
+                            style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+                            <span class="kv-key">stock_quantity</span>
+                            <span class="kv-val" id="stockQty"
+                                style="font-size:1.1rem; color:var(--accent-color);"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-panel">
+                    <h3>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        Table: orders (History)
+                    </h3>
+                    <div class="data-card">
+                        <div class="kv-pair"><span class="kv-key">last_purchase</span><span class="kv-val"
+                                id="uiLastOrderDate">2023-10-01 (15 days ago)</span></div>
+                    </div>
+                </div>
+
+                <button class="demo-btn" id="runTraceBtn" onclick="runDemoTrace()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Execute Agent Toolchain
+                </button>
+            </div>
+        </div>
+
+        <!-- CENTER COL -->
+        <div class="column col-center">
+            <div class="col-header">
+                Autonomous Execution Flow
+                <span class="badge info" id="flowStatusBadge" style="display:none;">Running</span>
+            </div>
+            <div class="col-content">
+                <div class="agent-flow">
+
+                    <!-- Agent 1 -->
+                    <div class="agent-node idle" id="node-conv">
+                        <div class="node-icon">1</div>
+                        <div class="node-content">
+                            <div class="node-title">
+                                <span>Conversation Agent</span>
+                                <div style="display:flex; align-items:center; gap:8px;">
+                                    <div class="loader"></div>
+                                    <span class="node-status">WAITING</span>
+                                </div>
+                            </div>
+                            <div class="node-details" id="detail-conv">Awaiting trigger...</div>
+                        </div>
+                    </div>
+
+                    <!-- Agent 2 -->
+                    <div class="agent-node idle" id="node-pol">
+                        <div class="node-icon">2</div>
+                        <div class="node-content">
+                            <div class="node-title">
+                                <span>Policy & Safety Agent</span>
+                                <div style="display:flex; align-items:center; gap:8px;">
+                                    <div class="loader"></div>
+                                    <span class="node-status">WAITING</span>
+                                </div>
+                            </div>
+                            <div class="node-details" id="detail-pol">Evaluates Rx parameters...</div>
+                        </div>
+                    </div>
+
+                    <!-- Agent 3 -->
+                    <div class="agent-node idle" id="node-clin">
+                        <div class="node-icon">3</div>
+                        <div class="node-content">
+                            <div class="node-title">
+                                <span>Clinical Risk Agent</span>
+                                <div style="display:flex; align-items:center; gap:8px;">
+                                    <div class="loader"></div>
+                                    <span class="node-status">WAITING</span>
+                                </div>
+                            </div>
+                            <div class="node-details" id="detail-clin">Cross-references allergies...</div>
+                        </div>
+                    </div>
+
+                    <!-- Agent 4 -->
+                    <div class="agent-node idle" id="node-ref">
+                        <div class="node-icon">4</div>
+                        <div class="node-content">
+                            <div class="node-title">
+                                <span>Refill Prediction Agent</span>
+                                <div style="display:flex; align-items:center; gap:8px;">
+                                    <div class="loader"></div>
+                                    <span class="node-status">WAITING</span>
+                                </div>
+                            </div>
+                            <div class="node-details" id="detail-ref">Checks consumption rates...</div>
+                        </div>
+                    </div>
+
+                    <!-- Agent 5 -->
+                    <div class="agent-node idle" id="node-act">
+                        <div class="node-icon">5</div>
+                        <div class="node-content">
+                            <div class="node-title">
+                                <span>Action Agent</span>
+                                <div style="display:flex; align-items:center; gap:8px;">
+                                    <div class="loader"></div>
+                                    <span class="node-status">WAITING</span>
+                                </div>
+                            </div>
+                            <div class="node-details" id="detail-act">Commits transaction...</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT COL -->
+        <div class="column col-right" style="background: transparent; border: none; box-shadow: none;">
+            <div class="trace-explorer-container" style="height: 100%;">
+                <div class="trace-header">
+                    <div class="trace-title">
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                            Trace Explorer
+                        </div>
+                        <span id="traceTotalTime" style="color:#94a3b8; font-weight: normal;">-- ms</span>
+                    </div>
+                    <div class="trace-meta">
+                        <span>trace_id: <span style="color:#a7f3d0" id="traceIdDisplay">none</span></span>
+                        <span>Env: Production</span>
+                    </div>
+                </div>
+
+                <div class="trace-body" id="traceBody">
+                    <div style="color:#475569; font-family:monospace; font-size:0.8rem; text-align:center; padding-top:4rem;"
+                        id="traceEmpty">
+                        No traces generated yet.<br>Select a scenario and execute to view real-time span logs.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Scenarios mapped strictly to the rules requested
+        const SCENARIOS = {
+            otc: {
+                id: 'med_001', name: "Paracetamol", category: "Analgesic", req_prescription: false, risk_level: "LOW", stock_quantity: 120, qty: 1,
+                user_allergies: "None", refill_due: false,
+                expectedBlockAt: null
+            },
+            rx: {
+                id: 'med_002', name: "Amoxicillin", category: "Antibiotic", req_prescription: true, risk_level: "MEDIUM", stock_quantity: 45, qty: 1,
+                user_allergies: "None", refill_due: false,
+                expectedBlockAt: "pol", polDecision: "BLOCKED", polReason: "Requires Prescription. None provided in payload."
+            },
+            risk: {
+                id: 'med_003', name: "Warfarin", category: "Blood Thinner", req_prescription: true, risk_level: "HIGH", stock_quantity: 90, qty: 1,
+                user_allergies: "Aspirin, Warfarin", refill_due: false,
+                expectedBlockAt: "clin", clinDecision: "BLOCKED", clinReason: "CRITICAL: Direct allergy match to target medicine."
+            },
+            refill: {
+                id: 'med_004', name: "Metformin", category: "Anti-Diabetic", req_prescription: true, risk_level: "LOW", stock_quantity: 200, qty: 2,
+                user_allergies: "None", refill_due: true,
+                expectedBlockAt: null, refDecision: "WARNING", refReason: "Refill requested too early. Previous supply should last 15 more days."
+            }
+        };
+
+        function updateContextUI() {
+            const scenario = SCENARIOS[document.getElementById('scenarioSelector').value];
+
+            // User Data
+            const allergyEl = document.getElementById('uiAllergies');
+            allergyEl.innerText = scenario.user_allergies;
+            allergyEl.style.color = scenario.user_allergies !== 'None' ? "var(--danger)" : "var(--text-muted)";
+
+            // Med Data
+            document.getElementById('uiMedName').innerText = scenario.name;
+            document.getElementById('uiTargetQty').innerText = scenario.qty;
+            document.getElementById('uiRx').innerHTML = scenario.req_prescription ? '<span class="badge warning">TRUE</span>' : '<span class="badge success">FALSE</span>';
+
+            let riskHTML = '<span class="badge success">LOW</span>';
+            if (scenario.risk_level === "MEDIUM") riskHTML = '<span class="badge warning">MEDIUM</span>';
+            if (scenario.risk_level === "HIGH") riskHTML = '<span class="badge danger">HIGH</span>';
+            document.getElementById('uiRisk').innerHTML = riskHTML;
+
+            document.getElementById('stockQty').innerText = scenario.stock_quantity;
+            document.getElementById('stockQty').parentElement.classList.remove('flash-update');
+
+            // Order Data
+            let orderHTML = "2023-10-01 (15 Days supply)";
+            if (scenario.refill_due) {
+                orderHTML = '<span style="color:var(--danger)">2 days ago.</span>';
+            }
+            document.getElementById('uiLastOrderDate').innerHTML = orderHTML;
+        }
+
+        // Init
+        updateContextUI();
+
+        // Utilities
+        function syntaxHighlight(json) {
+            if (typeof json != 'string') { json = JSON.stringify(json, undefined, 2); }
+            json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+                var cls = 'json-number';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) { cls = 'json-key'; match = match.replace(/"/g, ''); }
+                    else { cls = 'json-string'; }
+                } else if (/true|false/.test(match)) { cls = 'json-boolean'; }
+                else if (/null/.test(match)) { cls = 'json-boolean'; }
+                return '<span class="' + cls + '">' + match + '</span>';
+            });
+        }
+
+        function toggleSpan(id) {
+            const el = document.getElementById(`span-content-${id}`);
+            el.classList.toggle('open');
+        }
+
+        // Generate dynamic steps based on Strict Rules
+        function buildAgentSteps(med) {
+            const steps = [];
+            let currentlyBlocked = false;
+
+            // 1. Conversation
+            steps.push({
+                id: 'conv', name: 'Conversation Agent', expected: 'success-node', latency: 120,
+                html: `Input: "Checkout cart"<br>Output JSON: { intent: "checkout", med: "${med.name}", qty: ${med.qty} }`,
+                log: {
+                    agent_name: "Conversation Agent", input_payload: { raw_text: "Checkout cart", context: { cart_items: [med.id] } },
+                    database_values_used: null, rules_triggered: ["intent_extraction"],
+                    decision: "PROCEED", reason: "Successfully parsed structured payload.", next_agent_called: "PolicySafetyAgent", latency_ms: 120, timestamp: new Date().toISOString()
+                }
+            });
+
+            // 2. Policy
+            let pDec = "APPROVED", pRes = "Medicine is OTC or Policy met.", pStatus = "success-node", pNext = "ClinicalRiskAgent";
+            if (med.expectedBlockAt === "pol") {
+                pDec = med.polDecision; pRes = med.polReason; pStatus = "error-node"; pNext = "NONE";
+                currentlyBlocked = true;
+            }
+            steps.push({
+                id: 'pol', name: 'Policy & Safety Agent', expected: currentlyBlocked ? 'skipped' : pStatus, latency: currentlyBlocked ? 0 : 85,
+                html: currentlyBlocked ? `<strong>SKIPPED – Upstream Failure</strong>` :
+                    `Rules: req_prescription=${med.req_prescription}<br>Stock: ${med.stock_quantity}>=${med.qty}<br>Decision: <strong>${pDec}</strong>`,
+                log: currentlyBlocked ? null : {
+                    agent_name: "PolicySafetyAgent", input_payload: { medicine: med.name, qty: med.qty },
+                    database_values_used: { req_prescription: med.req_prescription, stock_quantity: med.stock_quantity },
+                    rules_triggered: ["check_prescription", "check_stock"],
+                    decision: pDec, reason: pRes, next_agent_called: pNext, latency_ms: 85, timestamp: new Date().toISOString()
+                }
+            });
+
+            // 3. Clinical
+            let cDec = "SAFE", cRes = "No risk matched.", cStatus = "success-node", cNext = "RefillPredictionAgent";
+            if (!currentlyBlocked && med.expectedBlockAt === "clin") {
+                cDec = med.clinDecision; cRes = med.clinReason; cStatus = "error-node"; cNext = "NONE";
+                if (cDec === "REVIEW") cStatus = "warning-node";
+                currentlyBlocked = true;
+            }
+            steps.push({
+                id: 'clin', name: 'Clinical Risk Agent', expected: currentlyBlocked ? 'skipped' : cStatus, latency: currentlyBlocked ? 0 : 210,
+                html: currentlyBlocked ? `<strong>SKIPPED – Upstream/Compliance Failure</strong>` :
+                    `Risk: ${med.risk_level}<br>Allergies: ${med.user_allergies}<br>Decision: <strong>${cDec}</strong>`,
+                log: currentlyBlocked ? null : {
+                    agent_name: "ClinicalRiskAgent", input_payload: { user_id: "usr_8891ac", medicine: med.name },
+                    database_values_used: { target_risk_level: med.risk_level, user_allergies: med.user_allergies },
+                    rules_triggered: ["cross_reference_allergies", "evaluate_severity"],
+                    decision: cDec, reason: cRes, next_agent_called: cNext, latency_ms: 210, timestamp: new Date().toISOString()
+                }
+            });
+
+            // 4. Refill
+            let rDec = "NORMAL", rRes = "Timeline Valid", rStatus = "success-node", rNext = "ActionAgent";
+            if (!currentlyBlocked && med.refill_due) {
+                rDec = med.refDecision; rRes = med.refReason; rStatus = "warning-node";
+                // Doesn't block, just warns
+            }
+            steps.push({
+                id: 'ref', name: 'Refill Prediction Agent', expected: currentlyBlocked ? 'skipped' : rStatus, latency: currentlyBlocked ? 0 : 90,
+                html: currentlyBlocked ? `<strong>SKIPPED – Upstream Failure</strong>` :
+                    `Decision: <strong>${rDec}</strong><br>Reason: ${rRes}`,
+                log: currentlyBlocked ? null : {
+                    agent_name: "RefillPredictionAgent", input_payload: { user_id: "usr_8891ac", medicine: med.name },
+                    database_values_used: { last_purchase_date: "2 days ago", required_cycle: 15 },
+                    rules_triggered: ["supply_exhaustion_calc"],
+                    decision: rDec, reason: rRes, next_agent_called: rNext, latency_ms: 90, timestamp: new Date().toISOString()
+                }
+            });
+
+            // 5. Action
+            let aDec = "COMMITTED", aRes = "Db synchronized", aStatus = currentlyBlocked ? 'skipped' : 'success-node';
+            steps.push({
+                id: 'act', name: 'Action Agent', expected: aStatus, latency: currentlyBlocked ? 0 : 350,
+                html: currentlyBlocked ? `<strong>SKIPPED – Compliance Failure</strong>` :
+                    `Executed.<br>New Stock: <strong>${med.stock_quantity - med.qty}</strong>`,
+                log: currentlyBlocked ? null : {
+                    agent_name: "ActionAgent", input_payload: { commit_order: true, qty: med.qty },
+                    database_values_used: {}, rules_triggered: ["insert_order", "deduct_inventory"],
+                    decision: aDec, reason: aRes, next_agent_called: "NONE", latency_ms: 350, timestamp: new Date().toISOString()
+                }
+            });
+
+            return { steps, blocked: currentlyBlocked };
+        }
+
+        async function runDemoTrace() {
+            const btn = document.getElementById('runTraceBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<div class="loader" style="display:inline-block; border-top-color:#fff; margin-right:8px;"></div> Executing Chain...';
+
+            const med = SCENARIOS[document.getElementById('scenarioSelector').value];
+            const chainResult = buildAgentSteps(med);
+            const parentTraceId = `req_${Math.random().toString(36).substr(2, 8)}`;
+            const traceName = `Checkout - User usr_8891ac (${med.name} Qty:${med.qty})`;
+
+            // Reset Right Panel
+            document.getElementById('traceEmpty').style.display = 'none';
+            document.getElementById('traceIdDisplay').innerText = parentTraceId;
+            document.getElementById('traceBody').innerHTML = `
+                <div class="trace-parent">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    Parent: ${traceName}
+                </div>
+            `;
+            document.getElementById('traceTotalTime').innerText = "0 ms";
+
+            // Reset Center UI nodes
+            document.querySelectorAll('.agent-node').forEach(n => {
+                n.className = 'agent-node idle';
+                n.querySelector('.node-status').innerText = 'WAITING';
+                n.querySelector('.node-details').innerHTML = '...';
+            });
+            document.getElementById('flowStatusBadge').style.display = 'inline-block';
+            document.getElementById('flowStatusBadge').innerText = 'Running Phase';
+            document.getElementById('flowStatusBadge').className = 'badge info';
+
+            // Execution Loop
+            let totalTime = 0;
+            for (let i = 0; i < chainResult.steps.length; i++) {
+                const s = chainResult.steps[i];
+                const node = document.getElementById(`node-${s.id}`);
+
+                // If it's expected to be skipped
+                if (s.expected === 'skipped') {
+                    node.classList.remove('idle');
+                    node.classList.add('skipped');
+                    node.querySelector('.node-status').innerText = 'SKIPPED';
+                    node.querySelector('.node-details').innerHTML = s.html;
+
+                    // Add skipped trace
+                    const uid = s.id + '_' + Date.now();
+                    document.getElementById('traceBody').insertAdjacentHTML('beforeend', `
+                        <div class="trace-span span-skipped visible">
+                            <div class="span-header" style="cursor:default">
+                                <span class="span-name">└─ Agent / ${s.name}</span>
+                                <span class="span-latency" style="color:var(--danger)">SKIPPED - Upstream Block</span>
+                            </div>
+                        </div>
+                    `);
+                    continue; // instantly skip processing
+                }
+
+                // Activate Node
+                node.classList.remove('idle');
+                node.classList.add('active');
+                node.querySelector('.node-status').innerText = 'PROCESSING...';
+
+                // Artificial delay to show process
+                await new Promise(r => setTimeout(r, (s.latency * 2.5) + 300));
+
+                // Complete Node
+                node.classList.remove('active');
+                node.classList.add(s.expected);
+
+                let textStat = "DONE";
+                if (s.expected === 'error-node') textStat = "BLOCKED";
+                if (s.expected === 'warning-node') textStat = "WARNING";
+
+                node.querySelector('.node-status').innerText = textStat;
+                node.querySelector('.node-details').innerHTML = s.html;
+
+                // Push to trace log
+                const uid = s.id + '_' + Date.now();
+                let spanClass = "trace-span visible";
+                if (s.expected === 'error-node') spanClass += " span-error";
+                if (s.expected === 'warning-node') spanClass += " span-warning";
+
+                document.getElementById('traceBody').insertAdjacentHTML('beforeend', `
+                    <div class="${spanClass}">
+                        <div class="span-header" onclick="toggleSpan('${uid}')">
+                            <span class="span-name">└─ Agent / ${s.name}</span>
+                            <span class="span-latency">
+                                ${s.latency}ms 
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </div>
+                        <div class="span-content" id="span-content-${uid}">
+                            <pre class="code-block">${syntaxHighlight(s.log)}</pre>
+                        </div>
+                    </div>
+                `);
+
+                totalTime += s.latency;
+                document.getElementById('traceTotalTime').innerText = totalTime + " ms";
+
+                // Visual action side-effect
+                if (s.id === 'act' && s.expected === 'success-node') {
+                    const stEl = document.getElementById('stockQty');
+                    stEl.innerText = med.stock_quantity - med.qty;
+                    stEl.parentElement.classList.add('flash-update');
+                }
+            }
+
+            // Final state
+            btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Run Again`;
+
+            const finalBadge = document.getElementById('flowStatusBadge');
+            if (chainResult.blocked) {
+                finalBadge.innerText = "Halted by Compliance Rules";
+                finalBadge.className = "badge danger";
+            } else {
+                finalBadge.innerText = "Transaction Complete";
+                finalBadge.className = "badge success";
+            }
+
+            setTimeout(() => { btn.disabled = false; }, 1500);
+        }
+    </script>
+</body>
+
+</html>

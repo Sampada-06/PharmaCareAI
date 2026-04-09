@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick Scanner Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 15px 30px; font-size: 16px; margin: 10px; cursor: pointer; }
+        #console { background: #000; color: #0f0; padding: 15px; font-family: monospace; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Quick Scanner Test</h1>
+    
+    <button onclick="testScanner()">Open Prescription Scanner</button>
+    <button onclick="testWithDebug()">Open Scanner with Debug</button>
+    
+    <div id="console"></div>
+    
+    <script>
+        function log(msg) {
+            document.getElementById('console').innerHTML += msg + '<br>';
+            console.log(msg);
+        }
+        
+        function testScanner() {
+            log('Opening prescription scanner...');
+            window.location.href = 'http://127.0.0.1:8001/site/prescription-scanner.html';
+        }
+        
+        function testWithDebug() {
+            log('Opening scanner with console open...');
+            log('INSTRUCTIONS:');
+            log('1. Press F12 when page opens');
+            log('2. Click "📷 Take Photo"');
+            log('3. Watch console messages');
+            log('4. Copy and report what you see');
+            setTimeout(() => {
+                window.location.href = 'http://127.0.0.1:8001/site/prescription-scanner.html';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

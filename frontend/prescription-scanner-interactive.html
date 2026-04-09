@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCare - Interactive Prescription Scanner</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 14px; }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        /* Image Area */
+        .image-section {
+            position: relative;
+        }
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            background: #f8f9ff;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .upload-area:hover { background: #e8ebff; }
+        .upload-area.hidden { display: none; }
+        
+        .image-container {
+            position: relative;
+            display: none;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #000;
+        }
+        .image-container.active { display: block; }
+        
+        #prescriptionImage {
+            width: 100%;
+            height: auto;
+            display: block;
+            user-select: none;
+        }
+        
+        .selection-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: crosshair;
+        }
+        
+        .selection-box {
+            position: absolute;
+            border: 2px solid #667eea;
+            background: rgba(102, 126, 234, 0.2);
+            pointer-events: none;
+        }
+        
+        /* Chat Section */
+        .chat-section {
+            display: flex;
+            flex-direction: column;
+            background: #f8f9ff;
+            border-radius: 15px;
+            padding: 20px;
+            max-height: 600px;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .message {
+            padding: 12px 16px;
+            border-radius: 12px;
+            max-width: 85%;
+            word-wrap: break-word;
+        }
+        
+        .message.bot {
+            background: white;
+            align-self: flex-start;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .message.user {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            align-self: flex-end;
+        }
+        
+        .chat-input-area {
+            display: flex;
+            gap: 10px;
+        }
+        
+        #chatInput {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .extracted-text {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .extracted-text h3 {
+            font-size: 14px;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        
+        .extracted-text p {
+            font-size: 13px;
+            color: #333;
+            margin: 5px 0;
+        }
+        
+        .instruction {
+            background: #fff3cd;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            .chat-section {
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📸 Interactive Prescription Scanner</h1>
+            <p>Upload prescription → Select text with cursor → Add to cart via AI chatbot</p>
+        </div>
+        
+        <div class="content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <div class="upload-area" id="uploadArea">
+                    <div style="font-size: 64px; margin-bottom: 20px;">📸</div>
+                    <h2 style="color: #667eea; margin-bottom: 10px;">Upload Prescription</h2>
+                    <p style="color: #666; margin-bottom: 20px;">Click to upload or drag & drop</p>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;">
+                    <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+                        📁 Choose File
+                    </button>
+                    <button class="btn btn-secondary" onclick="openCamera()" style="margin-left: 10px;">
+                        📷 Take Photo
+                    </button>
+                </div>
+                
+                <div class="image-container" id="imageContainer">
+                    <img id="prescriptionImage" alt="Prescription">
+                    <canvas id="selectionCanvas" class="selection-overlay"></canvas>
+                </div>
+                
+                <!-- Camera Modal -->
+                <div id="cameraModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; padding: 20px;">
+                    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                        <h2 style="color: white; margin-bottom: 20px;">📷 Take Photo</h2>
+                        <video id="cameraVideo" autoplay playsinline style="width: 100%; max-width: 640px; border-radius: 10px; margin-bottom: 20px;"></video>
+                        <div style="display: flex; gap: 15px; justify-content: center;">
+                            <button class="btn btn-primary" onclick="capturePhoto()">📸 Capture</button>
+                            <button class="btn btn-secondary" onclick="closeCamera()">❌ Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 15px; text-align: center; display: none;" id="imageControls">
+                    <button class="btn btn-secondary" onclick="resetScanner()">
+                        🔄 Upload New Image
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <div class="instruction">
+                    💡 <strong>How to use:</strong> Upload image → Click and drag to select medicine name → AI extracts text (or type manually if OCR fails)
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot">
+                        👋 Hi! Upload a prescription image, then select any medicine name by clicking and dragging. I'll help you add it to your cart!
+                    </div>
+                    <div class="message bot" id="loginStatus" style="background: #fff3cd; border: 1px solid #ffc107; color: #856404;">
+                        🔐 Checking login status...
+                    </div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <input type="text" id="chatInput" placeholder="Or type medicine name..." onkeypress="handleKeyPress(event)">
+                    <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedText = '';
+        let isSelecting = false;
+        let startX, startY;
+        let cameraStream = null;
+        const canvas = document.getElementById('selectionCanvas');
+        const ctx = canvas.getContext('2d');
+        const image = document.getElementById('prescriptionImage');
+        const video = document.getElementById('cameraVideo');
+        
+        // Check login status on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('auth_token');
+            const loginStatusDiv = document.getElementById('loginStatus');
+            
+            if (token) {
+                loginStatusDiv.innerHTML = '✅ You are logged in. Ready to add items to cart!';
+                loginStatusDiv.style.background = '#d4edda';
+                loginStatusDiv.style.borderColor = '#28a745';
+                loginStatusDiv.style.color = '#155724';
+            } else {
+                loginStatusDiv.innerHTML = '⚠️ You are NOT logged in. Please <a href="auth.html" style="color: #667eea; text-decoration: underline; font-weight: bold;">login here</a> to add items to cart.';
+            }
+        });
+        
+        // File upload handling
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+        document.getElementById('cameraInput').addEventListener('change', handleFileSelect);
+        
+        document.getElementById('uploadArea').addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.currentTarget.style.background = '#e8ebff';
+        });
+        
+        document.getElementById('uploadArea').addEventListener('dragleave', (e) => {
+            e.currentTarget.style.background = '#f8f9ff';
+        });
+        
+        document.getElementById('uploadArea').addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.currentTarget.style.background = '#f8f9ff';
+            const file = e.dataTransfer.files[0];
+            if (file && file.type.startsWith('image/')) {
+                loadImage(file);
+            }
+        });
+        
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                loadImage(file);
+            }
+        }
+        
+        function loadImage(file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                image.src = e.target.result;
+                image.onload = () => {
+                    document.getElementById('uploadArea').classList.add('hidden');
+                    document.getElementById('imageContainer').classList.add('active');
+                    document.getElementById('imageControls').style.display = 'block';
+                    
+                    // Setup canvas
+                    canvas.width = image.width;
+                    canvas.height = image.height;
+                    canvas.style.width = '100%';
+                    canvas.style.height = '100%';
+                    
+                    setupSelection();
+                    addBotMessage('✅ Image loaded! Now click and drag to select any medicine name from the prescription.');
+                };
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        function setupSelection() {
+            canvas.addEventListener('mousedown', startSelection);
+            canvas.addEventListener('mousemove', updateSelection);
+            canvas.addEventListener('mouseup', endSelection);
+        }
+        
+        function startSelection(e) {
+            isSelecting = true;
+            const rect = canvas.getBoundingClientRect();
+            startX = e.clientX - rect.left;
+            startY = e.clientY - rect.top;
+        }
+        
+        function updateSelection(e) {
+            if (!isSelecting) return;
+            
+            const rect = canvas.getBoundingClientRect();
+            const currentX = e.clientX - rect.left;
+            const currentY = e.clientY - rect.top;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const width = currentX - startX;
+            const height = currentY - startY;
+            
+            ctx.fillStyle = 'rgba(102, 126, 234, 0.2)';
+            ctx.fillRect(startX, startY, width, height);
+            ctx.strokeStyle = '#667eea';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(startX, startY, width, height);
+        }
+        
+        async function endSelection(e) {
+            if (!isSelecting) return;
+            isSelecting = false;
+            
+            const rect = canvas.getBoundingClientRect();
+            const endX = e.clientX - rect.left;
+            const endY = e.clientY - rect.top;
+            
+            // Calculate selection bounds
+            const x = Math.min(startX, endX);
+            const y = Math.min(startY, endY);
+            const width = Math.abs(endX - startX);
+            const height = Math.abs(endY - startY);
+            
+            // Clear selection box
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            if (width < 10 || height < 10) {
+                addBotMessage('⚠️ Selection too small. Please select a larger area.');
+                return;
+            }
+            
+            // Extract selected region from image
+            addBotMessage('🔍 Extracting text from selected area...');
+            await extractTextFromSelection(x, y, width, height);
+        }
+        
+        async function extractTextFromSelection(x, y, width, height) {
+            try {
+                // Create a temporary canvas to crop the selected region
+                const tempCanvas = document.createElement('canvas');
+                const tempCtx = tempCanvas.getContext('2d');
+                
+                // Scale coordinates to actual image size
+                const scaleX = image.naturalWidth / image.width;
+                const scaleY = image.naturalHeight / image.height;
+                
+                const cropX = x * scaleX;
+                const cropY = y * scaleY;
+                const cropWidth = width * scaleX;
+                const cropHeight = height * scaleY;
+                
+                tempCanvas.width = cropWidth;
+                tempCanvas.height = cropHeight;
+                
+                // Draw cropped region
+                tempCtx.drawImage(
+                    image,
+                    cropX, cropY, cropWidth, cropHeight,
+                    0, 0, cropWidth, cropHeight
+                );
+                
+                // Convert to blob
+                const blob = await new Promise(resolve => tempCanvas.toBlob(resolve, 'image/png'));
+                
+                // Send to backend for OCR
+                const formData = new FormData();
+                formData.append('file', blob, 'selection.png');
+                
+                const response = await fetch('http://127.0.0.1:8001/scan_prescription', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                console.log('OCR Result:', result);
+                
+                // Check for extracted text in various response formats
+                let extractedText = '';
+                let debugInfo = '';
+                
+                if (result.success === false) {
+                    // Show error with helpful info
+                    addBotMessage(`⚠️ ${result.error || 'OCR failed'}\n\n${result.help ? 'Suggestions:\n' + Object.values(result.help).join('\n') : ''}\n\nPlease type the medicine name manually in the chat box below.`);
+                    return;
+                }
+                
+                // Try to get text from response
+                if (result.raw_text && result.raw_text.trim()) {
+                    extractedText = result.raw_text.trim();
+                    debugInfo = `Raw OCR text: ${extractedText.substring(0, 100)}...`;
+                } else if (result.extracted_text && result.extracted_text.trim()) {
+                    extractedText = result.extracted_text.trim();
+                } else if (result.medicines && result.medicines.length > 0) {
+                    // If medicines array exists, use the first medicine name
+                    const firstMed = result.medicines[0];
+                    extractedText = firstMed.name || firstMed;
+                    debugInfo = `Found ${result.medicines.length} medicine(s)`;
+                } else if (result.database_matches && result.database_matches.length > 0) {
+                    // Use database match
+                    extractedText = result.database_matches[0].product_name;
+                    debugInfo = `Found in database: ${extractedText}`;
+                }
+                
+                if (extractedText) {
+                    addBotMessage(`✅ Extracted: "${extractedText}"\n${debugInfo ? debugInfo : ''}\n\nSearching...`);
+                    addUserMessage(`Selected: ${extractedText}`);
+                    
+                    // Try to search, but if fails, ask user to type
+                    const searchResult = await processSelectedMedicine(extractedText);
+                    
+                    if (!searchResult) {
+                        addBotMessage(`💬 OCR might not be accurate. Please type the medicine name manually in the chat box below.`);
+                    }
+                } else {
+                    addBotMessage(`⚠️ Could not extract clear text from selection.\n\nBackend response: ${JSON.stringify(result).substring(0, 200)}\n\nPlease type the medicine name manually in the chat box below.`);
+                }
+                
+            } catch (error) {
+                console.error('OCR Error:', error);
+                addBotMessage(`⚠️ Error: ${error.message}\n\nPlease type the medicine name manually in the chat box below.`);
+            }
+        }
+        
+        async function processSelectedMedicine(medicineName) {
+            addBotMessage(`🔍 Searching for "${medicineName}"...`);
+            
+            try {
+                // Clean the medicine name - remove brand names and extra words
+                let cleanName = medicineName
+                    .replace(/^(Torrent|Cipla|Sun Pharma|Dr\. Reddy's|Mankind|Lupin|Zydus|Alkem)\s+/i, '') // Remove brand names
+                    .replace(/\s+Tablet.*$/i, '') // Remove "Tablet" suffix
+                    .replace(/\s+Capsule.*$/i, '') // Remove "Capsule" suffix
+                    .trim();
+                
+                // Extract just the medicine name (first word or two)
+                const words = cleanName.split(/\s+/);
+                const searchTerms = [
+                    cleanName, // Full cleaned name
+                    words[0], // First word only
+                    words.slice(0, 2).join(' ') // First two words
+                ];
+                
+                let medicines = [];
+                
+                // Try each search term until we find results
+                for (const term of searchTerms) {
+                    if (term.length < 3) continue;
+                    
+                    console.log(`Searching for: "${term}"`);
+                    const response = await fetch(`http://127.0.0.1:8001/medicines?search=${encodeURIComponent(term)}`);
+                    medicines = await response.json();
+                    
+                    if (medicines && medicines.length > 0) {
+                        console.log(`Found ${medicines.length} results for "${term}"`);
+                        break;
+                    }
+                }
+                
+                if (medicines && medicines.length > 0) {
+                    const medicine = medicines[0];
+                    
+                    // Show all matches if multiple found
+                    if (medicines.length > 1) {
+                        let options = medicines.slice(0, 3).map((m, i) => 
+                            `${i + 1}. ${m.name} - ₹${m.price} (Stock: ${m.stock_qty})`
+                        ).join('\n');
+                        
+                        addBotMessage(`✅ Found ${medicines.length} matches:\n\n${options}\n\nUsing: ${medicine.name} - ₹${medicine.price}\n\nHow many units would you like to add to cart?`);
+                    } else {
+                        addBotMessage(`✅ Found: ${medicine.name} - ₹${medicine.price}\n\nHow many units would you like to add to cart?`);
+                    }
+                    
+                    // Store medicine data for cart
+                    window.currentMedicine = medicine;
+                } else {
+                    addBotMessage(`❌ Sorry, I couldn't find "${medicineName}" in our inventory.\n\nTried searching for: ${searchTerms.join(', ')}\n\nPlease type the exact medicine name from our inventory.`);
+                }
+            } catch (error) {
+                addBotMessage(`⚠️ Error searching for medicine. Please make sure the backend is running.`);
+                console.error(error);
+            }
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+        
+        async function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            addUserMessage(message);
+            input.value = '';
+            
+            // Check if user is responding to quantity question
+            if (window.currentMedicine) {
+                // Try to extract quantity from message
+                const quantityMatch = message.match(/(\d+)/);
+                
+                if (quantityMatch) {
+                    const quantity = parseInt(quantityMatch[1]);
+                    if (quantity > 0) {
+                        await addToCart(window.currentMedicine, quantity);
+                        window.currentMedicine = null;
+                        return;
+                    }
+                }
+                
+                // Check for common phrases
+                const lowerMsg = message.toLowerCase();
+                if (lowerMsg.includes('add') || lowerMsg.includes('unit') || lowerMsg.includes('piece')) {
+                    const qty = parseInt(message.match(/(\d+)/)?.[1] || '1');
+                    if (qty > 0) {
+                        await addToCart(window.currentMedicine, qty);
+                        window.currentMedicine = null;
+                        return;
+                    }
+                }
+            }
+            
+            // Otherwise, treat as medicine search
+            await processSelectedMedicine(message);
+        }
+        
+        async function addToCart(medicine, quantity) {
+            try {
+                addBotMessage(`⏳ Adding ${quantity} unit(s) to cart...`);
+                
+                // Check if user is logged in
+                const token = localStorage.getItem('auth_token');
+                
+                console.log('=== ADD TO CART DEBUG ===');
+                console.log('Token exists:', !!token);
+                console.log('Medicine:', medicine);
+                console.log('Quantity:', quantity);
+                
+                if (!token) {
+                    addBotMessage(`⚠️ Please login first to add items to cart.\n\n<a href="auth.html" style="color: #667eea; text-decoration: underline; font-weight: bold;">Click here to login</a>`);
+                    return;
+                }
+                
+                const requestBody = {
+                    medicine_id: medicine.id.toString(),
+                    medicine_name: medicine.name,
+                    price_inr: medicine.price,
+                    qty: quantity
+                };
+                
+                console.log('Request body:', requestBody);
+                
+                const response = await fetch('http://127.0.0.1:8001/cart/add', {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+                
+                console.log('Response status:', response.status);
+                
+                const result = await response.json();
+                console.log('Response body:', result);
+                console.log('=== END DEBUG ===');
+                
+                if (response.ok && result.status === 'success') {
+                    addBotMessage(`✅ Successfully added ${quantity} unit(s) of ${medicine.name} to cart!\n\nSubtotal: ₹${result.subtotal || (medicine.price * quantity)}\n\n🛒 Redirecting to cart...`);
+                    
+                    // Redirect to cart page after 1.5 seconds
+                    setTimeout(() => {
+                        // Store a flag to open cart page
+                        sessionStorage.setItem('openCart', 'true');
+                        window.location.href = 'user-dashboard.html';
+                    }, 1500);
+                } else {
+                    if (response.status === 401) {
+                        addBotMessage(`⚠️ Session expired. Please <a href="auth.html" style="color: #667eea; text-decoration: underline; font-weight: bold;">login again</a>.`);
+                    } else {
+                        addBotMessage(`⚠️ Failed to add to cart:\n\nStatus: ${response.status}\nMessage: ${result.detail || result.message || JSON.stringify(result)}\n\nCheck browser console (F12) for details.`);
+                    }
+                }
+            } catch (error) {
+                addBotMessage(`⚠️ Error adding to cart: ${error.message}\n\nPlease make sure:\n1. You're logged in\n2. Backend server is running\n3. Check browser console (F12) for details`);
+                console.error('Cart error:', error);
+            }
+        }
+        
+        function addBotMessage(text) {
+            const messagesDiv = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message bot';
+            messageDiv.textContent = text;
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+        
+        function addUserMessage(text) {
+            const messagesDiv = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message user';
+            messageDiv.textContent = text;
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+        
+        function resetScanner() {
+            document.getElementById('uploadArea').classList.remove('hidden');
+            document.getElementById('imageContainer').classList.remove('active');
+            document.getElementById('imageControls').style.display = 'none';
+            document.getElementById('fileInput').value = '';
+            document.getElementById('cameraInput').value = '';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            selectedText = '';
+            window.currentMedicine = null;
+        }
+        
+        async function openCamera() {
+            try {
+                const modal = document.getElementById('cameraModal');
+                modal.style.display = 'block';
+                
+                cameraStream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { 
+                        facingMode: 'environment',
+                        width: { ideal: 1920 },
+                        height: { ideal: 1080 }
+                    } 
+                });
+                
+                video.srcObject = cameraStream;
+                addBotMessage('📷 Camera opened! Position your prescription and click Capture.');
+            } catch (error) {
+                console.error('Camera error:', error);
+                alert('Unable to access camera. Please check permissions or use "Choose File" instead.');
+                closeCamera();
+            }
+        }
+        
+        function capturePhoto() {
+            const captureCanvas = document.createElement('canvas');
+            captureCanvas.width = video.videoWidth;
+            captureCanvas.height = video.videoHeight;
+            
+            const captureCtx = captureCanvas.getContext('2d');
+            captureCtx.drawImage(video, 0, 0);
+            
+            // Convert to blob and load as image
+            captureCanvas.toBlob((blob) => {
+                const file = new File([blob], 'camera-capture.jpg', { type: 'image/jpeg' });
+                loadImage(file);
+                closeCamera();
+            }, 'image/jpeg', 0.95);
+        }
+        
+        function closeCamera() {
+            if (cameraStream) {
+                cameraStream.getTracks().forEach(track => track.stop());
+                cameraStream = null;
+            }
+            document.getElementById('cameraModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Backend Connection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+        .test-box {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        button {
+            background: #14b8a6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0d9488;
+        }
+        .result {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .success { border-color: #22c55e; color: #22c55e; }
+        .error { border-color: #ef4444; color: #ef4444; }
+        input {
+            width: 100%;
+            padding: 10px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            color: #e2e8f0;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        h1 { color: #14b8a6; }
+        h3 { color: #38bdf8; margin-top: 0; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Backend Connection Test</h1>
+    <p>Test your backend API connection and chat endpoint</p>
+
+    <!-- Test 1: Backend Health -->
+    <div class="test-box">
+        <h3>Test 1: Backend Health Check</h3>
+        <p>Check if backend is running</p>
+        <button onclick="testBackendHealth()">Test Backend</button>
+        <div id="health-result" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Test 2: Get Medicines -->
+    <div class="test-box">
+        <h3>Test 2: Get Medicines</h3>
+        <p>Fetch medicines from backend</p>
+        <button onclick="testGetMedicines()">Get Medicines</button>
+        <div id="medicines-result" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Test 3: Simple Chat -->
+    <div class="test-box">
+        <h3>Test 3: Chat Endpoint (Simple)</h3>
+        <p>Test chat with a simple message</p>
+        <button onclick="testSimpleChat()">Send "Hello"</button>
+        <div id="simple-chat-result" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Test 4: Custom Chat -->
+    <div class="test-box">
+        <h3>Test 4: Chat Endpoint (Custom)</h3>
+        <p>Test chat with your own message</p>
+        <input type="text" id="customMessage" placeholder="Type your message..." value="I need 2 Aspirin">
+        <button onclick="testCustomChat()">Send Message</button>
+        <div id="custom-chat-result" class="result" style="display:none;"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://127.0.0.1:8001';
+
+        function showResult(elementId, data, isError = false) {
+            const el = document.getElementById(elementId);
+            el.style.display = 'block';
+            el.className = 'result ' + (isError ? 'error' : 'success');
+            el.textContent = typeof data === 'object' ? JSON.stringify(data, null, 2) : data;
+        }
+
+        async function testBackendHealth() {
+            try {
+                const response = await fetch(`${API_BASE}/medicines?limit=1`);
+                if (response.ok) {
+                    const data = await response.json();
+                    showResult('health-result', {
+                        status: 'SUCCESS',
+                        message: 'Backend is running!',
+                        sample: data[0]
+                    });
+                } else {
+                    showResult('health-result', {
+                        status: 'ERROR',
+                        code: response.status,
+                        message: 'Backend returned error'
+                    }, true);
+                }
+            } catch (error) {
+                showResult('health-result', {
+                    status: 'ERROR',
+                    message: 'Cannot connect to backend',
+                    error: error.message,
+                    hint: 'Make sure backend is running on port 8000'
+                }, true);
+            }
+        }
+
+        async function testGetMedicines() {
+            try {
+                const response = await fetch(`${API_BASE}/medicines?limit=3`);
+                const data = await response.json();
+                showResult('medicines-result', {
+                    status: 'SUCCESS',
+                    count: data.length,
+                    medicines: data
+                });
+            } catch (error) {
+                showResult('medicines-result', {
+                    status: 'ERROR',
+                    error: error.message
+                }, true);
+            }
+        }
+
+        async function testSimpleChat() {
+            try {
+                const response = await fetch(`${API_BASE}/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        message: "Hello"
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult('simple-chat-result', {
+                        status: 'SUCCESS',
+                        response: data
+                    });
+                } else {
+                    showResult('simple-chat-result', {
+                        status: 'ERROR',
+                        code: response.status,
+                        error: data
+                    }, true);
+                }
+            } catch (error) {
+                showResult('simple-chat-result', {
+                    status: 'ERROR',
+                    error: error.message
+                }, true);
+            }
+        }
+
+        async function testCustomChat() {
+            const message = document.getElementById('customMessage').value;
+            if (!message) {
+                alert('Please enter a message');
+                return;
+            }
+
+            try {
+                console.log('Sending:', { message });
+                
+                const response = await fetch(`${API_BASE}/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        message: message,
+                        context: {}
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult('custom-chat-result', {
+                        status: 'SUCCESS',
+                        sent: message,
+                        response: data
+                    });
+                } else {
+                    showResult('custom-chat-result', {
+                        status: 'ERROR',
+                        code: response.status,
+                        sent: message,
+                        error: data
+                    }, true);
+                }
+            } catch (error) {
+                showResult('custom-chat-result', {
+                    status: 'ERROR',
+                    sent: message,
+                    error: error.message
+                }, true);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #4CAF50;
+            color: white;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .info { background: #d1ecf1; color: #0c5460; }
+        video {
+            width: 100%;
+            max-width: 640px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        #console {
+            background: #000;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Camera Feature Debug Test</h1>
+    
+    <div class="test-section">
+        <h2>Step 1: Check URL</h2>
+        <div id="urlCheck"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Step 2: Check Camera API</h2>
+        <div id="apiCheck"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Step 3: Test Camera Access</h2>
+        <button onclick="testCamera()">📷 Test Camera</button>
+        <button onclick="testFileUpload()">📁 Test File Upload</button>
+        <div id="status"></div>
+        <video id="video" autoplay playsinline style="display:none;"></video>
+        <input type="file" id="fileInput" accept="image/*" style="display:none;" onchange="handleFile(event)">
+    </div>
+
+    <div class="test-section">
+        <h2>Console Output</h2>
+        <div id="console"></div>
+    </div>
+
+    <script>
+        // Console logging
+        function log(message, type = 'info') {
+            const consoleDiv = document.getElementById('console');
+            const timestamp = new Date().toLocaleTimeString();
+            consoleDiv.innerHTML += `[${timestamp}] ${message}<br>`;
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+            console.log(message);
+        }
+
+        // Check URL
+        function checkURL() {
+            const urlDiv = document.getElementById('urlCheck');
+            const url = window.location.href;
+            
+            if (url.startsWith('http://127.0.0.1:8001') || url.startsWith('http://localhost:8000')) {
+                urlDiv.innerHTML = `<div class="success">✅ CORRECT: ${url}</div>`;
+                log('✅ URL is correct: ' + url);
+            } else if (url.startsWith('file://')) {
+                urlDiv.innerHTML = `<div class="error">❌ WRONG: ${url}<br><br>Camera won't work with file:// protocol!<br>Please run START_PROJECT.bat and access via http://127.0.0.1:8001</div>`;
+                log('❌ URL is wrong: ' + url);
+            } else {
+                urlDiv.innerHTML = `<div class="info">⚠️ UNKNOWN: ${url}</div>`;
+                log('⚠️ Unknown URL: ' + url);
+            }
+        }
+
+        // Check Camera API
+        function checkAPI() {
+            const apiDiv = document.getElementById('apiCheck');
+            
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                apiDiv.innerHTML = '<div class="success">✅ Camera API is available</div>';
+                log('✅ Camera API is available');
+            } else {
+                apiDiv.innerHTML = '<div class="error">❌ Camera API is NOT available<br>Your browser may not support camera access</div>';
+                log('❌ Camera API is NOT available');
+            }
+        }
+
+        // Test Camera
+        async function testCamera() {
+            const statusDiv = document.getElementById('status');
+            const video = document.getElementById('video');
+            
+            statusDiv.innerHTML = '<div class="info">⏳ Requesting camera access...</div>';
+            log('Requesting camera access...');
+            
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    video: {
+                        facingMode: 'environment',
+                        width: { ideal: 1920 },
+                        height: { ideal: 1080 }
+                    }
+                });
+                
+                video.srcObject = stream;
+                video.style.display = 'block';
+                statusDiv.innerHTML = '<div class="success">✅ Camera is working! You should see video above.</div>';
+                log('✅ Camera access granted');
+                log('Stream active: ' + stream.active);
+                log('Video tracks: ' + stream.getVideoTracks().length);
+                
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="error">❌ Camera Error: ${error.name}<br>${error.message}</div>`;
+                log('❌ Camera error: ' + error.name + ' - ' + error.message);
+                
+                if (error.name === 'NotAllowedError') {
+                    statusDiv.innerHTML += '<br><br>You denied camera permission. Please:<br>1. Click the camera icon in address bar<br>2. Select "Always allow"<br>3. Refresh and try again';
+                } else if (error.name === 'NotFoundError') {
+                    statusDiv.innerHTML += '<br><br>No camera found on your device.';
+                } else if (error.name === 'NotSupportedError') {
+                    statusDiv.innerHTML += '<br><br>Camera not supported on this protocol. Use http://127.0.0.1:8001';
+                }
+            }
+        }
+
+        // Test File Upload
+        function testFileUpload() {
+            log('Opening file picker...');
+            document.getElementById('fileInput').click();
+        }
+
+        function handleFile(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const statusDiv = document.getElementById('status');
+                statusDiv.innerHTML = `<div class="success">✅ File selected: ${file.name}<br>Size: ${(file.size / 1024).toFixed(2)} KB<br>Type: ${file.type}</div>`;
+                log('✅ File selected: ' + file.name);
+            }
+        }
+
+        // Run checks on load
+        window.onload = function() {
+            log('Page loaded');
+            checkURL();
+            checkAPI();
+        };
+    </script>
+</body>
+</html>

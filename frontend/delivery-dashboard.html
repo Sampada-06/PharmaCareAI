@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaCare AI - Delivery Agency</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module">
+        const token = localStorage.getItem('auth_token');
+        if (!token || token === 'undefined' || token === 'null') {
+            window.location.href = 'auth.html';
+        }
+    </script>
+    <style>
+        :root {
+            --bg: #0B1220;
+            --sidebar: #111827;
+            --card: #182233;
+            --primary: #14B8A6;
+            --success: #22C55E;
+            --accent: #38BDF8;
+            --text: #F1F5F9;
+            --muted: #94A3B8;
+        }
+
+        .badge.pending {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+        }
+
+        .badge.assigned {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--warning);
+        }
+
+        .badge.packed {
+            background: rgba(249, 115, 22, 0.1);
+            color: #f97316;
+        }
+
+        .badge.shipped {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+        }
+
+        .badge.out {
+            background: rgba(99, 102, 241, 0.1);
+            color: #6366f1;
+        }
+
+        .badge.tomorrow {
+            background: rgba(139, 92, 246, 0.1);
+            color: #8b5cf6;
+        }
+
+        .badge.delivered {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+        }
+
+        .timeline-text {
+            font-size: 11px;
+            color: var(--muted);
+            line-height: 1.4;
+        }
+
+        .dropdown-select {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            font-size: 12px;
+            outline: none;
+        }
+
+        .dropdown-select:focus {
+            border-color: var(--primary);
+        }
+    </style>
+    <script>
+        function showPage(id) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            var pageEl = document.getElementById('page-' + id);
+            if (pageEl) pageEl.classList.add('active');
+            var navEl = document.getElementById('nav-' + id);
+            if (navEl) navEl.classList.add('active');
+            var titles = {
+                unassigned: 'Unassigned Orders', 'agent-panel': 'My Deliveries',
+                history: 'Order History', analytics: 'Agent Analytics',
+                agents: 'Delivery Agents'
+            };
+            var tEl = document.getElementById('topbar-title');
+            if (tEl) tEl.textContent = titles[id] || id;
+            if (window.innerWidth < 900) closeSidebar();
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            var ov = document.getElementById('sidebarOverlay');
+            if (sb) sb.classList.toggle('open');
+            if (ov) ov.classList.toggle('open');
+        }
+
+        function closeSidebar() {
+            var sb = document.getElementById('sidebar');
+            var ov = document.getElementById('sidebarOverlay');
+            if (sb) sb.classList.remove('open');
+            if (ov) ov.classList.remove('open');
+        }
+
+        window.logout = () => {
+            localStorage.removeItem('auth_token');
+            localStorage.removeItem('user');
+            window.location.href = 'index.html';
+        };
+    </script>
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- SIDEBAR -->
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <div class="logo-icon" style="font-size:11px;font-weight:800;color:var(--primary);">DA</div>
+                <div>
+                    <div class="logo-text">PharmaCare AI</div>
+                    <div class="logo-sub">Delivery Agency</div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section-label">Operations</div>
+                <a class="nav-item active" onclick="showPage('unassigned')" id="nav-unassigned">
+                    <span class="nav-icon"></span> Unassigned Orders
+                </a>
+                <a class="nav-item" onclick="showPage('agent-panel')" id="nav-agent-panel">
+                    <span class="nav-icon"></span> My Deliveries
+                </a>
+                <div class="nav-section-label" style="margin-top:12px;">Monitoring</div>
+                <a class="nav-item" onclick="showPage('history')" id="nav-history">
+                    <span class="nav-icon"></span> Order History
+                </a>
+                <a class="nav-item" onclick="showPage('analytics')" id="nav-analytics">
+                    <span class="nav-icon"></span> Analytics
+                </a>
+                <a class="nav-item" onclick="showPage('agents')" id="nav-agents">
+                    <span class="nav-icon"></span> Delivery Agents
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="nav-item" style="margin-bottom:8px;">
+                    <span class="nav-icon"></span> ← Home
+                </a>
+                <a href="user-dashboard.html" class="nav-item" style="margin-bottom:8px;">
+                    <span class="nav-icon"></span> Patient Portal
+                </a>
+                <a href="pharmacist-dashboard.html" class="nav-item" style="margin-bottom:8px;">
+                    <span class="nav-icon"></span> Pharmacist Portal
+                </a>
+                <div class="user-profile-mini">
+                    <div class="avatar" style="background:linear-gradient(135deg,#10b981,#3b82f6);">DA</div>
+                    <div class="user-meta">
+                        <div class="u-info">
+                            <span class="u-name" id="agentNameDisplay">Delivery Agent</span>
+                            <span class="u-role">Logistics Team</span>
+                        </div>
+                        <a href="#" onclick="logout(); return false;" class="btn btn-ghost btn-sm"
+                            style="color:var(--danger); margin-left:15px; border-color:rgba(239,68,68,0.2);">Logout</a>
+                    </div>
+                </div>
+        </aside>
+
+        <!-- MAIN -->
+        <div class="main-content">
+            <header class="topbar">
+                <div style="display:flex;align-items:center;">
+                    <div class="hamburger" onclick="toggleSidebar()">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div>
+                        <div class="topbar-title" id="topbar-title">Unassigned Orders</div>
+                        <div class="topbar-subtitle">System dynamically routes orders approved by pharmacists.</div>
+                    </div>
+                </div>
+                <div class="topbar-actions">
+                    <div class="topbar-btn" data-tooltip="Notifications" style="position:relative;">
+                        <span
+                            style="position:absolute;top:6px;right:6px;width:7px;height:7px;border-radius:50%;background:var(--accent);"></span>
+                    </div>
+                    <div class="avatar" style="background:linear-gradient(135deg,#10b981,#3b82f6);cursor:pointer;">DA
+                    </div>
+                </div>
+            </header>
+
+            <main class="page-content">
+
+                <!-- ═══ UNASSIGNED ORDERS ═══ -->
+                <section class="page active" id="page-unassigned">
+                    <div class="table-wrap">
+                        <div class="table-header">
+                            <div style="font-size:15px;font-weight:700;color:var(--text);">Pending Assignment</div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Patient</th>
+                                    <th>Address</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Assign Agent</th>
+                                </tr>
+                            </thead>
+                            <tbody id="unassigned-table-body"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ═══ MY DELIVERIES ═══ -->
+                <section class="page" id="page-agent-panel">
+                    <div class="table-wrap">
+                        <div class="table-header">
+                            <div style="font-size:15px;font-weight:700;color:var(--text);">Active Deliveries (All
+                                Agents)</div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Patient</th>
+                                    <th>Assigned Agent</th>
+                                    <th>Current Status</th>
+                                    <th>Update Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="my-deliveries-table-body"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ═══ ORDER HISTORY ═══ -->
+                <section class="page" id="page-history">
+                    <div class="table-wrap">
+                        <div class="table-header">
+                            <div style="font-size:15px;font-weight:700;color:var(--text);">All Processed Orders</div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Patient</th>
+                                    <th>Amount</th>
+                                    <th>Assigned Agent</th>
+                                    <th>Final Status</th>
+                                    <th>Timeline Updates</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history-table-body"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ═══ ANALYTICS ═══ -->
+                <section class="page" id="page-analytics">
+                    <div class="kpi-grid mb-24">
+                        <div class="kpi-card primary">
+                            <div class="kpi-icon primary"></div>
+                            <div class="kpi-label">Total Delivered</div>
+                            <div class="kpi-value" id="statTotalDelivered">0</div>
+                            <div class="kpi-sub delta-up">Lifetime successfully delivered</div>
+                        </div>
+                        <div class="kpi-card danger">
+                            <div class="kpi-icon danger"></div>
+                            <div class="kpi-label">Active Orders</div>
+                            <div class="kpi-value" id="statActive">0</div>
+                            <div class="kpi-sub" style="color:var(--muted);">Currently assigned to you</div>
+                        </div>
+                        <div class="kpi-card success">
+                            <div class="kpi-icon success"></div>
+                            <div class="kpi-label">Estimated Earnings</div>
+                            <div class="kpi-value" id="statEarnings">₹0.00</div>
+                            <div class="kpi-sub delta-up">Based on ₹45 per delivery</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══ DELIVERY AGENTS ═══ -->
+                <section class="page" id="page-agents">
+                    <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:16px;">Agent Performance
+                        Overview</div>
+                    <div class="kpi-grid mb-24" id="agentsListContainer">
+                        <!-- Agents rendered dynamically -->
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <script type="module">
+        import api from './services/api.js';
+
+        // Same agent ID mock logic 
+        // Global store for orders to access full details during updates
+        let allOrders = [];
+        let currentUserId = "DELIVERY_AGENT_1";
+
+        const availableAgents = [
+            { id: 'DELIVERY_AGENT_1', name: 'Agent John' },
+            { id: 'DELIVERY_AGENT_2', name: 'Agent Sarah' },
+            { id: 'DELIVERY_AGENT_3', name: 'Agent Mike' },
+            { id: 'DELIVERY_AGENT_4', name: 'Agent Emily' },
+            { id: 'DELIVERY_AGENT_5', name: 'Agent Rahul' },
+            { id: 'DELIVERY_AGENT_6', name: 'Agent David' }
+        ];
+
+        async function fetchDeliveryOrders() {
+            try {
+                const response = await fetch('http://127.0.0.1:8001/api/delivery-agency/orders');
+                if (!response.ok) {
+                    console.error("API Error:", response.status);
+                    return;
+                }
+                const orders = await response.json();
+                console.log(`[Delivery] Fetched ${orders.length} potential delivery orders`);
+                allOrders = orders; // Save to global store
+                renderDashboards(orders);
+            } catch (err) {
+                console.error("Connection Error:", err);
+            }
+        }
+
+        function renderDashboards(orders) {
+            const unassignedBody = document.getElementById('unassigned-table-body');
+            const myBody = document.getElementById('my-deliveries-table-body');
+            const historyBody = document.getElementById('history-table-body');
+
+            unassignedBody.innerHTML = '';
+            myBody.innerHTML = '';
+            historyBody.innerHTML = '';
+
+            let totalDelivered = 0;
+            let activeOrders = 0;
+
+            orders.forEach(o => {
+                const status = (o.order_status || o.shipping_status || 'PENDING').toUpperCase();
+                const assigned = o.assigned_agent_id;
+
+                let pName = 'Unknown';
+                try { pName = JSON.parse(o.customer_info)?.name || 'Unknown'; } catch (e) { }
+
+                // Section A: Unassigned
+                if (status === 'APPROVED_FOR_DELIVERY' && !assigned) {
+                    let options = `<option value="">-- Select Agent --</option>`;
+                    availableAgents.forEach(a => { options += `<option value="${a.id}">${a.name}</option>`; });
+
+                    unassignedBody.innerHTML += `
+                        <tr>
+                            <td><strong>${o.order_id}</strong></td>
+                            <td style="font-weight:600;">${pName}</td>
+                            <td class="timeline-text">System Generated Address View</td>
+                            <td style="color:var(--primary);font-weight:700;">₹${o.total_amount}</td>
+                            <td><span class="badge pending">PENDING ASSIGNMENT</span></td>
+                            <td>
+                                <div style="display:flex; gap:8px;">
+                                    <select class="dropdown-select" id="assign-${o.order_id}">${options}</select>
+                                    <button class="btn btn-sm" style="font-size:11px; padding:6px 12px; background:var(--accent);" onclick="assignAgent('${o.order_id}')">Assign</button>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                }
+
+                // Section B: Assigned Orders (All Agents)
+                if (assigned && status !== 'DELIVERED') {
+                    activeOrders++;
+
+                    // Find agent name
+                    const agentName = availableAgents.find(a => a.id === assigned)?.name || 'Unknown Agent';
+
+                    myBody.innerHTML += `
+                        <tr>
+                            <td><strong>${o.order_id}</strong></td>
+                            <td style="font-weight:600;">${pName}</td>
+                            <td class="timeline-text">${agentName}</td>
+                            <td><span class="badge ${getStatusClass(status)}">${status}</span></td>
+                            <td>
+                                <div style="display:flex; gap:8px;">
+                                    <select class="dropdown-select" id="status-${o.order_id}">
+                                        <option value="PACKED">Packed</option>
+                                        <option value="SHIPPED">Shipped</option>
+                                        <option value="OUT_FOR_DELIVERY">Out for Delivery</option>
+                                        <option value="DELIVERY_TOMORROW">Delivery Tomorrow</option>
+                                        <option value="DELIVERED">Delivered</option>
+                                    </select>
+                                    <button class="btn btn-sm" style="font-size:11px; padding:6px 12px; background:var(--primary);" onclick="updateStatus('${o.order_id}')">Update</button>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                }
+
+                // Analytics Logic - Count all delivered orders
+                if (assigned && status === 'DELIVERED') totalDelivered++;
+
+                // Section D: History
+                let agentName = availableAgents.find(a => a.id === assigned)?.name || 'None';
+                historyBody.innerHTML += `
+                    <tr>
+                        <td><strong>${o.order_id}</strong></td>
+                        <td style="font-weight:600;">${pName}</td>
+                        <td style="color:var(--primary);font-weight:700;">₹${o.total_amount}</td>
+                        <td>${agentName}</td>
+                        <td><span class="badge ${getStatusClass(status)}">${status}</span></td>
+                        <td class="timeline-text">
+                            ${formatTimeline(o.delivery_timeline)}
+                        </td>
+                    </tr>
+                `;
+            });
+
+            document.getElementById('statTotalDelivered').textContent = totalDelivered;
+            document.getElementById('statActive').textContent = activeOrders;
+            document.getElementById('statEarnings').textContent = '₹' + (totalDelivered * 45).toFixed(2);
+
+            // Calculate metrics per agent
+            const agentsData = {};
+            availableAgents.forEach(a => {
+                agentsData[a.id] = { name: a.name, deliveredCount: 0, revenue: 0 };
+            });
+
+            orders.forEach(o => {
+                const status = (o.order_status || o.shipping_status || 'PENDING').toUpperCase();
+                const assigned = o.assigned_agent_id;
+                if (assigned && agentsData[assigned]) {
+                    if (status === 'DELIVERED') {
+                        agentsData[assigned].deliveredCount++;
+                        agentsData[assigned].revenue += parseFloat(o.total_amount) || 0;
+                    }
+                }
+            });
+
+            const agentsContainer = document.getElementById('agentsListContainer');
+            if (agentsContainer) {
+                agentsContainer.innerHTML = '';
+                Object.values(agentsData).forEach(a => {
+                    let revenueStr = a.revenue.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                    agentsContainer.innerHTML += `
+                        <div class="kpi-card" style="border-top-color:var(--accent);">
+                            <div class="kpi-icon" style="background:var(--accent-glow);color:var(--accent);">
+                                <span style="font-size:14px;font-weight:800;">DA</span>
+                            </div>
+                            <div class="kpi-label" style="font-size:14px;font-weight:700;color:var(--text);">${a.name}</div>
+                            <div style="margin-top:10px;display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:10px;">
+                                <div>
+                                    <div style="font-size:11px;color:var(--muted);">Orders</div>
+                                    <div style="font-size:16px;font-weight:700;color:var(--primary);">${a.deliveredCount}</div>
+                                </div>
+                                <div style="text-align:right;">
+                                    <div style="font-size:11px;color:var(--muted);">Revenue</div>
+                                    <div style="font-size:16px;font-weight:700;color:var(--success);">₹${revenueStr}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+        }
+
+        window.assignAgent = async function (orderId) {
+            const agentId = document.getElementById(`assign-${orderId}`).value;
+            if (!agentId) return alert('Select an agent');
+
+            try {
+                await fetch(`http://127.0.0.1:8001/api/delivery-agency/orders/${orderId}/assign`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ agent_id: agentId })
+                });
+                fetchDeliveryOrders();
+            } catch (err) {
+                console.error(err);
+                alert("Failed to assign");
+            }
+        };
+
+        window.updateStatus = async function (orderId) {
+            const status = document.getElementById(`status-${orderId}`).value;
+
+            // COD Check: If delivering, verify payment was received if it was a COD order
+            if (status === 'DELIVERED') {
+                const order = allOrders.find(o => o.order_id === orderId);
+                // In our system, 'Pending' payment_status typically means a COD order that hasn't been paid yet
+                if (order && (order.payment_status === 'Pending' || order.payment_status === 'Unpaid')) {
+                    const received = confirm(`ORDER ${orderId} is Cash on Delivery (₹${order.total_amount}).\n\nHas the payment been RECEIVED in cash?`);
+                    if (!received) {
+                        alert("COD payment is required first before marking as delivered.");
+                        return;
+                    }
+                }
+            }
+
+            try {
+                await fetch(`http://127.0.0.1:8001/api/delivery-agency/orders/${orderId}/status`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ delivery_status: status })
+                });
+                fetchDeliveryOrders();
+            } catch (err) {
+                console.error(err);
+                alert("Failed to update status");
+            }
+        };
+
+        function getStatusClass(status) {
+            if (status === 'ASSIGNED') return 'assigned';
+            if (status === 'PACKED') return 'packed';
+            if (status === 'SHIPPED') return 'shipped';
+            if (status === 'OUT_FOR_DELIVERY') return 'out';
+            if (status === 'DELIVERY_TOMORROW') return 'tomorrow';
+            if (status === 'DELIVERED') return 'delivered';
+            return 'pending';
+        }
+
+        function formatTimeline(tl) {
+            if (!tl) return 'No timeline data';
+            let str = '';
+            if (tl.packed_at) str += `<b>Packed:</b> ${new Date(tl.packed_at).toLocaleString()}<br>`;
+            if (tl.shipped_at) str += `<b>Shipped:</b> ${new Date(tl.shipped_at).toLocaleString()}<br>`;
+            if (tl.out_for_delivery_at) str += `<b>Out:</b> ${new Date(tl.out_for_delivery_at).toLocaleString()}<br>`;
+            if (tl.delivered_at) str += `<b>Delivered:</b> ${new Date(tl.delivered_at).toLocaleString()}<br>`;
+            return str || 'Processing...';
+        }
+
+        const userStr = localStorage.getItem('user');
+        if (userStr) {
+            const user = JSON.parse(userStr);
+            if (document.getElementById('agentNameDisplay')) {
+                document.getElementById('agentNameDisplay').textContent = user.name || 'Delivery Agent';
+            }
+        }
+
+        fetchDeliveryOrders();
+        setInterval(fetchDeliveryOrders, 10000);
+
+    </script>
+</body>
+
+</html>
