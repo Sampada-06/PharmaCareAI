@@ -2,7 +2,7 @@ from fastapi import FastAPI, Query, HTTPException, UploadFile, File, BackgroundT
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse
-from app.language_processor import process_user_input, get_medicine_search_terms
+from backend.app.language_processor import process_user_input, get_medicine_search_terms
 from pydantic import BaseModel, Field, validator
 from typing import Optional, Literal
 import os

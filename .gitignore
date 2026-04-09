@@ -18,7 +18,7 @@ __pycache__/
 *.log
 
 # Temporary files
-*.txt
+
 *.bat
 *.backup
 
